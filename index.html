@@ -1,0 +1,385 @@
+<!DOCTYPE html><!--*- ispell-dictionary: "english" -*-->
+<html>
+<head>
+  <!-- Copyright 2021 by zrajm. Licenses: CC BY-SA for text, GPLv2 for code. -->
+  <meta charset="utf-8">
+  <title>Toki Pona Syllabics</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    /* minireset */
+    html { box-sizing: border-box; }
+    *, :before, :after { box-sizing: inherit; padding: 0; margin: 0; }
+    /********************/
+    html {
+       max-width: 100%;
+       font: 24px/1.5 sans, sans-serif;
+       margin: 1rem 2rem;
+    }
+    /* https://gist.github.com/unruthless/413930 */
+    sup { top: -0.5rem; }
+    sub { bottom: -0.25rem; }
+    sub, sup {
+      font-size: .8rem;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+    /********************/
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+      font: 30px/1.5 sans, sans-serif;
+      margin: 2rem auto;
+      padding: .5em;
+      caption-side: bottom;
+    }
+    caption {
+      margin-top: 1em;
+    }
+    thead,
+    tbody {
+      border-bottom: 3px solid black;
+    }
+    .gray {
+      color: #ccc;
+    }
+    th {
+      font-weight: normal;
+    }
+    td, th {
+      border: 1px solid #000;
+      padding: .25rem .75rem;
+      white-space: nowrap;
+    }
+    td:nth-child(2n),
+    tbody th:nth-child(2n),
+    th:first-child {
+      border-left: 0;
+    }
+    td:nth-child(2n+1),
+    tbody th:nth-child(2n+1),
+    td:last-child,
+    th:last-child {
+      border-right: 0;
+    }
+    tr:nth-child(3n+1) td,
+    tr:nth-child(3n+1) th,
+    tr:nth-child(3n+2) td,
+    tr:nth-child(3n+2) th {
+      border-bottom: 0;
+    }
+    tr:nth-child(3n) td,
+    tr:nth-child(3n) th,
+    tr:nth-child(3n+2) td,
+    tr:nth-child(3n+2) th,
+    thead tr:first-child th {
+      border-top: 0;
+    }
+    .hanging div p:first-child {
+      margin-top: 0;
+      text-indent: -2rem;
+    }
+    .hanging p[id] {
+      text-indent: -2rem;
+    }
+    .hanging p {
+      padding-left: 2rem;
+    }
+    p {
+      margin-top: 1rem;
+    }
+    p + p {
+      margin-top: 0;
+      text-indent: 2rem;
+    }
+    ul {
+      padding-left: 2rem;
+    }
+    h1 {
+      margin-top: 1rem;
+    }
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    :target { background: #88f8; }
+
+    /**********/
+    .overdot {
+      position: relative;
+      font-size: 85%;
+      text-indent: 0;
+    }
+    .overdot:after {
+      content: '◌';
+    }
+    .overdot:before {
+      transform: translateX(-50%);
+      position: absolute;
+      left: 50%;
+      font-size: 1rem;
+      content: 'ᐝ';
+    }
+    /**********/
+  </style>
+</head>
+<body>
+  <h1>Toki Pona Syllabics</h1>
+
+  <p>Here is a way to write <a href="https://en.wikipedia.org/wiki/Toki_Pona"
+  title="ᑐᑭ ᐳᓇ">Toki Pona</a>
+  using <a href="https://en.wikipedia.org/wiki/Canadian_Aboriginal_syllabics">Canadian
+  syllabics</a>! (One of the coolest writing
+  systems!)<sup><a href="#fn1">[1]</a></sup>
+
+  <table>
+    <thead>
+      <tr>
+        <th colspan=2>
+        <th colspan=2>-
+        <th colspan=2>w- <sup><a href="#fn2">[2]</a></sup>
+        <th colspan=2>p-
+        <th colspan=2>t-
+        <th colspan=2>k-
+    </thead>
+    <tbody>
+      <tr>
+        <th>-i
+        <th>-e
+        <td title="i">ᐃ
+        <td title="e">ᐁ
+        <td title="wi">ᐎ
+        <td title="we">ᐌ
+        <td title="pi">ᐱ
+        <td title="pe">ᐯ
+        <td class="gray" title="ti (not used for Toki Pona)">ᑎ
+        <td title="te">ᑌ
+        <td title="ki">ᑭ
+        <td title="ke">ᑫ
+      <tr>
+        <th>-a
+        <th>-o
+        <td title="a">ᐊ
+        <td title="o">ᐅ
+        <td title="wa">ᐗ
+        <td class=gray title="wo (not used for Toki Pona)">ᐒ
+        <td title="pa">ᐸ
+        <td title="po">ᐳ
+        <td title="ta">ᑕ
+        <td title="to">ᑐ
+        <td title="ka">ᑲ
+        <td title="ko">ᑯ
+      <tr>
+        <th>
+        <th>-u
+        <td>
+        <td title="u">ᐆ
+        <td>
+        <td class=gray title="wu (not used for Toki Pona)">ᐔ
+        <td>
+        <td title="pu">ᐴ
+        <td>
+        <td title="tu">ᑑ
+        <td>
+        <td title="ku">ᑰ
+      <tr>
+        <th>-i
+        <th>-e
+        <td title="mi">ᒥ
+        <td title="me">ᒣ
+        <td title="ni">ᓂ
+        <td title="ne">ᓀ
+        <td title="si">ᓯ
+        <td title="se">ᓭ
+        <td class="gray" title="ji (not used for Toki Pona)">ᔨ
+        <td title="je">ᔦ
+        <td title="li">ᓕ
+        <td title="le">ᓓ
+      <tr>
+        <th>-a
+        <th>-o
+        <td title="ma">ᒪ
+        <td title="mo">ᒧ
+        <td title="na">ᓇ
+        <td title="no">ᓄ
+        <td title="sa">ᓴ
+        <td title="so">ᓱ
+        <td title="ja">ᔭ
+        <td title="jo">ᔪ
+        <td title="la">ᓚ
+        <td title="lo">ᓗ
+      <tr>
+        <th>
+        <th>-u
+        <td>
+        <td title="mu">ᒨ
+        <td>
+        <td title="nu">ᓅ
+        <td>
+        <td title="su">ᓲ
+        <td>
+        <td title="ju">ᔫ
+        <td>
+        <td title="lu">ᓘ
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan=2>
+        <th colspan=2>m-
+        <th colspan=2>n-
+        <th colspan=2>s-
+        <th colspan=2>j- <sup><a href="#fn3">[3]</a></sup>
+        <th colspan=2>l- <sup><a href="#fn4">[4]</a></sup>
+    </tfoot>
+    <caption>
+      ◌ᓐ means <i>n</i> at end of syllable
+      (e.g. <span title="tonsi">ᑐᓐᓯ</span>) <sup><a href="#fn5">[5]</a></sup>
+    </caption>
+  </table>
+
+  <ul>
+    <li>An <i>overdot</i> (<span class="overdot"></span>) is used to indicate
+      that a syllable is pronounced with <i>u</i> instead
+      of <nobr><i>o</i>.<sup><a href="#fn6">[6]</a></sup></nobr>
+    <li>Shaded syllables (<span title="wo">ᐒ</span> <span title="wu">ᐔ</span>
+      <span title="ti">ᑎ</span> <span title="ji">ᔨ</span>) are not valid
+      according to Toki Pona rules.
+  </ul>
+
+  <section id="punct">
+    <h1>Punctuation</h1>
+
+    <p>Instead of the usual hyphen, Canadian syllabics uses a double hyphen ‘᐀’
+    (this is because the final <i>c</i> – which is not used with Toki Pona –
+    also looks like a hyphen).
+
+    <p>Most texts use only spaces between words and ‘᙮’ at the end of
+    sentences. Other texts instead use the punctuation from the Latin script
+    (including period).
+  </section>
+
+  <section id="words">
+    <h1>Some (Non-Pu) Words</h1>
+
+    <p><b title="kipisi">ᑭᐱᓯ</b> – part, portion, piece
+    (<span title="kipisi e">ᑭᐱᓯ ᐁ</span> = cut, slice, divide)
+
+    <p><b title="monsuta">ᒧᓐᓲᑕ</b> monster, beast
+    (<span title="pilin monsuta">ᐱᓕᓐ ᒧᓐᓲᑕ</span> = fear)
+
+    <p><b title="tonsi">ᑐᓐᓯ</b> non-binary gender, trans
+
+    <p><b title="leko">ᓓᑯ</b> block, cube, square, stairs
+
+    <p><b title="ewe">ᐁᐌ</b> gravel, soft stone, powder
+
+    <p><b title="jasima">ᔭᓯᒪ</b> reflection, mirror, opposite
+    (<span title="supa jasima">ᓲᐸ ᔭᓯᒪ</span> = mirror)
+
+    <p><b title="linluwi">ᓕᓐᓘᐎ</b> web, net, network, signal, connection, to
+    internet, connection (<span title="linja linluwi">ᓕᓐᔭ ᓕᓐᓘᐎ</span> = web,
+    net)
+
+    <p><b title="taki">ᐸᑭ</b> sticky, adhesive, clingy
+    (<span title="lipu taki">ᓕᐴ ᐸᑭ</span> = tape)
+
+    <p><b title="apeja">ᐊᐯᔭ</b> shame, guilt, embarrassment
+
+    <p><b title="misikeke">ᒥᓯᑫᑫ</b> medicine, drugs
+
+    <p><b title="waleja">ᐗᓓᔭ</b> context, value, topic, relating to, relevance,
+    salience, importance
+  </section>
+
+<section id=footnotes class=hanging>
+  <h1>Footnotes</h1>
+
+  <p id="fn1">[1] Of
+  course, <a href="https://en.wikipedia.org/wiki/Canadian_Aboriginal_syllabics">Canadian
+  Aboriginal syllabics</a> is under fierce competition for the title of
+  “coolest writing system” from other nifty scripts such
+  as <a href="https://en.wikipedia.org/wiki/Hangul">Hangul</a>
+  and <a href="https://en.wikipedia.org/wiki/ASLwrite">ASLwrite</a>.
+
+  <p id="fn2">[2] Western Cree, which were first to adopt Canadian syllabics,
+  write <i>w</i> using a dot <i>after</i> the syllable
+  <nobr>(<span title="wi">ᐏ</span> <span title="we">ᐍ</span></nobr>
+  <nobr><span title="wa">ᐘ</span> <span title="wo">ᐓ</span>),</nobr> while
+  Eastern Cree and Ojibwe, which took up syllabics later, instead put the
+  dot <i>in front of</i> the syllable
+  <nobr>(<span title="wi">ᐎ</span> <span title="we">ᐌ</span></nobr>
+  <nobr><span title="wa">ᐗ</span> <span title="wo">ᐒ</span>).</nobr> Since Toki
+  Pona syllabics already uses the l-series
+  (<span title="li">ᓕ</span> <span title="le">ᓓ</span>
+  <span title="la">ᓚ</span> <span title="lo">ᓗ</span>), and the final <i>n</i>
+  (<span title="Final ‘n’">◌ᓐ</span>) from Eastern Cree, I have opted to follow
+  the Eastern Cree practice in regards to <i>w</i> as well, and put
+  the <i>w</i> dot in front of the syllable.
+
+  <p id="fn3">[3] In accordance with the Toki Pona way of spelling, I have
+  labeled the y-series
+  <nobr>(<span title="ji">ᔨ</span> <span title="je">ᔦ</span></nobr>
+  <nobr><span title="ja">ᔭ</span> <span title="jo">ᔪ</span>)</nobr>
+  as <i>j-</i> in the table above. (Fear not, just like Toki Pona <i>j,</i> it
+  is pronounced <i>y</i>.)
+
+  <p id="fn4">[4] I opted to use the l-series from Eastern Cree (also used by
+  Inuktitut), simply because that set of glyphs respects the symmetry of the
+  syllabics, while glyphs of the l-series in Western Cree syllabics do not
+  follow the expected pattern of rotations. The table below show a comparison
+  between Eastern and Western l-series (Yes! The ‘Western’ column looks all
+  wonky, but I assure you: That is not a mistake on my part!):
+
+  <table>
+    <thead>
+      <tr>
+        <th colspan=2>
+        <th colspan=2><small>Eastern</small>
+        <th colspan=2><small>Western</small>
+    </thead>
+    <tbody>
+      <tr>
+        <th>-i
+        <th>-e
+        <td title="li">ᓕ
+        <td title="le">ᓓ
+        <td title="li">ᕆ
+        <td title="le">ᕃ
+      <tr>
+        <th>-a
+        <th>-o
+        <td title="la">ᓚ
+        <td title="lo">ᓗ
+        <td title="la">ᕍ
+        <td title="lo">ᕊ
+    </tbody>
+  </table>
+
+  <p id="fn5">[5] The languages written in Canadian syllabics use various
+  different glyphs for non-syllabic <i>n</i>. For simplicity’s sake I’m here
+  using the character <span title="Raised ‘na’ glyph">◌ᓐ</span> (used by
+  Inuktitut, Eastern Cree, and the most common variant in Ojibwe). Other
+  possible choices would’ve included <span title="Raised ‘n’ glyph">◌ᐣ</span>
+  (used in Western Cree) or <span title="Raised ‘ni’ glyph">◌ᣙ</span> (a
+  variant from Ojibwe which is more rarely seen).
+
+  <div id="fn6">
+    <p>[6] In Canadian syllabics the <i>overdot</i>
+    (<span class="overdot"></span>) is used to mark long vowels, but Toki Pona
+    does not make a distinction between long and short vowels. However,
+    Canadian syllabics only have four possible rotations with which to indicate
+    vowel, and Toki Pona has <i>five</i> vowels, so in this system the overdot
+    is instead used to convert an <i>o</i> into an <i>u</i>, instead of its
+    traditional vowel-lengthening role.
+
+    <p>The <i>o</i>-series of glyphs – which is used here for both <i>o</i>
+    (without overdot) and <i>u</i> (with overdot) – is used for <i>o</i> in
+    most of the Canadian syllabics languages, but is used for <i>u</i> in
+    Inuktitut. I’ve chosen to mark <i>u</i> with an overdot (rather
+    than <i>o</i>) since <i>u</i> is the least common vowel in Toki Pona, and I
+    want to minimize the amount of diacritics occurring in text.
+  </div>
+</section>
+<footer style="border-top:3px solid #000;text-align:center;margin:1rem">
+  <p>Copyright 2021 <a href="http://zrajm.org">zrajm</a> (Uppsala, Sverige)
+</footer>
+</body>
+</html>

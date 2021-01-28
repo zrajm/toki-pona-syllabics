@@ -1,0 +1,19 @@
+-*- org -*-
+
+* Add search function
+  https://jprogr.github.io/TokiPonaDictionary/
+* Remove "to" in verb definitions in dictionary
+* Add groupings of symbols
+  A la http://theotherwebsite.com/tokipona/
+* Add Canadian syllabics script
+* Add sitelen pona script
+  jan Sonja’s word based script
+* Add sitelen sitelen script
+  The Maya inspired hieroglyphics.
+* Add sitelen ko script(?)
+  Cuneiform inspired script.
+  https://www.reddit.com/r/tokipona/comments/i71a3g/sitelen_ko_a_script_for_clay/
+* Add sitelen telo script(?)
+  Japanese inspired script.
+  https://www.reddit.com/r/tokipona/comments/jax1x2/sitelen_telo_v101_a_japaneseinspired_logographic/
+* [eof]

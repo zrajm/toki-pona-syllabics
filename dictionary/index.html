@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" XXXclass="showsource">
 <head>
 <meta charset="utf-8">
 <title>Zrajm’s Toki Pona Dictionary</title>
@@ -13,712 +13,957 @@
 .TODO { background:#ff08; }
 .FIXME { background:#f88a; }
 body {
+  font:20px/1.5 sans, sans-serif;
   width:40em;
   margin:auto;
 }
-.dict > * {
-  margin:1rem 0;
-  width:100%;
-  border-collapse:collapse;
-  outline:1px solid #000;
-}
-.dict td {
-  vertical-align:top;
-}
-.dict td[rowspan] {
-  width:4em;
-}
-td:first-child:not([rowspan]) {
-  width:6em;
-}
-.x1 { background:#f006; }
-.x2 { background:#00f5; }
-.x1.x2 { background:#f0f8; }
+.showsource .x1 { background:#f006; }
+.showsource .x2 { background:#00f5; }
+.showsource .x1.x2 { background:#f0f8; }
 footer { margin:1rem; text-align:center; }
+
+/* dictionary */
+#dict > div {
+  margin:2rem 0;
+  display:flex;
+  flex-direction:row;
+}
+ts { flex:1 }
+w, t { display:block; }
+w {
+  width:5em;
+  font-weight:bold;
+}
+t {
+  flex-grow:2;
+  padding-left:6em;
+}
+pos {
+  margin-left:-6em;
+  width:6em;
+  display:inline-block;
+  text-transform:lowercase;
+}
 </style>
 </head>
 <body>
 <center>
   <h1>Zrajm’s Toki Pona Dictionary</h1>
 </center>
-<section class="dict">
-  <table>
-    <tr><td rowspan="10"><b lang="toki">a</b>
-        <br><b lang="toki">kin</b></td>
-    <tr><td>PARTICLE<td> (<span class="x1 x2">emotional interjection</span>, <span class="x1 x2">emphasis</span>, <span class="x1 x2">confirmation</span>)</td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">akesi</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">non-cute animal</span>; <span class="x1 x2">reptile</span>, <span class="x1 x2">amphibian</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">ala</b></td>
-    <tr><td>NOUN<td> <span class="x1">nothing</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">not</span>, <span class="x1 x2">no</span>, <span class="x1">empty</span></td>
-    <tr><td>NUMBER<td> <span class="x1">0</span>, <span class="x1 x2">zero</span></td>
-  </table>
-  <table class="TODO">
-    <tr><td rowspan="10"><b lang="toki">alasa</b></td>
-    <tr><td>VERB<td> <span class="x1 x2">hunt</span>, <span class="x1">gather</span>, <span class="x2">forage</span></td>
-    <tr><td>VERB<td> <span class="x1">(unconventional) search</span>, <span class="x1">(unconventional) look for</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">ale</b>
-        <br><b lang="toki">ali</b></td>
-    <tr><td>NOUN<td> <span class="x2">abundance</span>, <span class="x1 x2">everything</span>, <span class="x2">life</span>, <span class="x1 x2">universe</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">all</span>; <span class="x1 x2">abundant</span>, <span class="x2">countless</span>, <span class="x2">bountiful</span>, <span class="x1 x2">every</span>, <span class="x2">plentiful</span></td>
-    <tr><td>NUMBER<td> <span class="x1">all/infinite (simple system)</span>, <span class="x1 x1">100 (complex system)</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">anpa</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">bowing down</span>, <span class="x1 x2">downward</span>, <span class="x1 x2">humble</span>, <span class="x1 x2">lowly</span>, <span class="x1 x2">dependent</span></td>
-    <tr><td>NOUN<td> <span class="x1">(old/non-pu) lower part</span></td>
-    <tr><td>VERB<td> <span class="x1">(without object) to bow down</span></td>
-    <tr><td>VERB<td> <span class="x1">(with object) to conquer</span>, <span class="x1">to defeat</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">ante</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">different</span>, <span class="x2">altered</span>, <span class="x1 x2">changed</span>, <span class="x1 x2">other</span></td>
-    <tr><td>NOUN<td> <span class="x1">difference</span>, <span class="x1">change</span>, <span class="x1">(unconventional) version</span></td>
-    <tr><td>VERB<td> <span class="x1">to change</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">anu</b></td>
-    <tr><td>PARTICLE<td> <span class="x1 x2">or</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">awen</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">kept</span>, <span class="x2">protected</span>, <span class="x1 x2">safe</span>, <span class="x1 x2">enduring</span>, <span class="x1">resilient</span>, <span class="x1 x2">waiting</span>, <span class="x1 x2">staying</span></td>
-    <tr><td>PRE-VERB<td> <span class="x1 x2">to continue to (do something)</span></td>
-    <tr><td>NOUN<td> <span class="x1">(unconventional) stability</span>, <span class="x1">safety</span>, <span class="x1">wait</span></td>
-    <tr><td>VERB<td> <span class="x1">keep</span>, <span class="x1">stay</span>, <span class="x1">endure</span>, <span class="x1">protect</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">e</b></td>
-    <tr><td>PARTICLE<td> (<span class="x1 x2">before the direct object</span>)</td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">en</b></td>
-    <tr><td>PARTICLE<td> <span class="x1">and</span> (<span class="x2">between multiple subjects</span>)</td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">esun</b></td>
-    <tr><td>NOUN<td> <span class="x1">trade</span>, <span class="x1 x2">transaction</span>, <span class="x1">exchange</span>, <span class="x2">market</span>, <span class="x2">shop</span>, <span class="x2">fair</span>, <span class="x2">bazaar</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">trade/exchange-related</span>, <span class="x1">commercial</span></td>
-    <tr><td>VERB<td> <span class="x1">to trade</span>, <span class="x1">to exchange</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">ijo</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">thing</span>, <span class="x2">phenomenon</span>, <span class="x1 x2">object</span>, <span class="x1 x2">matter</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">material</span>, <span class="x1">physical</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">ike</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">bad</span>, <span class="x1">evil</span>, <span class="x2">negative</span>; <span class="x1">complex</span>, <span class="x2">non-essential</span>, <span class="x1">unnecessary</span>, <span class="x2">irrelevant</span></td>
-    <tr><td>NOUN<td> <span class="x1">evil</span></td>
-    <tr><td>VERB<td> <span class="x1">(unconventional) make something worse</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">ilo</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">tool</span>, <span class="x2">implement</span>, <span class="x1 x2">machine</span>, <span class="x1 x2">device</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">useful</span>, <span class="x1">(unconventional) electronic</span>, <span class="x1">metallic</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">insa</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">center</span>, <span class="x1 x2">content</span>, <span class="x1 x2">inside</span>, <span class="x2">between</span>; <span class="x2">internal organ</span>, <span class="x1 x2">stomach</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">central</span>, <span class="x1">inside</span>, <span class="x1">between</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">jaki</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">dirty</span>, <span class="x1 x2">disgusting</span>, <span class="x1 x2">unclean</span>, <span class="x1 x2">unsanitary</span>, <span class="x1 x2">toxic</span>, <span class="x2">obscene</span>, <span class="x2">sickly</span></td>
-    <tr><td>NOUN<td> <span class="x1">dirt</span>, <span class="x1">waste</span></td>
-    <tr><td>VERB<td> <span class="x1">to make something dirty</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">jan</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">somebody</span>, <span class="x1 x2">person</span>, <span class="x2">human being</span>, <span class="x1">people</span>, <span class="x1">humanity</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">human-like</span>, <span class="x1">personal</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">jelo</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">yellow</span>, <span class="x1 x2">yellowish</span></td>
-    <tr><td>NOUN<td> <span class="x1">yellow (and its shades)</span></td>
-    <tr><td>VERB<td> <span class="x1">color something yellow</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">jo</b></td>
-    <tr><td>VERB<td> <span class="x1 x2">have</span>, <span class="x1 x2">carry</span>, <span class="x1 x2">contain</span>, <span class="x1 x2">hold</span></td>
-    <tr><td>NOUN<td> <span class="x1">(unconventional) possessions</span>, <span class="x1">property</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">kala</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">fish</span>, <span class="x1 x2">marine animal</span>, <span class="x1 x2">sea creature</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">kalama</b></td>
-    <tr><td>VERB<td> <span class="x2">produce sound</span>, <span class="x1">make noise</span>, <span class="x1">to play (an instrument)</span>; <span class="x1 x2">recite</span>, <span class="x2">utter aloud</span></td>
-    <tr><td>NOUN<td> <span class="x1">sound</span>, <span class="x1">noise</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">loud</span>, <span class="x1">noisy</span>, <span class="x1">sound-making</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">kama</b></td>
-    <tr><td>PRE-VERB<td> <span class="x1 x2">become</span>, <span class="x1">be in the process of (doing something)</span>, <span class="x1 x2">manage to</span>, <span class="x1 x2">succeed in</span></td>
-    <tr><td>NOUN<td> <span class="x1">event</span>, <span class="x1">arrival</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">arriving</span>, <span class="x1 x2">coming</span>, <span class="x1 x2">future</span>, <span class="x1 x2">summoned</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">kasi</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">plant</span>, <span class="x2">vegetation</span>; <span class="x1 x2">herb</span>, <span class="x1 x2">leaf</span>, <span class="x1">grass</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">ken</b></td>
-    <tr><td>PRE-VERB<td> <span class="x2">be able to</span>, <span class="x2">be allowed to</span>, <span class="x1 x2">can</span>, <span class="x1 x2">may</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">possible</span>, <span class="x1">(unconventional) able</span></td>
-    <tr><td>NOUN<td> <span class="x1">ability</span>, <span class="x1">possibility</span>, <span class="x1">(unconventional) right</span>, <span class="x1">liberty</span></td>
-  </table>
-  <table class="TODO">
-    <tr><td rowspan="10"><b lang="toki">kepeken</b></td>
-    <tr><td>PREPOSITION<td> <span class="x2">to use</span>, <span class="x2">with</span>, <span class="x2">by means of</span></td>
-    <tr><td>PREPOSITION<td> <span class="x1">(do something) using</span>, <span class="x1">with the help of</span></td>
-    <tr><td>NOUN<td> <span class="x1">use</span>, <span class="x1">(unconventional) practice</span></td>
-    <tr><td>VERB<td> <span class="x1">(with object) to use something</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">kili</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">fruit</span>, <span class="x1 x2">vegetable</span>, <span class="x1 x2">mushroom</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">kiwen</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">hard object</span>, <span class="x1 x2">metal</span>, <span class="x2">rock</span>, <span class="x1 x2">stone</span>, <span class="x1">solid</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">hard</span>, <span class="x1">metallic</span>, <span class="x1">solid</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">ko</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">clay</span>, <span class="x2">clinging form</span>, <span class="x2">dough</span>, <span class="x1 x2">semi-solid</span>, <span class="x1 x2">paste</span>, <span class="x1 x2">powder</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">kon</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">air</span>, <span class="x2">breath</span>; <span class="x1 x2">essence</span>, <span class="x1 x2">spirit</span>; <span class="x2">hidden reality</span>, <span class="x2">unseen agent</span>, <span class="x1">(unconventional) gas</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">invisible</span>, <span class="x1">ephemeral</span>, <span class="x1">(unconventional) gaseous</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">kule</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">colorful</span>, <span class="x2">pigmented</span>, <span class="x1 x2">painted</span></td>
-    <tr><td>NOUN<td> <span class="x1">color</span>, <span class="x1">(rare) gender</span></td>
-    <tr><td>VERB<td> <span class="x1">to paint something a color</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">kulupu</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">group</span>, <span class="x1 x2">community</span>, <span class="x1 x2">company</span>, <span class="x1 x2">society</span>, <span class="x1 x2">nation</span>, <span class="x1 x2">tribe</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">communal</span>, <span class="x1">social</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">kute</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">ear</span>, <span class="x1">hearing</span></td>
-    <tr><td>VERB<td> <span class="x1 x2">to hear</span>, <span class="x1 x2">listen</span>; <span class="x2">pay attention to</span>, <span class="x1 x2">obey</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">…-sounding</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">la</b></td>
-    <tr><td>PARTICLE<td> <span class="x1">if, when (introduces context</span>; <span class="x2">between the context phrase and the main sentence</span>)</td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">lape</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">sleeping</span>, <span class="x2">resting</span>, <span class="x1">restful</span></td>
-    <tr><td>NOUN<td> <span class="x1">sleep</span>, <span class="x1">rest</span></td>
-    <tr><td>VERB<td> <span class="x1">sleep</span>, <span class="x1">rest</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">laso</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">blue</span>, <span class="x1 x2">green</span></td>
-    <tr><td>NOUN<td> <span class="x1">blue</span>, <span class="x1">green</span></td>
-    <tr><td>VERB<td> <span class="x1">color something blue/green</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">lawa</b></td>
-    <tr><td>VERB<td> <span class="x1">head</span>, <span class="x1 x2">control</span>, <span class="x1 x2">direct</span>, <span class="x1 x2">guide</span>, <span class="x1 x2">lead</span>, <span class="x1 x2">own</span>, <span class="x2">plan</span>, <span class="x2">regulate</span>, <span class="x1 x2">rule</span></td>
-    <tr><td>NOUN<td> <span class="x1 x2">head</span>, <span class="x1 x2">mind</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">main</span>, <span class="x1">primary</span>, <span class="x1">controlling</span>, <span class="x1">ruling</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">len</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">cloth</span>, <span class="x1 x2">clothes</span>, <span class="x1 x2">fabric</span>, <span class="x2">textile</span>; <span class="x2">cover</span>, <span class="x1 x2">layer of privacy</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">clothed</span>, <span class="x1">made of cloth/fabric</span></td>
-    <tr><td>VERB<td> <span class="x1">to clothe</span>, <span class="x1">to provide a layer of privacy</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">lete</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">cold</span>, <span class="x1 x2">cool</span>; <span class="x1 x2">uncooked</span>, <span class="x1 x2">raw</span></td>
-    <tr><td>NOUN<td> <span class="x1">cold</span></td>
-    <tr><td>VERB<td> <span class="x1">cool down</span></td>
-  </table>
-  <table class="TODO">
-    <tr><td rowspan="10"><b lang="toki">li</b></td>
-    <tr><td>PARTICLE<td> (<span class="x2">between any subject except mi alone or sina alone and its <dp>VERB</dp>; also to introduce a new <dp>VERB</dp> for the same subject</span>)</td>
-    <tr><td>PARTICLE<td> (<span class="x1">between subject and verb/adjective</span>)</td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">lili</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x2">little</span>, <span class="x1 x2">small</span>, <span class="x2">short</span>; <span class="x1 x2">few</span>; <span class="x2">a bit</span>; <span class="x1 x2">young</span></td>
-    <tr><td>NOUN<td> <span class="x1">smallness</span></td>
-    <tr><td>VERB<td> <span class="x1">to shrink</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">linja</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">long flexible thing</span>; <span class="x1">string</span>, <span class="x2">cord</span>, <span class="x1 x2">hair</span>, <span class="x1 x2">rope</span>, <span class="x2">thread</span>, <span class="x2">yarn</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">lipu</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">flat object</span>; <span class="x1 x2">book</span>, <span class="x1 x2">document</span>, <span class="x1">page</span>, <span class="x2">card</span>, <span class="x1 x2">paper</span>, <span class="x1 x2">record</span>, <span class="x1 x2">website</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">flat</span>, <span class="x1">used as lipu</span>, <span class="x1">lipu-like</span>, <span class="x1">of lipu</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">loje</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">red</span>, <span class="x1 x2">reddish</span></td>
-    <tr><td>NOUN<td> <span class="x1">red</span></td>
-    <tr><td>VERB<td> <span class="x1">color something red</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">lon</b></td>
-    <tr><td>PREPOSITION<td> <span class="x1">in</span>, <span class="x1">at</span>, <span class="x1">on</span>, <span class="x2">located at</span>, <span class="x2">present at</span>; <span class="x2">real</span>, <span class="x2">true</span>, <span class="x2">existing</span></td>
-    <tr><td>NOUN<td> <span class="x1">truth</span>, <span class="x1">life</span>, <span class="x1">existence</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">real</span>, <span class="x1">true</span>, <span class="x1">present</span>, <span class="x1">existing</span></td>
-    <tr><td>VERB<td> <span class="x1">(without object) is true</span>, <span class="x1">exists</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">luka</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">arm</span>, <span class="x1 x2">hand</span>, <span class="x2">tactile organ</span></td>
-    <tr><td>NUMBER<td> <span class="x1 x2">5</span>, <span class="x1 x2">five (complex system)</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">lukin</b>
-        <br><b lang="toki">oko</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">eye</span>, <span class="x1">vision</span></td>
-    <tr><td>VERB<td> <span class="x1 x2">look at</span>, <span class="x1 x2">see</span>, <span class="x2">examine</span>, <span class="x2">observe</span>, <span class="x1 x2">read</span>, <span class="x2">watch</span></td>
-    <tr><td>PRE-VERB<td> <span class="x1 x2">seek</span>, <span class="x2">look for</span>, <span class="x2">try to</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">…-looking</span>, <span class="x1">visual</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">lupa</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">door</span>, <span class="x1 x2">hole</span>, <span class="x1 x2">orifice</span>, <span class="x1 x2">window</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">ma</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">earth</span>, <span class="x1 x2">land</span>; <span class="x1 x2">outdoors</span>, <span class="x2">world</span>; <span class="x1 x2">country</span>, <span class="x1 x2">territory</span>; <span class="x2">soil</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">mama</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">parent</span>, <span class="x1 x2">ancestor</span>; <span class="x1 x2">creator</span>, <span class="x1">origin</span>, <span class="x2">originator</span>; <span class="x1 x2">caretaker</span>, <span class="x2">sustainer</span></td>
-    <tr><td>VERB<td> <span class="x1">create</span>, <span class="x1">parent</span>, <span class="x1">take care of</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">mani</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">money</span>, <span class="x2">cash</span>, <span class="x2">savings</span>, <span class="x2">wealth</span>; <span class="x1 x2">large domesticated animal</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">(unconventional) wealthy</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">meli</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">woman</span>, <span class="x1 x2">female</span>, <span class="x2">feminine person</span>; <span class="x1 x2">wife</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">feminine</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">mi</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">I</span>, <span class="x1 x2">me</span>, <span class="x1 x2">we</span>, <span class="x1 x2">us</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">my</span>, <span class="x1">our</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">mije</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">man</span>, <span class="x1 x2">male</span>, <span class="x2">masculine person</span>; <span class="x1 x2">husband</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">masculine</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">moku</b></td>
-    <tr><td>VERB<td> <span class="x1 x2">eat</span>, <span class="x1 x2">drink</span>, <span class="x2">consume</span>, <span class="x1 x2">swallow</span>, <span class="x2">ingest</span></td>
-    <tr><td>NOUN<td> <span class="x1">food</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">edible</span>, <span class="x1">of food</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">moli</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">dead</span>, <span class="x1 x2">dying</span></td>
-    <tr><td>NOUN<td> <span class="x1">death</span></td>
-    <tr><td>VERB<td> <span class="x1">to kill</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">monsi</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">back</span>, <span class="x1 x2">behind</span>, <span class="x1 x2">rear</span>, <span class="x1">butt</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">back</span>, <span class="x1">rear</span></td>
-  </table>
-  <table class="FIXME">
-    <tr><td rowspan="10"><b lang="toki">mu</b></td>
-    <tr><td>PARTICLE<td><span class="x2">animal noise or communication</span>, <span class="x1">any animal sound</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">mun</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">moon</span>, <span class="x1 x2">star</span>, <span class="x1 x2">night sky object</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">lunar</span>, <span class="x1">stellar</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">musi</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">artistic</span>, <span class="x1 x2">entertaining</span>, <span class="x1">amusing</span>, <span class="x2">frivolous</span>, <span class="x2">playful</span>, <span class="x2">recreational</span></td>
-    <tr><td>NOUN<td> <span class="x1">game</span>, <span class="x1">art</span></td>
-    <tr><td>VERB<td> <span class="x1">amuse</span>, <span class="x1">play</span>, <span class="x1">have fun</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">mute</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">many</span>, <span class="x2">a lot</span>, <span class="x1 x2">more</span>, <span class="x2">much</span>, <span class="x2">several</span>, <span class="x2">very</span></td>
-    <tr><td>NOUN<td> <span class="x1 x2">quantity</span></td>
-    <tr><td>NUMBER<td> <span class="x1">3 or more (simple system)</span>, <span class="x1">20 (complex system)</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">nanpa</b></td>
-    <tr><td>PARTICLE<td> <span class="x1 x2">-th (ordinal number</span>)</td>
-    <tr><td>ADJECTIVE<td> <span class="x1">mathematical</span>, <span class="x1">numeric</span>, <span class="x1">(unconventional) digital</span></td>
-    <tr><td>NOUN<td> <span class="x1 x2">number</span></td>
-  </table>
-  <table class="TODO">
-    <tr><td rowspan="10"><b lang="toki">nasa</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x2">unusual</span>, <span class="x2">strange</span>; <span class="x2">foolish</span>, <span class="x2">crazy</span>; <span class="x2">drunk</span>, <span class="x2">intoxicated</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">weird</span>, <span class="x1">unusual</span>, <span class="x1">strange</span>, <span class="x1">crazy</span>, <span class="x1">drunk</span></td>
-  </table>
-  <table class="TODO">
-    <tr><td rowspan="10"><b lang="toki">nasin</b></td>
-    <tr><td>NOUN<td> <span class="x2">way</span>, <span class="x2">custom</span>, <span class="x2">doctrine</span>, <span class="x2">method</span>, <span class="x2">path</span>, <span class="x2">road</span></td>
-    <tr><td>NOUN<td> <span class="x1">path</span>, <span class="x1">road</span>, <span class="x1">street</span>, <span class="x1">directive</span>, <span class="x1">way</span>, <span class="x1">custom</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">street-</span>, <span class="x1">true to the directive/way/custom</span></td>
-    <tr><td>VERB<td> <span class="x1">(unconventional) to guide</span>, <span class="x1">to show the path</span></td>
-  </table>
-  <table class="TODO">
-    <tr><td rowspan="10"><b lang="toki">nena</b></td>
-    <tr><td>NOUN<td> <span class="x2">bump</span>, <span class="x2">button</span>, <span class="x2">hill</span>, <span class="x2">mountain</span>, <span class="x2">nose</span>, <span class="x2">protuberance</span></td>
-    <tr><td>NOUN<td> <span class="x1">hill</span>, <span class="x1">mountain</span>, <span class="x1">button</span>, <span class="x1">bump</span>, <span class="x1">nose</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">hilly</span>, <span class="x1">mountainous</span>, <span class="x1">bumpy</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">ni</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">this</span>, <span class="x1 x2">that</span></td>
-    <tr><td>NOUN<td> <span class="x1">this</span>, <span class="x1">that</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">nimi</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">name</span>, <span class="x1 x2">word</span></td>
-  </table>
-  <table class="TODO">
-    <tr><td rowspan="10"><b lang="toki">noka</b></td>
-    <tr><td>NOUN<td> <span class="x2">foot</span>, <span class="x2">leg</span>, <span class="x2">organ of locomotion</span>; <span class="x2">bottom</span>, <span class="x2">lower part</span></td>
-    <tr><td>NOUN<td> <span class="x1">foot</span>, <span class="x1">leg</span>, <span class="x1">bottom</span>, <span class="x1">lower part</span>, <span class="x1">under (something</span>)</td>
-  </table>
-  <table class="TODO">
-    <tr><td rowspan="10"><b lang="toki">o</b></td>
-    <tr><td>PARTICLE<td> <span class="x2">hey! O! (vocative or imperative)</span></td>
-    <tr><td>PARTICLE<td> (<span class="x1">addressing people</span>, <span class="x1">commands</span>)</td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">olin</b></td>
-    <tr><td>VERB<td> <span class="x1 x2">love</span>, <span class="x2">have compassion for</span>, <span class="x1 x2">respect</span>, <span class="x2">show affection to</span></td>
-    <tr><td>NOUN<td> <span class="x1">love</span>, <span class="x1">compassion</span>, <span class="x1">affection</span>, <span class="x1">respect</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">loved</span>, <span class="x1">favorite</span>, <span class="x1">respected</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">ona</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">he</span>, <span class="x1 x2">she</span>, <span class="x1 x2">it</span>, <span class="x1 x2">they</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">his</span>, <span class="x1">her</span>, <span class="x1">their</span>, <span class="x1">its</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">open</b></td>
-    <tr><td>VERB<td> <span class="x2">begin</span>, <span class="x1 x2">start</span>; <span class="x1 x2">open</span>; <span class="x1 x2">turn on</span></td>
-    <tr><td>NOUN<td> <span class="x1">start</span>, <span class="x1">beginning</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">initial</span>, <span class="x1">starting</span></td>
-    <tr><td>PRE-VERB<td> <span class="x1">begin (doing something)</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">pakala</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x2">botched</span>, <span class="x1 x2">broken</span>, <span class="x2">damaged</span>, <span class="x2">harmed</span>, <span class="x2">messed up</span>, <span class="x1 x2">wrong</span></td>
-    <tr><td>NOUN<td> <span class="x1">damage</span>, <span class="x1">mistake</span></td>
-    <tr><td>VERB<td> <span class="x1">to break</span>, <span class="x1">to make mistakes</span></td>
-    <tr><td>PARTICLE<td> (<span class="x1">generic curse</span>)</td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">pali</b></td>
-    <tr><td>VERB<td> <span class="x2">do</span>, <span class="x2">take action on</span>, <span class="x1 x2">work on</span>; <span class="x2">build</span>, <span class="x1 x2">make</span>, <span class="x2">prepare</span></td>
-    <tr><td>NOUN<td> <span class="x1">work</span>, <span class="x1">labor</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">working</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">palisa</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">long hard thing</span>; <span class="x1 x2">branch</span>, <span class="x2">rod</span>, <span class="x1 x2">stick</span>, <span class="x1">(unconventional) length</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">long</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">pan</b></td>
-    <tr><td>NOUN<td> <span class="x2">cereal</span>, <span class="x1 x2">grain</span>; <span class="x2">barley</span>, <span class="x1 x2">corn</span>, <span class="x2">oat</span>, <span class="x1 x2">rice</span>, <span class="x2">wheat</span>; <span class="x1 x2">bread</span>, <span class="x2">pasta</span>, <span class="x1">pizza</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">pana</b></td>
-    <tr><td>VERB<td> <span class="x2 x2">give</span>, <span class="x1 x2">send</span>, <span class="x1 x2">emit</span>, <span class="x2">provide</span>, <span class="x2">put</span>, <span class="x1 x2">release</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">(unconventional) given</span>, <span class="x1">sent</span>, <span class="x1">released</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">pi</b></td>
-    <tr><td>PARTICLE<td> <span class="x1 x2">of</span> (<span class="x1">regroup two or more modifiers</span>)</td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">pilin</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">heart</span>; <span class="x1">feeling</span>, <span class="x1">touch</span>, <span class="x1">sense</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">feeling</span> (<span class="x2">an emotion</span>, <span class="x2">a direct experience</span>)</td>
-    <tr><td>VERB<td> <span class="x1">touch</span>, <span class="x1">think</span>, <span class="x1">feel</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">pimeja</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">black</span>, <span class="x1 x2">dark</span>, <span class="x2">unlit</span></td>
-    <tr><td>NOUN<td> <span class="x1">black</span>, <span class="x1">shadow</span></td>
-    <tr><td>VERB<td> <span class="x1">color something black</span>, <span class="x1">cast a shadow</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">pini</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x2">ago</span>, <span class="x1 x2">completed</span>, <span class="x2">ended</span>, <span class="x1 x2">finished</span>, <span class="x1">final</span>, <span class="x1 x2">past</span> <span class="x1">(with tenpo)</span></td>
-    <tr><td>NOUN<td> <span class="x1">end</span>, <span class="x1">finish</span></td>
-    <tr><td>VERB<td> <span class="x1">to end</span>, <span class="x1">to finish</span>, <span class="x1">to close</span></td>
-    <tr><td>PRE-VERB<td> <span class="x1">to end/stop doing something</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">pipi</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">bug</span>, <span class="x1 x2">insect</span>, <span class="x2">ant</span>, <span class="x2">spider</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">poka</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">hip</span>, <span class="x1 x2">side</span>; <span class="x2">next to</span>, <span class="x2">nearby</span>, <span class="x2">vicinity</span>, <span class="x1">nearby area</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">neighboring</span>, <span class="x1">nearby</span>, <span class="x1">at one’s side</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">poki</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">container</span>, <span class="x2">bag</span>, <span class="x1 x2">bowl</span>, <span class="x1 x2">box</span>, <span class="x1 x2">cup</span>, <span class="x2">cupboard</span>, <span class="x1 x2">drawer</span>, <span class="x2">vessel</span></td>
-    <tr><td>VERB<td> <span class="x1">(unconventional) to put in a box</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">pona</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">good</span>, <span class="x2">positive</span>, <span class="x2">useful</span>; <span class="x1 x2">friendly</span>, <span class="x1 x2">peaceful</span>; <span class="x1 x2">simple</span></td>
-    <tr><td>NOUN<td> <span class="x1">good</span>, <span class="x1">simplicity</span></td>
-    <tr><td>VERB<td> <span class="x1">to improve</span>, <span class="x1">to fix</span></td>
-  </table>
-  <table class="TODO">
-    <tr><td rowspan="10"><b lang="toki">pu</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x2">interacting with the official Toki Pona book</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">as told in the official toki pona book</span></td>
-    <tr><td>NOUN<td> <span class="x1">the official toki pona book</span></td>
-    <tr><td>VERB<td> <span class="x1">interacting with the official toki pona book</span></td>
-    <tr><td><td class="note">The official toki pona book only defines the verb meaning of the word “pu”. Some people in the toki pona community prefer to only use it in the verb meaning, while others use it in others as well.</td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">sama</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x2">same</span>, <span class="x1 x2">similar</span>, <span class="x1">like</span>; <span class="x2">each other</span>; <span class="x1 x2">sibling</span>, <span class="x2">peer</span>, <span class="x2">fellow</span></td>
-    <tr><td>PREPOSITION<td> <span class="x1 x2">as</span>, <span class="x1 x2">like</span></td>
-    <tr><td>NOUN<td> <span class="x1">similarity</span>, <span class="x1">(someone’s) sibling</span></td>
-  </table>
-  <table class="TODO">
-    <tr><td rowspan="10"><b lang="toki">seli</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x2">fire</span>; <span class="x2">cooking element</span>, <span class="x2">chemical reaction</span>, <span class="x2">heat source</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">warm</span>, <span class="x1">hot</span></td>
-    <tr><td>NOUN<td> <span class="x1">heat</span>, <span class="x1">warmth</span>, <span class="x1">chemical reaction</span>, <span class="x1">heat source</span></td>
-    <tr><td>VERB<td> <span class="x1">to heat</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">selo</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">outer form</span>, <span class="x1 x2">outer layer</span>; <span class="x2">bark</span>, <span class="x2">peel</span>, <span class="x1 x2">shell</span>, <span class="x1 x2">skin</span>; <span class="x1 x2">boundary</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">outer</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">seme</b></td>
-    <tr><td>PARTICLE<td> <span class="x1 x2">what? which? (for questions)</span></td>
-  </table>
-  <table class="TODO">
-    <tr><td rowspan="10"><b lang="toki">sewi</b></td>
-    <tr><td>NOUN<td> <span class="x2">area above</span>, <span class="x2">highest part</span>, <span class="x2">something elevated</span></td>
-    <tr><td>NOUN<td> <span class="x1">area above</span>, <span class="x1">top</span>, <span class="x1">highest part</span>, <span class="x1">sky</span>, <span class="x1">god</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x2">awe-inspiring</span>, <span class="x2">divine</span>, <span class="x2">sacred</span>, <span class="x2">supernatural</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">high</span>, <span class="x1">above</span>, <span class="x1">divine</span>, <span class="x1">sacred</span></td>
-  </table>
-  <table class="TODO">
-    <tr><td rowspan="10"><b lang="toki">sijelo</b></td>
-    <tr><td>NOUN<td> <span class="x2">body (of person or animal)</span>, <span class="x2">physical state</span>, <span class="x2">torso</span></td>
-    <tr><td>NOUN<td> <span class="x1">body</span>, <span class="x1">physical state</span>, <span class="x1">torso</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">physical</span>, <span class="x1">of sijelo</span></td>
-  </table>
-  <table class="TODO">
-    <tr><td rowspan="10"><b lang="toki">sike</b></td>
-    <tr><td>NOUN<td> <span class="x2">round or circular thing</span>; <span class="x2">ball</span>, <span class="x2">circle</span>, <span class="x2">cycle</span>, <span class="x2">sphere</span>, <span class="x2">wheel</span></td>
-    <tr><td>NOUN<td> <span class="x1">circle</span>, <span class="x1">ball</span>, <span class="x1">cycle</span>, <span class="x1">wheel</span>, <span class="x1">(with tenpo) year</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x2">of one year</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">round</span>, <span class="x1">circular</span>, <span class="x1">spherical</span>, <span class="x1">of one year</span></td>
-    <tr><td>VERB<td> <span class="x1">to make a circle around</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">sin</b>
-        <br><b lang="toki">namako</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">new</span>, <span class="x1 x2">fresh</span>; <span class="x1 x2">additional</span>, <span class="x2">another</span>, <span class="x1 x2">extra</span></td>
-    <tr><td>NOUN<td> <span class="x1">novelty</span>, <span class="x1">addition</span>, <span class="x1">(unconventional) update</span>, <span class="x1">spice</span></td>
-    <tr><td>VERB<td> <span class="x1">to add</span>, <span class="x1">to update</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">sina</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">you</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">your</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">sinpin</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">face</span>, <span class="x1 x2">foremost part</span>, <span class="x1 x2">front</span>, <span class="x1 x2">wall</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">of face</span>, <span class="x1">foremost</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">sitelen</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">image</span>, <span class="x2">picture</span>, <span class="x2">representation</span>, <span class="x1 x2">symbol</span>, <span class="x2">mark</span>, <span class="x1 x2">writing</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">symbolic</span>, <span class="x1">written</span>, <span class="x1">recorded</span></td>
-    <tr><td>VERB<td> <span class="x1">to write</span>, <span class="x1">to draw</span>, <span class="x1">to record</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">sona</b></td>
-    <tr><td>VERB<td> <span class="x1 x2">know</span>, <span class="x2">be skilled in</span>, <span class="x2">be wise about</span>, <span class="x2">have information on</span></td>
-    <tr><td>PRE-VERB<td> <span class="x2">know how to</span></td>
-    <tr><td>NOUN<td> <span class="x1">knowledge</span>, <span class="x1">information</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">known</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">soweli</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">animal</span>, <span class="x2">beast</span>, <span class="x1 x2">land mammal</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">suli</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">big</span>, <span class="x1 x2">heavy</span>, <span class="x2">large</span>, <span class="x2">long</span>, <span class="x1 x2">tall</span>; <span class="x1 x2">important</span>, <span class="x1">great</span>; <span class="x1 x2">adult</span></td>
-    <tr><td>NOUN<td> <span class="x1">size</span>, <span class="x1">greatness</span></td>
-    <tr><td>VERB<td> <span class="x1">to grow</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">suno</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">sun</span>; <span class="x1 x2">light</span>, <span class="x1 x2">brightness</span>, <span class="x2">glow</span>, <span class="x2">radiance</span>, <span class="x2">shine</span>; <span class="x1 x2">light source</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">solar</span>, <span class="x1">bright</span></td>
-    <tr><td>VERB<td> <span class="x1">to light</span>, <span class="x1">to shine</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">supa</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">horizontal surface</span>, <span class="x2">thing to put or rest something on</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">suwi</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">sweet</span>, <span class="x1 x2">fragrant</span>; <span class="x1 x2">cute</span>, <span class="x2">innocent</span>, <span class="x1 x2">adorable</span></td>
-    <tr><td>NOUN<td> <span class="x1">(unconventional) sweets</span>, <span class="x1">fragrances</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">tan</b></td>
-    <tr><td>PREPOSITION<td> <span class="x2">by</span>, <span class="x1 x2">from</span>, <span class="x1 x2">because of</span></td>
-    <tr><td>NOUN<td> <span class="x1">cause</span>, <span class="x1">reason</span>, <span class="x1">origin</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">original</span></td>
-    <tr><td>VERB<td> <span class="x1">(with object) (unconventional) to cause</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">taso</b></td>
-    <tr><td>PARTICLE<td> <span class="x1">(at beginning of sentence)</span> <span class="x1 x2">but</span>, <span class="x1 x2">however</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">only</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">tawa</b></td>
-    <tr><td>PREPOSITION<td> <span class="x2">going to</span>, <span class="x2">toward</span>; <span class="x1">to</span>, <span class="x1 x2">for</span>; <span class="x1 x2">from the perspective of</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">moving</span></td>
-    <tr><td>NOUN<td> <span class="x1">movement</span></td>
-    <tr><td>VERB<td> <span class="x1">to move</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">telo</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">water</span>, <span class="x1 x2">liquid</span>, <span class="x1 x2">fluid</span>, <span class="x2">wet substance</span>; <span class="x2">beverage</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">wet</span>, <span class="x1">fluid</span>, <span class="x1">liquid</span></td>
-    <tr><td>VERB<td> <span class="x1">to water</span>, <span class="x1">to clean</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">tenpo</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">time</span>, <span class="x2">duration</span>, <span class="x1 x2">moment</span>, <span class="x1 x2">occasion</span>, <span class="x2">period</span>, <span class="x2">situation</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">temporal</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">toki</b></td>
-    <tr><td>VERB<td> <span class="x2">to communicate</span>, <span class="x2">say</span>, <span class="x1 x2">speak</span>, <span class="x1 x2">talk</span>, <span class="x1 x2">use language</span>, <span class="x1 x2">think</span></td>
-    <tr><td>NOUN<td> <span class="x1">speech</span>, <span class="x1">conversation</span>, <span class="x1">language</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">verbal</span>, <span class="x1">conversational</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">tomo</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">indoor space</span>; <span class="x1 x2">building</span>, <span class="x1">structure</span>, <span class="x1 x2">home</span>, <span class="x2">house</span>, <span class="x1 x2">room</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">indoor</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">tu</b></td>
-    <tr><td>NUMBER<td> <span class="x1 x2">2</span>, <span class="x1 x2">two</span></td>
-    <tr><td>NOUN<td> <span class="x1">divide</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">divided</span></td>
-    <tr><td>VERB<td> <span class="x1">to divide</span></td>
-    <tr><td><td class="note">Using “tu” at the end of a noun phrase is generally associated with the number 2. The meaning “divided” is usually specified by using a “li” particle:
-        <ul>
-          <li>kulupu tu – two communities
-          <li>kulupu li tu. – the community is divided.
-        </ul>
-      </td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">unpa</b></td>
-    <tr><td>VERB<td> <span class="x1 x2">to have sex with</span></td>
-    <tr><td>NOUN<td> <span class="x1">sex</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">sexual</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">uta</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">mouth</span>, <span class="x1 x2">lips</span>, <span class="x2">oral cavity</span>, <span class="x2">jaw</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">oral</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">utala</b></td>
-    <tr><td>VERB<td> <span class="x1">to fight</span>, <span class="x1 x2">to battle</span>, <span class="x1 x2">challenge</span>, <span class="x2">compete against</span>, <span class="x2">struggle against</span></td>
-    <tr><td>NOUN<td> <span class="x1">fight</span>, <span class="x1">battle</span>, <span class="x1">challenge</span>, <span class="x1">war</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">aggressive</span>, <span class="x1">warlike</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">walo</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">white</span>, <span class="x2">whitish</span>; <span class="x2">light-colored</span>, <span class="x2">pale</span>; <span class="x1">bright, light</span></td>
-    <tr><td>NOUN<td> <span class="x1">the color white (and its shades)</span></td>
-    <tr><td>VERB<td> <span class="x1">to color something white</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">wan</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x2">unique</span>, <span class="x1 x2">united</span>, <span class="x1">married</span></td>
-    <tr><td>NUMBER<td> <span class="x1 x2">1</span>, <span class="x1 x2">one</span></td>
-    <tr><td>NOUN<td> <span class="x1">part (of something)</span></td>
-    <tr><td>VERB<td> <span class="x1">to unite</span>, <span class="x1">to marry</span></td>
-    <tr><td><td class="note">Using “wan” at the end of a noun phrase is generally associated with the number 1. The meaning “united” is usually specified by using a “li” particle:
-        <ul>
-          <li>kulupu wan – one community
-          <li>kulupu li wan. – the community is united.
-          <li>kulupu mute wan – 21 communities (complex numbering system)
-          <li>kulupu mute li wan – many (or 20) communities are united.
-      </td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">waso</b></td>
-    <tr><td>NOUN<td> <span class="x1 x2">bird</span>, <span class="x1 x2">flying creature</span>, <span class="x2">winged animal</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">wawa</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">strong</span>, <span class="x1 x2">powerful</span>; <span class="x2">confident</span>, <span class="x2">sure</span>; <span class="x1 x2">energetic</span>, <span class="x2">intense</span></td>
-    <tr><td>NOUN<td> <span class="x1">strength</span>, <span class="x1">power</span>, <span class="x1">energy</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">weka</b></td>
-    <tr><td>ADJECTIVE<td> <span class="x1 x2">absent</span>, <span class="x1 x2">away</span>, <span class="x1">remote</span>, <span class="x2">ignored</span></td>
-    <tr><td>NOUN<td> <span class="x1">absence</span>, <span class="x1">remoteness</span></td>
-    <tr><td>VERB<td> <span class="x1">remove</span>, <span class="x1">get rid of</span></td>
-  </table>
-  <table>
-    <tr><td rowspan="10"><b lang="toki">wile</b></td>
-    <tr><td>PRE-VERB<td> <span class="x2">must</span>, <span class="x2">need</span>, <span class="x2">require</span>, <span class="x2">should</span>, <span class="x2">want</span>, <span class="x2">wish</span>, <span class="x1">to want to do something</span></td>
-    <tr><td>NOUN<td> <span class="x1">want</span>, <span class="x1">need</span>, <span class="x1">desire</span></td>
-    <tr><td>ADJECTIVE<td> <span class="x1">desired</span>, <span class="x1">needed</span>, <span class="x1">required</span></td>
-    <tr><td>VERB<td> <span class="x1">to want something</span></td>
-  </table>
+<section id="dict">
+  <div>
+    <w>a kin</w>
+    <ts>
+      <t><pos>PARTICLE</pos>(<span class="x1 x2">emotional interjection</span>, <span class="x1 x2">emphasis</span>, <span class="x1 x2">confirmation</span>)</t>
+    </ts>
+  </div>
+  <div>
+    <w>akesi</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">non-cute animal</span>; <span class="x1 x2">reptile</span>, <span class="x1 x2">amphibian</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>ala</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1">nothing</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">not</span>, <span class="x1 x2">no</span>, <span class="x1">empty</span></t>
+      <t><pos>NUMBER</pos><span class="x1">0</span>, <span class="x1 x2">zero</span></t>
+    </ts>
+  </div>
+  <div class="TODO">
+    <w>alasa</w>
+    <ts>
+      <t><pos>VERB</pos><span class="x1 x2">hunt</span>, <span class="x1">gather</span>, <span class="x2">forage</span></t>
+      <t><pos>VERB</pos><span class="x1">(unconventional) search</span>, <span class="x1">(unconventional) look for</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>ale ali</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x2">abundance</span>, <span class="x1 x2">everything</span>, <span class="x2">life</span>, <span class="x1 x2">universe</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">all</span>; <span class="x1 x2">abundant</span>, <span class="x2">countless</span>, <span class="x2">bountiful</span>, <span class="x1 x2">every</span>, <span class="x2">plentiful</span></t>
+      <t><pos>NUMBER</pos><span class="x1">all/infinite (simple system)</span>, <span class="x1 x1">100 (complex system)</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>anpa</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">bowing down</span>, <span class="x1 x2">downward</span>, <span class="x1 x2">humble</span>, <span class="x1 x2">lowly</span>, <span class="x1 x2">dependent</span></t>
+      <t><pos>NOUN</pos><span class="x1">(old/non-pu) lower part</span></t>
+      <t><pos>VERB</pos><span class="x1">(without object) to bow down</span></t>
+      <t><pos>VERB</pos><span class="x1">(with object) to conquer</span>, <span class="x1">to defeat</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>ante</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">different</span>, <span class="x2">altered</span>, <span class="x1 x2">changed</span>, <span class="x1 x2">other</span></t>
+      <t><pos>NOUN</pos><span class="x1">difference</span>, <span class="x1">change</span>, <span class="x1">(unconventional) version</span></t>
+      <t><pos>VERB</pos><span class="x1">to change</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>anu</w>
+    <ts>
+      <t><pos>PARTICLE</pos><span class="x1 x2">or</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>awen</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">kept</span>, <span class="x2">protected</span>, <span class="x1 x2">safe</span>, <span class="x1 x2">enduring</span>, <span class="x1">resilient</span>, <span class="x1 x2">waiting</span>, <span class="x1 x2">staying</span></t>
+      <t><pos>PRE-VERB</pos><span class="x1 x2">to continue to (do something)</span></t>
+      <t><pos>NOUN</pos><span class="x1">(unconventional) stability</span>, <span class="x1">safety</span>, <span class="x1">wait</span></t>
+      <t><pos>VERB</pos><span class="x1">keep</span>, <span class="x1">stay</span>, <span class="x1">endure</span>, <span class="x1">protect</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>e</w>
+    <ts>
+      <t><pos>PARTICLE</pos>(<span class="x1 x2">before the direct object</span>)</t>
+    </ts>
+  </div>
+  <div>
+    <w>en</w>
+    <ts>
+      <t><pos>PARTICLE</pos><span class="x1">and</span> (<span class="x2">between multiple subjects</span>)</t>
+    </ts>
+  </div>
+  <div>
+    <w>esun</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1">trade</span>, <span class="x1 x2">transaction</span>, <span class="x1">exchange</span>, <span class="x2">market</span>, <span class="x2">shop</span>, <span class="x2">fair</span>, <span class="x2">bazaar</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">trade/exchange-related</span>, <span class="x1">commercial</span></t>
+      <t><pos>VERB</pos><span class="x1">to trade</span>, <span class="x1">to exchange</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>ijo</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">thing</span>, <span class="x2">phenomenon</span>, <span class="x1 x2">object</span>, <span class="x1 x2">matter</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">material</span>, <span class="x1">physical</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>ike</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">bad</span>, <span class="x1">evil</span>, <span class="x2">negative</span>; <span class="x1">complex</span>, <span class="x2">non-essential</span>, <span class="x1">unnecessary</span>, <span class="x2">irrelevant</span></t>
+      <t><pos>NOUN</pos><span class="x1">evil</span></t>
+      <t><pos>VERB</pos><span class="x1">(unconventional) make something worse</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>ilo</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">tool</span>, <span class="x2">implement</span>, <span class="x1 x2">machine</span>, <span class="x1 x2">device</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">useful</span>, <span class="x1">(unconventional) electronic</span>, <span class="x1">metallic</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>insa</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">center</span>, <span class="x1 x2">content</span>, <span class="x1 x2">inside</span>, <span class="x2">between</span>; <span class="x2">internal organ</span>, <span class="x1 x2">stomach</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">central</span>, <span class="x1">inside</span>, <span class="x1">between</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>jaki</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1">dirty</span>, <span class="x1 x2">disgusting</span>, <span class="x1 x2">unclean</span>, <span class="x1 x2">unsanitary</span>, <span class="x1 x2">toxic</span>, <span class="x2">obscene</span>, <span class="x2">sickly</span></t>
+      <t><pos>NOUN</pos><span class="x1">dirt</span>, <span class="x1">waste</span></t>
+      <t><pos>VERB</pos><span class="x1">to make something dirty</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>jan</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">somebody</span>, <span class="x1 x2">person</span>, <span class="x2">human being</span>, <span class="x1">people</span>, <span class="x1">humanity</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">human-like</span>, <span class="x1">personal</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>jelo</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">yellow</span>, <span class="x1 x2">yellowish</span></t>
+      <t><pos>NOUN</pos><span class="x1">yellow (and its shades)</span></t>
+      <t><pos>VERB</pos><span class="x1">color something yellow</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>jo</w>
+    <ts>
+      <t><pos>VERB</pos><span class="x1 x2">have</span>, <span class="x1 x2">carry</span>, <span class="x1 x2">contain</span>, <span class="x1 x2">hold</span></t>
+      <t><pos>NOUN</pos><span class="x1">(unconventional) possessions</span>, <span class="x1">property</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>kala</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">fish</span>, <span class="x1 x2">marine animal</span>, <span class="x1 x2">sea creature</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>kalama</w>
+    <ts>
+      <t><pos>VERB</pos><span class="x2">produce sound</span>, <span class="x1">make noise</span>, <span class="x1">to play (an instrument)</span>; <span class="x1 x2">recite</span>, <span class="x2">utter aloud</span></t>
+      <t><pos>NOUN</pos><span class="x1">sound</span>, <span class="x1">noise</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">loud</span>, <span class="x1">noisy</span>, <span class="x1">sound-making</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>kama</w>
+    <ts>
+      <t><pos>PRE-VERB</pos><span class="x1 x2">become</span>, <span class="x1">be in the process of (doing something)</span>, <span class="x1 x2">manage to</span>, <span class="x1 x2">succeed in</span></t>
+      <t><pos>NOUN</pos><span class="x1">event</span>, <span class="x1">arrival</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">arriving</span>, <span class="x1 x2">coming</span>, <span class="x1 x2">future</span>, <span class="x1 x2">summoned</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>kasi</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">plant</span>, <span class="x2">vegetation</span>; <span class="x1 x2">herb</span>, <span class="x1 x2">leaf</span>, <span class="x1">grass</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>ken</w>
+    <ts>
+      <t><pos>PRE-VERB</pos><span class="x2">be able to</span>, <span class="x2">be allowed to</span>, <span class="x1 x2">can</span>, <span class="x1 x2">may</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">possible</span>, <span class="x1">(unconventional) able</span></t>
+      <t><pos>NOUN</pos><span class="x1">ability</span>, <span class="x1">possibility</span>, <span class="x1">(unconventional) right</span>, <span class="x1">liberty</span></t>
+    </ts>
+  </div>
+  <div class="TODO">
+    <w>kepeken</w>
+    <ts>
+      <t><pos>PREPOSITION</pos><span class="x2">to use</span>, <span class="x2">with</span>, <span class="x2">by means of</span></t>
+      <t><pos>PREPOSITION</pos><span class="x1">(do something) using</span>, <span class="x1">with the help of</span></t>
+      <t><pos>NOUN</pos><span class="x1">use</span>, <span class="x1">(unconventional) practice</span></t>
+      <t><pos>VERB</pos><span class="x1">(with object) to use something</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>kili</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">fruit</span>, <span class="x1 x2">vegetable</span>, <span class="x1 x2">mushroom</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>kiwen</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">hard object</span>, <span class="x1 x2">metal</span>, <span class="x2">rock</span>, <span class="x1 x2">stone</span>, <span class="x1">solid</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">hard</span>, <span class="x1">metallic</span>, <span class="x1">solid</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>ko</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">clay</span>, <span class="x2">clinging form</span>, <span class="x2">dough</span>, <span class="x1 x2">semi-solid</span>, <span class="x1 x2">paste</span>, <span class="x1 x2">powder</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>kon</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">air</span>, <span class="x2">breath</span>; <span class="x1 x2">essence</span>, <span class="x1 x2">spirit</span>; <span class="x2">hidden reality</span>, <span class="x2">unseen agent</span>, <span class="x1">(unconventional) gas</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">invisible</span>, <span class="x1">ephemeral</span>, <span class="x1">(unconventional) gaseous</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>kule</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">colorful</span>, <span class="x2">pigmented</span>, <span class="x1 x2">painted</span></t>
+      <t><pos>NOUN</pos><span class="x1">color</span>, <span class="x1">(rare) gender</span></t>
+      <t><pos>VERB</pos><span class="x1">to paint something a color</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>kulupu</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">group</span>, <span class="x1 x2">community</span>, <span class="x1 x2">company</span>, <span class="x1 x2">society</span>, <span class="x1 x2">nation</span>, <span class="x1 x2">tribe</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">communal</span>, <span class="x1">social</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>kute</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">ear</span>, <span class="x1">hearing</span></t>
+      <t><pos>VERB</pos><span class="x1 x2">to hear</span>, <span class="x1 x2">listen</span>; <span class="x2">pay attention to</span>, <span class="x1 x2">obey</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">…-sounding</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>la</w>
+    <ts>
+      <t><pos>PARTICLE</pos><span class="x1">if, when (introduces context</span>; <span class="x2">between the context phrase and the main sentence</span>)</t>
+    </ts>
+  </div>
+  <div>
+    <w>lape</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">sleeping</span>, <span class="x2">resting</span>, <span class="x1">restful</span></t>
+      <t><pos>NOUN</pos><span class="x1">sleep</span>, <span class="x1">rest</span></t>
+      <t><pos>VERB</pos><span class="x1">sleep</span>, <span class="x1">rest</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>laso</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">blue</span>, <span class="x1 x2">green</span></t>
+      <t><pos>NOUN</pos><span class="x1">blue</span>, <span class="x1">green</span></t>
+      <t><pos>VERB</pos><span class="x1">color something blue/green</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>lawa</w>
+    <ts>
+      <t><pos>VERB</pos><span class="x1">head</span>, <span class="x1 x2">control</span>, <span class="x1 x2">direct</span>, <span class="x1 x2">guide</span>, <span class="x1 x2">lead</span>, <span class="x1 x2">own</span>, <span class="x2">plan</span>, <span class="x2">regulate</span>, <span class="x1 x2">rule</span></t>
+      <t><pos>NOUN</pos><span class="x1 x2">head</span>, <span class="x1 x2">mind</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">main</span>, <span class="x1">primary</span>, <span class="x1">controlling</span>, <span class="x1">ruling</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>len</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">cloth</span>, <span class="x1 x2">clothes</span>, <span class="x1 x2">fabric</span>, <span class="x2">textile</span>; <span class="x2">cover</span>, <span class="x1 x2">layer of privacy</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">clothed</span>, <span class="x1">made of cloth/fabric</span></t>
+      <t><pos>VERB</pos><span class="x1">to clothe</span>, <span class="x1">to provide a layer of privacy</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>lete</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">cold</span>, <span class="x1 x2">cool</span>; <span class="x1 x2">uncooked</span>, <span class="x1 x2">raw</span></t>
+      <t><pos>NOUN</pos><span class="x1">cold</span></t>
+      <t><pos>VERB</pos><span class="x1">cool down</span></t>
+    </ts>
+  </div>
+  <div class="TODO">
+    <w>li</w>
+    <ts>
+      <t><pos>PARTICLE</pos>(<span class="x2">between any subject except mi alone or sina alone and its <dp>VERB</dp>; also to introduce a new <dp>VERB</dp> for the same subject</span>)</t>
+      <t><pos>PARTICLE</pos>(<span class="x1">between subject and verb/adjective</span>)</t>
+    </ts>
+  </div>
+  <div>
+    <w>lili</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x2">little</span>, <span class="x1 x2">small</span>, <span class="x2">short</span>; <span class="x1 x2">few</span>; <span class="x2">a bit</span>; <span class="x1 x2">young</span></t>
+      <t><pos>NOUN</pos><span class="x1">smallness</span></t>
+      <t><pos>VERB</pos><span class="x1">to shrink</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>linja</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">long flexible thing</span>; <span class="x1">string</span>, <span class="x2">cord</span>, <span class="x1 x2">hair</span>, <span class="x1 x2">rope</span>, <span class="x2">thread</span>, <span class="x2">yarn</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>lipu</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">flat object</span>; <span class="x1 x2">book</span>, <span class="x1 x2">document</span>, <span class="x1">page</span>, <span class="x2">card</span>, <span class="x1 x2">paper</span>, <span class="x1 x2">record</span>, <span class="x1 x2">website</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">flat</span>, <span class="x1">used as lipu</span>, <span class="x1">lipu-like</span>, <span class="x1">of lipu</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>loje</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">red</span>, <span class="x1 x2">reddish</span></t>
+      <t><pos>NOUN</pos><span class="x1">red</span></t>
+      <t><pos>VERB</pos><span class="x1">color something red</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>lon</w>
+    <ts>
+      <t><pos>PREPOSITION</pos><span class="x1">in</span>, <span class="x1">at</span>, <span class="x1">on</span>, <span class="x2">located at</span>, <span class="x2">present at</span>; <span class="x2">real</span>, <span class="x2">true</span>, <span class="x2">existing</span></t>
+      <t><pos>NOUN</pos><span class="x1">truth</span>, <span class="x1">life</span>, <span class="x1">existence</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">real</span>, <span class="x1">true</span>, <span class="x1">present</span>, <span class="x1">existing</span></t>
+      <t><pos>VERB</pos><span class="x1">(without object) is true</span>, <span class="x1">exists</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>luka</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">arm</span>, <span class="x1 x2">hand</span>, <span class="x2">tactile organ</span></t>
+      <t><pos>NUMBER</pos><span class="x1 x2">5</span>, <span class="x1 x2">five (complex system)</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>lukin oko</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">eye</span>, <span class="x1">vision</span></t>
+      <t><pos>VERB</pos><span class="x1 x2">look at</span>, <span class="x1 x2">see</span>, <span class="x2">examine</span>, <span class="x2">observe</span>, <span class="x1 x2">read</span>, <span class="x2">watch</span></t>
+      <t><pos>PRE-VERB</pos><span class="x1 x2">seek</span>, <span class="x2">look for</span>, <span class="x2">try to</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">…-looking</span>, <span class="x1">visual</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>lupa</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">door</span>, <span class="x1 x2">hole</span>, <span class="x1 x2">orifice</span>, <span class="x1 x2">window</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>ma</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">earth</span>, <span class="x1 x2">land</span>; <span class="x1 x2">outdoors</span>, <span class="x2">world</span>; <span class="x1 x2">country</span>, <span class="x1 x2">territory</span>; <span class="x2">soil</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>mama</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">parent</span>, <span class="x1 x2">ancestor</span>; <span class="x1 x2">creator</span>, <span class="x1">origin</span>, <span class="x2">originator</span>; <span class="x1 x2">caretaker</span>, <span class="x2">sustainer</span></t>
+      <t><pos>VERB</pos><span class="x1">create</span>, <span class="x1">parent</span>, <span class="x1">take care of</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>mani</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">money</span>, <span class="x2">cash</span>, <span class="x2">savings</span>, <span class="x2">wealth</span>; <span class="x1 x2">large domesticated animal</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">(unconventional) wealthy</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>meli</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">woman</span>, <span class="x1 x2">female</span>, <span class="x2">feminine person</span>; <span class="x1 x2">wife</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">feminine</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>mi</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">I</span>, <span class="x1 x2">me</span>, <span class="x1 x2">we</span>, <span class="x1 x2">us</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">my</span>, <span class="x1">our</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>mije</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">man</span>, <span class="x1 x2">male</span>, <span class="x2">masculine person</span>; <span class="x1 x2">husband</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">masculine</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>moku</w>
+    <ts>
+      <t><pos>VERB</pos><span class="x1 x2">eat</span>, <span class="x1 x2">drink</span>, <span class="x2">consume</span>, <span class="x1 x2">swallow</span>, <span class="x2">ingest</span></t>
+      <t><pos>NOUN</pos><span class="x1">food</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">edible</span>, <span class="x1">of food</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>moli</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">dead</span>, <span class="x1 x2">dying</span></t>
+      <t><pos>NOUN</pos><span class="x1">death</span></t>
+      <t><pos>VERB</pos><span class="x1">to kill</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>monsi</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">back</span>, <span class="x1 x2">behind</span>, <span class="x1 x2">rear</span>, <span class="x1">butt</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">back</span>, <span class="x1">rear</span></t>
+    </ts>
+  </div>
+  <div class="FIXME">
+    <w>mu</w>
+    <ts>
+      <t><pos>PARTICLE</pos><span class="x2">animal noise or communication</span>, <span class="x1">any animal sound</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>mun</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">moon</span>, <span class="x1 x2">star</span>, <span class="x1 x2">night sky object</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">lunar</span>, <span class="x1">stellar</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>musi</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">artistic</span>, <span class="x1 x2">entertaining</span>, <span class="x1">amusing</span>, <span class="x2">frivolous</span>, <span class="x2">playful</span>, <span class="x2">recreational</span></t>
+      <t><pos>NOUN</pos><span class="x1">game</span>, <span class="x1">art</span></t>
+      <t><pos>VERB</pos><span class="x1">amuse</span>, <span class="x1">play</span>, <span class="x1">have fun</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>mute</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">many</span>, <span class="x2">a lot</span>, <span class="x1 x2">more</span>, <span class="x2">much</span>, <span class="x2">several</span>, <span class="x2">very</span></t>
+      <t><pos>NOUN</pos><span class="x1 x2">quantity</span></t>
+      <t><pos>NUMBER</pos><span class="x1">3 or more (simple system)</span>, <span class="x1">20 (complex system)</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>nanpa</w>
+    <ts>
+      <t><pos>PARTICLE</pos><span class="x1 x2">-th (ordinal number</span>)</t>
+      <t><pos>ADJECTIVE</pos><span class="x1">mathematical</span>, <span class="x1">numeric</span>, <span class="x1">(unconventional) digital</span></t>
+      <t><pos>NOUN</pos><span class="x1 x2">number</span></t>
+    </ts>
+  </div>
+  <div class="TODO">
+    <w>nasa</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x2">unusual</span>, <span class="x2">strange</span>; <span class="x2">foolish</span>, <span class="x2">crazy</span>; <span class="x2">drunk</span>, <span class="x2">intoxicated</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">weird</span>, <span class="x1">unusual</span>, <span class="x1">strange</span>, <span class="x1">crazy</span>, <span class="x1">drunk</span></t>
+    </ts>
+  </div>
+  <div class="TODO">
+    <w>nasin</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x2">way</span>, <span class="x2">custom</span>, <span class="x2">doctrine</span>, <span class="x2">method</span>, <span class="x2">path</span>, <span class="x2">road</span></t>
+      <t><pos>NOUN</pos><span class="x1">path</span>, <span class="x1">road</span>, <span class="x1">street</span>, <span class="x1">directive</span>, <span class="x1">way</span>, <span class="x1">custom</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">street-</span>, <span class="x1">true to the directive/way/custom</span></t>
+      <t><pos>VERB</pos><span class="x1">(unconventional) to guide</span>, <span class="x1">to show the path</span></t>
+    </ts>
+  </div>
+  <div class="TODO">
+    <w>nena</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x2">bump</span>, <span class="x2">button</span>, <span class="x2">hill</span>, <span class="x2">mountain</span>, <span class="x2">nose</span>, <span class="x2">protuberance</span></t>
+      <t><pos>NOUN</pos><span class="x1">hill</span>, <span class="x1">mountain</span>, <span class="x1">button</span>, <span class="x1">bump</span>, <span class="x1">nose</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">hilly</span>, <span class="x1">mountainous</span>, <span class="x1">bumpy</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>ni</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">this</span>, <span class="x1 x2">that</span></t>
+      <t><pos>NOUN</pos><span class="x1">this</span>, <span class="x1">that</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>nimi</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">name</span>, <span class="x1 x2">word</span></t>
+    </ts>
+  </div>
+  <div class="TODO">
+    <w>noka</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x2">foot</span>, <span class="x2">leg</span>, <span class="x2">organ of locomotion</span>; <span class="x2">bottom</span>, <span class="x2">lower part</span></t>
+      <t><pos>NOUN</pos><span class="x1">foot</span>, <span class="x1">leg</span>, <span class="x1">bottom</span>, <span class="x1">lower part</span>, <span class="x1">under (something</span>)</t>
+    </ts>
+  </div>
+  <div class="TODO">
+    <w>o</w>
+    <ts>
+      <t><pos>PARTICLE</pos><span class="x2">hey! O! (vocative or imperative)</span></t>
+      <t><pos>PARTICLE</pos>(<span class="x1">addressing people</span>, <span class="x1">commands</span>)</t>
+    </ts>
+  </div>
+  <div>
+    <w>olin</w>
+    <ts>
+      <t><pos>VERB</pos><span class="x1 x2">love</span>, <span class="x2">have compassion for</span>, <span class="x1 x2">respect</span>, <span class="x2">show affection to</span></t>
+      <t><pos>NOUN</pos><span class="x1">love</span>, <span class="x1">compassion</span>, <span class="x1">affection</span>, <span class="x1">respect</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">loved</span>, <span class="x1">favorite</span>, <span class="x1">respected</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>ona</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">he</span>, <span class="x1 x2">she</span>, <span class="x1 x2">it</span>, <span class="x1 x2">they</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">his</span>, <span class="x1">her</span>, <span class="x1">their</span>, <span class="x1">its</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>open</w>
+    <ts>
+      <t><pos>VERB</pos><span class="x2">begin</span>, <span class="x1 x2">start</span>; <span class="x1 x2">open</span>; <span class="x1 x2">turn on</span></t>
+      <t><pos>NOUN</pos><span class="x1">start</span>, <span class="x1">beginning</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">initial</span>, <span class="x1">starting</span></t>
+      <t><pos>PRE-VERB</pos><span class="x1">begin (doing something)</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>pakala</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x2">botched</span>, <span class="x1 x2">broken</span>, <span class="x2">damaged</span>, <span class="x2">harmed</span>, <span class="x2">messed up</span>, <span class="x1 x2">wrong</span></t>
+      <t><pos>NOUN</pos><span class="x1">damage</span>, <span class="x1">mistake</span></t>
+      <t><pos>VERB</pos><span class="x1">to break</span>, <span class="x1">to make mistakes</span></t>
+      <t><pos>PARTICLE</pos>(<span class="x1">generic curse</span>)</t>
+    </ts>
+  </div>
+  <div>
+    <w>pali</w>
+    <ts>
+      <t><pos>VERB</pos><span class="x2">do</span>, <span class="x2">take action on</span>, <span class="x1 x2">work on</span>; <span class="x2">build</span>, <span class="x1 x2">make</span>, <span class="x2">prepare</span></t>
+      <t><pos>NOUN</pos><span class="x1">work</span>, <span class="x1">labor</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">working</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>palisa</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">long hard thing</span>; <span class="x1 x2">branch</span>, <span class="x2">rod</span>, <span class="x1 x2">stick</span>, <span class="x1">(unconventional) length</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">long</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>pan</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x2">cereal</span>, <span class="x1 x2">grain</span>; <span class="x2">barley</span>, <span class="x1 x2">corn</span>, <span class="x2">oat</span>, <span class="x1 x2">rice</span>, <span class="x2">wheat</span>; <span class="x1 x2">bread</span>, <span class="x2">pasta</span>, <span class="x1">pizza</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>pana</w>
+    <ts>
+      <t><pos>VERB</pos><span class="x2 x2">give</span>, <span class="x1 x2">send</span>, <span class="x1 x2">emit</span>, <span class="x2">provide</span>, <span class="x2">put</span>, <span class="x1 x2">release</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">(unconventional) given</span>, <span class="x1">sent</span>, <span class="x1">released</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>pi</w>
+    <ts>
+      <t><pos>PARTICLE</pos><span class="x1 x2">of</span> (<span class="x1">regroup two or more modifiers</span>)</t>
+    </ts>
+  </div>
+  <div>
+    <w>pilin</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">heart</span>; <span class="x1">feeling</span>, <span class="x1">touch</span>, <span class="x1">sense</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">feeling</span> (<span class="x2">an emotion</span>, <span class="x2">a direct experience</span>)</t>
+      <t><pos>VERB</pos><span class="x1">touch</span>, <span class="x1">think</span>, <span class="x1">feel</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>pimeja</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">black</span>, <span class="x1 x2">dark</span>, <span class="x2">unlit</span></t>
+      <t><pos>NOUN</pos><span class="x1">black</span>, <span class="x1">shadow</span></t>
+      <t><pos>VERB</pos><span class="x1">color something black</span>, <span class="x1">cast a shadow</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>pini</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x2">ago</span>, <span class="x1 x2">completed</span>, <span class="x2">ended</span>, <span class="x1 x2">finished</span>, <span class="x1">final</span>, <span class="x1 x2">past</span> <span class="x1">(with tenpo)</span></t>
+      <t><pos>NOUN</pos><span class="x1">end</span>, <span class="x1">finish</span></t>
+      <t><pos>VERB</pos><span class="x1">to end</span>, <span class="x1">to finish</span>, <span class="x1">to close</span></t>
+      <t><pos>PRE-VERB</pos><span class="x1">to end/stop doing something</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>pipi</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">bug</span>, <span class="x1 x2">insect</span>, <span class="x2">ant</span>, <span class="x2">spider</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>poka</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">hip</span>, <span class="x1 x2">side</span>; <span class="x2">next to</span>, <span class="x2">nearby</span>, <span class="x2">vicinity</span>, <span class="x1">nearby area</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">neighboring</span>, <span class="x1">nearby</span>, <span class="x1">at one’s side</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>poki</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">container</span>, <span class="x2">bag</span>, <span class="x1 x2">bowl</span>, <span class="x1 x2">box</span>, <span class="x1 x2">cup</span>, <span class="x2">cupboard</span>, <span class="x1 x2">drawer</span>, <span class="x2">vessel</span></t>
+      <t><pos>VERB</pos><span class="x1">(unconventional) to put in a box</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>pona</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">good</span>, <span class="x2">positive</span>, <span class="x2">useful</span>; <span class="x1 x2">friendly</span>, <span class="x1 x2">peaceful</span>; <span class="x1 x2">simple</span></t>
+      <t><pos>NOUN</pos><span class="x1">good</span>, <span class="x1">simplicity</span></t>
+      <t><pos>VERB</pos><span class="x1">to improve</span>, <span class="x1">to fix</span></t>
+    </ts>
+  </div>
+  <div class="TODO">
+    <w>pu</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x2">interacting with the official Toki Pona book</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">as told in the official toki pona book</span></t>
+      <t><pos>NOUN</pos><span class="x1">the official toki pona book</span></t>
+      <t><pos>VERB</pos><span class="x1">interacting with the official toki pona book</span></t>
+      <t class="note">The official toki pona book only defines the verb meaning of the word “pu”. Some people in the toki pona community prefer to only use it in the verb meaning, while others use it in others as well.</t>
+    </ts>
+  </div>
+  <div>
+    <w>sama</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x2">same</span>, <span class="x1 x2">similar</span>, <span class="x1">like</span>; <span class="x2">each other</span>; <span class="x1 x2">sibling</span>, <span class="x2">peer</span>, <span class="x2">fellow</span></t>
+      <t><pos>PREPOSITION</pos><span class="x1 x2">as</span>, <span class="x1 x2">like</span></t>
+      <t><pos>NOUN</pos><span class="x1">similarity</span>, <span class="x1">(someone’s) sibling</span></t>
+    </ts>
+  </div>
+  <div class="TODO">
+    <w>seli</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x2">fire</span>; <span class="x2">cooking element</span>, <span class="x2">chemical reaction</span>, <span class="x2">heat source</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">warm</span>, <span class="x1">hot</span></t>
+      <t><pos>NOUN</pos><span class="x1">heat</span>, <span class="x1">warmth</span>, <span class="x1">chemical reaction</span>, <span class="x1">heat source</span></t>
+      <t><pos>VERB</pos><span class="x1">to heat</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>selo</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">outer form</span>, <span class="x1 x2">outer layer</span>; <span class="x2">bark</span>, <span class="x2">peel</span>, <span class="x1 x2">shell</span>, <span class="x1 x2">skin</span>; <span class="x1 x2">boundary</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">outer</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>seme</w>
+    <ts>
+      <t><pos>PARTICLE</pos><span class="x1 x2">what? which? (for questions)</span></t>
+    </ts>
+  </div>
+  <div class="TODO">
+    <w>sewi</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x2">area above</span>, <span class="x2">highest part</span>, <span class="x2">something elevated</span></t>
+      <t><pos>NOUN</pos><span class="x1">area above</span>, <span class="x1">top</span>, <span class="x1">highest part</span>, <span class="x1">sky</span>, <span class="x1">god</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x2">awe-inspiring</span>, <span class="x2">divine</span>, <span class="x2">sacred</span>, <span class="x2">supernatural</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">high</span>, <span class="x1">above</span>, <span class="x1">divine</span>, <span class="x1">sacred</span></t>
+    </ts>
+  </div>
+  <div class="TODO">
+    <w>sijelo</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x2">body (of person or animal)</span>, <span class="x2">physical state</span>, <span class="x2">torso</span></t>
+      <t><pos>NOUN</pos><span class="x1">body</span>, <span class="x1">physical state</span>, <span class="x1">torso</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">physical</span>, <span class="x1">of sijelo</span></t>
+    </ts>
+  </div>
+  <div class="TODO">
+    <w>sike</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x2">round or circular thing</span>; <span class="x2">ball</span>, <span class="x2">circle</span>, <span class="x2">cycle</span>, <span class="x2">sphere</span>, <span class="x2">wheel</span></t>
+      <t><pos>NOUN</pos><span class="x1">circle</span>, <span class="x1">ball</span>, <span class="x1">cycle</span>, <span class="x1">wheel</span>, <span class="x1">(with tenpo) year</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x2">of one year</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">round</span>, <span class="x1">circular</span>, <span class="x1">spherical</span>, <span class="x1">of one year</span></t>
+      <t><pos>VERB</pos><span class="x1">to make a circle around</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>sin namako</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">new</span>, <span class="x1 x2">fresh</span>; <span class="x1 x2">additional</span>, <span class="x2">another</span>, <span class="x1 x2">extra</span></t>
+      <t><pos>NOUN</pos><span class="x1">novelty</span>, <span class="x1">addition</span>, <span class="x1">(unconventional) update</span>, <span class="x1">spice</span></t>
+      <t><pos>VERB</pos><span class="x1">to add</span>, <span class="x1">to update</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>sina</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">you</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">your</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>sinpin</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">face</span>, <span class="x1 x2">foremost part</span>, <span class="x1 x2">front</span>, <span class="x1 x2">wall</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">of face</span>, <span class="x1">foremost</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>sitelen</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">image</span>, <span class="x2">picture</span>, <span class="x2">representation</span>, <span class="x1 x2">symbol</span>, <span class="x2">mark</span>, <span class="x1 x2">writing</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">symbolic</span>, <span class="x1">written</span>, <span class="x1">recorded</span></t>
+      <t><pos>VERB</pos><span class="x1">to write</span>, <span class="x1">to draw</span>, <span class="x1">to record</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>sona</w>
+    <ts>
+      <t><pos>VERB</pos><span class="x1 x2">know</span>, <span class="x2">be skilled in</span>, <span class="x2">be wise about</span>, <span class="x2">have information on</span></t>
+      <t><pos>PRE-VERB</pos><span class="x2">know how to</span></t>
+      <t><pos>NOUN</pos><span class="x1">knowledge</span>, <span class="x1">information</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">known</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>soweli</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">animal</span>, <span class="x2">beast</span>, <span class="x1 x2">land mammal</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>suli</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">big</span>, <span class="x1 x2">heavy</span>, <span class="x2">large</span>, <span class="x2">long</span>, <span class="x1 x2">tall</span>; <span class="x1 x2">important</span>, <span class="x1">great</span>; <span class="x1 x2">adult</span></t>
+      <t><pos>NOUN</pos><span class="x1">size</span>, <span class="x1">greatness</span></t>
+      <t><pos>VERB</pos><span class="x1">to grow</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>suno</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">sun</span>; <span class="x1 x2">light</span>, <span class="x1 x2">brightness</span>, <span class="x2">glow</span>, <span class="x2">radiance</span>, <span class="x2">shine</span>; <span class="x1 x2">light source</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">solar</span>, <span class="x1">bright</span></t>
+      <t><pos>VERB</pos><span class="x1">to light</span>, <span class="x1">to shine</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>supa</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">horizontal surface</span>, <span class="x2">thing to put or rest something on</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>suwi</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">sweet</span>, <span class="x1 x2">fragrant</span>; <span class="x1 x2">cute</span>, <span class="x2">innocent</span>, <span class="x1 x2">adorable</span></t>
+      <t><pos>NOUN</pos><span class="x1">(unconventional) sweets</span>, <span class="x1">fragrances</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>tan</w>
+    <ts>
+      <t><pos>PREPOSITION</pos><span class="x2">by</span>, <span class="x1 x2">from</span>, <span class="x1 x2">because of</span></t>
+      <t><pos>NOUN</pos><span class="x1">cause</span>, <span class="x1">reason</span>, <span class="x1">origin</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">original</span></t>
+      <t><pos>VERB</pos><span class="x1">(with object) (unconventional) to cause</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>taso</w>
+    <ts>
+      <t><pos>PARTICLE</pos><span class="x1">(at beginning of sentence)</span> <span class="x1 x2">but</span>, <span class="x1 x2">however</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">only</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>tawa</w>
+    <ts>
+      <t><pos>PREPOSITION</pos><span class="x2">going to</span>, <span class="x2">toward</span>; <span class="x1">to</span>, <span class="x1 x2">for</span>; <span class="x1 x2">from the perspective of</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">moving</span></t>
+      <t><pos>NOUN</pos><span class="x1">movement</span></t>
+      <t><pos>VERB</pos><span class="x1">to move</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>telo</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">water</span>, <span class="x1 x2">liquid</span>, <span class="x1 x2">fluid</span>, <span class="x2">wet substance</span>; <span class="x2">beverage</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">wet</span>, <span class="x1">fluid</span>, <span class="x1">liquid</span></t>
+      <t><pos>VERB</pos><span class="x1">to water</span>, <span class="x1">to clean</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>tenpo</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">time</span>, <span class="x2">duration</span>, <span class="x1 x2">moment</span>, <span class="x1 x2">occasion</span>, <span class="x2">period</span>, <span class="x2">situation</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">temporal</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>toki</w>
+    <ts>
+      <t><pos>VERB</pos><span class="x2">to communicate</span>, <span class="x2">say</span>, <span class="x1 x2">speak</span>, <span class="x1 x2">talk</span>, <span class="x1 x2">use language</span>, <span class="x1 x2">think</span></t>
+      <t><pos>NOUN</pos><span class="x1">speech</span>, <span class="x1">conversation</span>, <span class="x1">language</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">verbal</span>, <span class="x1">conversational</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>tomo</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">indoor space</span>; <span class="x1 x2">building</span>, <span class="x1">structure</span>, <span class="x1 x2">home</span>, <span class="x2">house</span>, <span class="x1 x2">room</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">indoor</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>tu</w>
+    <ts>
+      <t><pos>NUMBER</pos><span class="x1 x2">2</span>, <span class="x1 x2">two</span></t>
+      <t><pos>NOUN</pos><span class="x1">divide</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">divided</span></t>
+      <t><pos>VERB</pos><span class="x1">to divide</span></t>
+      <t class="note">Using “tu” at the end of a noun phrase is generally associated with the number 2. The meaning “divided” is usually specified by using a “li” particle:
+          <ul>
+            <li>kulupu tu – two communities
+            <li>kulupu li tu. – the community is divided.
+          </ul>
+        </t>
+    </ts>
+  </div>
+  <div>
+    <w>unpa</w>
+    <ts>
+      <t><pos>VERB</pos><span class="x1 x2">to have sex with</span></t>
+      <t><pos>NOUN</pos><span class="x1">sex</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">sexual</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>uta</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">mouth</span>, <span class="x1 x2">lips</span>, <span class="x2">oral cavity</span>, <span class="x2">jaw</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">oral</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>utala</w>
+    <ts>
+      <t><pos>VERB</pos><span class="x1">to fight</span>, <span class="x1 x2">to battle</span>, <span class="x1 x2">challenge</span>, <span class="x2">compete against</span>, <span class="x2">struggle against</span></t>
+      <t><pos>NOUN</pos><span class="x1">fight</span>, <span class="x1">battle</span>, <span class="x1">challenge</span>, <span class="x1">war</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">aggressive</span>, <span class="x1">warlike</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>walo</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">white</span>, <span class="x2">whitish</span>; <span class="x2">light-colored</span>, <span class="x2">pale</span>; <span class="x1">bright, light</span></t>
+      <t><pos>NOUN</pos><span class="x1">the color white (and its shades)</span></t>
+      <t><pos>VERB</pos><span class="x1">to color something white</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>wan</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x2">unique</span>, <span class="x1 x2">united</span>, <span class="x1">married</span></t>
+      <t><pos>NUMBER</pos><span class="x1 x2">1</span>, <span class="x1 x2">one</span></t>
+      <t><pos>NOUN</pos><span class="x1">part (of something)</span></t>
+      <t><pos>VERB</pos><span class="x1">to unite</span>, <span class="x1">to marry</span></t>
+      <t class="note">Using “wan” at the end of a noun phrase is generally associated with the number 1. The meaning “united” is usually specified by using a “li” particle:
+          <ul>
+            <li>kulupu wan – one community
+            <li>kulupu li wan. – the community is united.
+            <li>kulupu mute wan – 21 communities (complex numbering system)
+            <li>kulupu mute li wan – many (or 20) communities are united.
+        </t>
+    </ts>
+  </div>
+  <div>
+    <w>waso</w>
+    <ts>
+      <t><pos>NOUN</pos><span class="x1 x2">bird</span>, <span class="x1 x2">flying creature</span>, <span class="x2">winged animal</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>wawa</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">strong</span>, <span class="x1 x2">powerful</span>; <span class="x2">confident</span>, <span class="x2">sure</span>; <span class="x1 x2">energetic</span>, <span class="x2">intense</span></t>
+      <t><pos>NOUN</pos><span class="x1">strength</span>, <span class="x1">power</span>, <span class="x1">energy</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>weka</w>
+    <ts>
+      <t><pos>ADJECTIVE</pos><span class="x1 x2">absent</span>, <span class="x1 x2">away</span>, <span class="x1">remote</span>, <span class="x2">ignored</span></t>
+      <t><pos>NOUN</pos><span class="x1">absence</span>, <span class="x1">remoteness</span></t>
+      <t><pos>VERB</pos><span class="x1">remove</span>, <span class="x1">get rid of</span></t>
+    </ts>
+  </div>
+  <div>
+    <w>wile</w>
+    <ts>
+      <t><pos>PRE-VERB</pos><span class="x2">must</span>, <span class="x2">need</span>, <span class="x2">require</span>, <span class="x2">should</span>, <span class="x2">want</span>, <span class="x2">wish</span>, <span class="x1">to want to do something</span></t>
+      <t><pos>NOUN</pos><span class="x1">want</span>, <span class="x1">need</span>, <span class="x1">desire</span></t>
+      <t><pos>ADJECTIVE</pos><span class="x1">desired</span>, <span class="x1">needed</span>, <span class="x1">required</span></t>
+      <t><pos>VERB</pos><span class="x1">to want something</span></t>
+    </ts>
+  </div>
 </section>
 <details>
   <summary>Resources Used</summary>

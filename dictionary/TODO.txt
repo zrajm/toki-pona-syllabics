@@ -2,9 +2,10 @@
 
 * Javascript
 ** TODO Don't use jquery, maybe? (for smallness)
-** TODO If using jquery maybe use .hide()/.show() instead of classes(?)
 ** TODO createIndex() should return index object
 ** TODO Hilite matching words(?)
+** TODO Support more advanced queries
+   e.g. multiple words, part of speech etc.
 * Dictionary
 ** TODO Resolve dictionary TODOs and FIXMEs
 ** TODO Hilite word notes better on page
@@ -27,4 +28,6 @@
 ** DONE Add search function
    CLOSED: [2021-01-30 Sat 21:48]
    https://jprogr.github.io/TokiPonaDictionary/
+** DONE If using jquery maybe use .hide()/.show() instead of classes(?)
+   CLOSED: [2021-01-30 Sat 22:01]
 * [eof]

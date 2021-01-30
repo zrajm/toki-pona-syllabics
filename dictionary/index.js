@@ -26,30 +26,30 @@ function createIndex($e, $mama) {
 $(main);
 function main() {
     'use strict';
+    const $entries = $('#dict > div');
     const $q = $('#q');
-    const $mama = $('#dict');
     const $err = $('#no_match');
-    $('#dict > *').each((_, x) => {
+    $entries.each((_, x) => {
         createIndex($(x));
     });
     $q.on("keyup", () => {
         const q = $q.val().trim().toLowerCase();
-        $('#dict > .found').removeClass('found');
-        if (q === '') {
+        if (q === '') {                        // no query; show everything
             $err.hide();
-            $mama.removeClass('found');
+            $entries.show();
             return;
         }
-        $mama.addClass('found');
         const re = new RegExp('^' + q.replace(/[*]/, '.*'));
         const matches = Object.keys(index).filter(x => x.match(re));
-        if (matches.length === 0) {
+        if (matches.length === 0) {            // no matches; show error
             $err.show();
-        } else {
-            $err.hide();
+            $entries.hide();
+            return;
         }
+        $err.hide();                           // show matches
+        $entries.hide();
         matches.forEach(match => {
-            index[match].forEach($e => $e.addClass('found'));
+            index[match].forEach($e => $e.show());
         });
     });
 }

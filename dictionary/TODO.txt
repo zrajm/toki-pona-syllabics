@@ -1,19 +1,30 @@
 -*- org -*-
 
-* Add search function
-  https://jprogr.github.io/TokiPonaDictionary/
-* Remove "to" in verb definitions in dictionary
-* Add groupings of symbols
-  A la http://theotherwebsite.com/tokipona/
-* Add Canadian syllabics script
-* Add sitelen pona script
-  jan Sonja’s word based script
-* Add sitelen sitelen script
-  The Maya inspired hieroglyphics.
-* Add sitelen ko script(?)
-  Cuneiform inspired script.
-  https://www.reddit.com/r/tokipona/comments/i71a3g/sitelen_ko_a_script_for_clay/
-* Add sitelen telo script(?)
-  Japanese inspired script.
-  https://www.reddit.com/r/tokipona/comments/jax1x2/sitelen_telo_v101_a_japaneseinspired_logographic/
+* Javascript
+** TODO Don't use jquery, maybe? (for smallness)
+** TODO If using jquery maybe use .hide()/.show() instead of classes(?)
+** TODO createIndex() should return index object
+** TODO Hilite matching words(?)
+* Dictionary
+** TODO Resolve dictionary TODOs and FIXMEs
+** TODO Hilite word notes better on page
+** TODO Add notes to more words
+** TODO Remove "to" in verb definitions in dictionary
+** TODO Add groupings of symbols
+   A la http://theotherwebsite.com/tokipona/
+** TODO Add Canadian syllabics script
+** TODO Add sitelen pona script
+   jan Sonja’s word based script
+** TODO Add sitelen sitelen script
+   The Maya inspired hieroglyphics.
+** TODO Add sitelen ko script(?)
+   Cuneiform inspired script.
+   https://www.reddit.com/r/tokipona/comments/i71a3g/sitelen_ko_a_script_for_clay/
+** TODO Add sitelen telo script(?)
+   Japanese inspired script.
+   https://www.reddit.com/r/tokipona/comments/jax1x2/sitelen_telo_v101_a_japaneseinspired_logographic/
+* FINISHED
+** DONE Add search function
+   CLOSED: [2021-01-30 Sat 21:48]
+   https://jprogr.github.io/TokiPonaDictionary/
 * [eof]

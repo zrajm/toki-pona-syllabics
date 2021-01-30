@@ -10,6 +10,10 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/toki-pona-syllabics/favicon/16x16.png">
 <link rel="manifest" href="/toki-pona-syllabics/favicon/site.webmanifest">
 <style>
+/* minireset */
+html { box-sizing:border-box; }
+*, :before, :after { box-sizing:inherit; }
+/********************/
 .TODO { background:#ff08; }
 .FIXME { background:#f88a; }
 body {
@@ -22,7 +26,10 @@ body {
 .showsource .x1.x2 { background:#f0f8; }
 footer { margin:1rem; text-align:center; }
 
-/* dictionary */
+/***** Dictionary *****/
+section {
+  margin:2rem 0;
+}
 #dict > div {
   margin:2rem 0;
   display:flex;
@@ -45,12 +52,35 @@ pos {
   text-transform:lowercase;
   opacity:.5;
 }
+select, input {
+  font:inherit;
+}
+input {
+  width:90%;
+  padding-left:.5em;
+}
+input::placeholder {
+  opacity:.5;
+  color:#000;
+}
+#dict.found > div:not(.found) {
+  display:none;
+}
+#no_match {
+  background:#f008;
+  padding:.5em 1em;
+  border-radius:.25em;
+}
 </style>
 </head>
 <body>
 <center>
   <h1>Zrajm’s Toki Pona Dictionary</h1>
+  <form>
+    <br><input autofocus placeholder="Search in English or Toki Pona…" id="q">
+  </form>
 </center>
+<section id="no_match" hidden>No matches.</section>
 <section id="dict">
   <div>
     <w>a kin</w>
@@ -985,5 +1015,7 @@ pos {
   </p>
 </details>
 <footer>Copyright 2021 <a href="http://zrajm.org">zrajm</a> (Uppsala, Sweden)</footer>
+<script src="../jquery-3.5.1.slim.min.js"></script>
+<script src="index.js"></script>
 </body>
 </html>

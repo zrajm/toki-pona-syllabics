@@ -9,7 +9,7 @@ function createIndex($e, $mama) {
                   .textContent
                   .trim()
                   .toLowerCase()
-                  .split(/[ ,;.()…-]+/)
+                  .split(/\W+/)
                   .filter(x => !!x);
             if (words.length > 0) {
                 words.forEach((x) => {

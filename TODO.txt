@@ -6,6 +6,8 @@
 ** TODO Hilite matching words(?)
 ** TODO Support more advanced queries
    e.g. multiple words, part of speech etc.
+* jan Pije
+** TODO Check for English spelling errors
 * Dictionary
 ** TODO Resolve dictionary TODOs and FIXMEs
 ** TODO Hilite word notes better on page

@@ -25,7 +25,7 @@ if (!String.prototype.supplant) {
 function ascii2syllabics(orgWord) {
     let err = 0;
     const newWord = orgWord
-          .split(/(?=[klmnpstwj][aeiou]|n(?:[klmpstwj]|$))/)
+          .split(/(?=[klmnpstwj][aeiou]|n(?:[klmpstwj]|$))/i)
           .map((char) => syllabics[char.toLowerCase()] || err++)
           .join('');
     return err > 0 ? orgWord : newWord;
@@ -34,7 +34,6 @@ function ascii2syllabics(orgWord) {
 $(() => {
     $(':lang(toki)').contents().each((_, node) => {
         if (node.nodeType === Node.TEXT_NODE) {              // only process text nodes
-            //console.log(node.textContent);
             const $node = $(node);
             const orgText = node.textContent;
             if (orgText.length > 0) {

@@ -31,7 +31,8 @@ function ascii2syllabics(orgWord) {
     return err > 0 ? orgWord : newWord;
 }
 
-$(() => {
+$(main);
+function main () {
     $(':lang(toki)').contents().each((_, node) => {
         if (node.nodeType === Node.TEXT_NODE) {              // only process text nodes
             const $node = $(node);
@@ -40,7 +41,6 @@ $(() => {
                 const newText = orgText.split(/([A-Za-z]+)/).map((word, i) => {
                     return (i % 2 === 0) ? word : ascii2syllabics(word);
                 }).join('');
-
                 $node.replaceWith(
                     (
                         '<span class="syllabics" title="{orgText}">{newText}</span>' +
@@ -50,4 +50,6 @@ $(() => {
             }
         }
     });
-});
+}
+
+//[eof]

@@ -7,11 +7,15 @@
 ** TODO Support more advanced queries
    e.g. multiple words, part of speech etc.
 * jan Pije
-** TODO Check for English spelling errors
+** TODO Is word 'muddler' correct?
+** TODO Is 'adjective: animal nois-' correct?
+** TODO Is 'to communicate animally' correct?
+** TODO Is 'If it has suchness, we can see it.' correct?
 * Dictionary
 ** TODO Resolve dictionary TODOs and FIXMEs
 ** TODO Hilite word notes better on page
 ** TODO Add notes to more words
+*** TODO “li” add note & examples
 ** TODO Remove "to" in verb definitions in dictionary
 ** TODO Add groupings of symbols
    A la http://theotherwebsite.com/tokipona/
@@ -32,4 +36,6 @@
    https://jprogr.github.io/TokiPonaDictionary/
 ** DONE If using jquery maybe use .hide()/.show() instead of classes(?)
    CLOSED: [2021-01-30 Sat 22:01]
+** DONE Check for English spelling errors
+   CLOSED: [2021-02-02 Tue 12:54]
 * [eof]

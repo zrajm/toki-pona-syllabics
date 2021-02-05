@@ -11,11 +11,15 @@
 ** TODO Is 'adjective: animal nois-' correct?
 ** TODO Is 'to communicate animally' correct?
 ** TODO Is 'If it has suchness, we can see it.' correct?
+** TODO Add toggle switch for Canadian syllabics/Latin alphabet
 * Dictionary
-** TODO Resolve dictionary TODOs and FIXMEs
+** TODO Resolve dictionary TODOs
+** TODO Resolve dictionary FIXMEs
 ** TODO Hilite word notes better on page
 ** TODO Add notes to more words
 *** TODO “li” add note & examples
+*** TODO “anu” add note & examples
+*** TODO “en” add note & examples
 ** TODO Remove "to" in verb definitions in dictionary
 ** TODO Add groupings of symbols
    A la http://theotherwebsite.com/tokipona/
@@ -38,4 +42,6 @@
    CLOSED: [2021-01-30 Sat 22:01]
 ** DONE Check for English spelling errors
    CLOSED: [2021-02-02 Tue 12:54]
+** DONE Merged definitions from jan Lentan and pu
+   CLOSED: [2021-02-05 Fri 09:31]
 * [eof]

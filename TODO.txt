@@ -13,11 +13,12 @@
 ** TODO Is 'If it has suchness, we can see it.' correct?
 ** TODO Add toggle switch for Canadian syllabics/Latin alphabet
 * Dictionary
+** TODO Add links to jan Pije’s grammar for special words
 ** TODO Add non-pu words
 ** TODO Resolve dictionary TODOs
-** TODO Resolve dictionary FIXMEs
 ** TODO Hilite word notes better on page
 ** TODO Add notes to more words
+*** TODO Clarify “mu”
 *** TODO “li” add note & examples
 *** TODO “anu” add note & examples
 *** TODO “en” add note & examples

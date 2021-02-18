@@ -58,7 +58,6 @@
     a { text-decoration: none; }
     a:hover { text-decoration: underline; }
     :target { background: #88f8; }
-
     /* Syllabics figures. */
     .fig {
         margin: 0em auto 2em;
@@ -105,6 +104,21 @@
     .fig tbody tr:first-of-type td { border-top-width: 2px; }
     .fig tbody tr:last-of-type td { border-bottom-width: 2px; }
     .fig tbody td + td:empty { padding: 0; width: .75em; }
+    /* Glossary table. */
+    .glossary {
+        border-collapse: collapse;
+        margin: 2rem;
+    }
+    .glossary td {
+        border: 2px solid #ccc;
+        padding: 0 .5rem;
+    }
+    /* To improve readability of syllabics. */
+    .syllabic {
+        line-height: 1.75;
+        word-spacing: .2em;
+        text-align: left;
+    }
   </style>
 </head>
 <body>
@@ -213,36 +227,34 @@
     final <i>c</i> (◌ᐨ) used in Western Cree.
   </section>
 
-  <section id="words">
-    <h1>Some (Non-Pu) Words</h1>
+  <section id="sample">
+    <h1>Sample Text</h1>
 
-    <p><b>ᑭᐱᓯ</b> <i>kipisi</i> – part, portion, piece (ᑭᐱᓯ ᐁ <i>kipisi e</i> =
-    cut, slice, divide)
+    <!--
+        <p>mi jan Sulin. mi lon ma tomo Upala. ma tomo Upala li lon ma Wensa.
 
-    <p><b>ᒧᓐᓲᑕ</b> <i>monsuta</i> – monster, beast (ᐱᓕᓐ
-    ᒧᓐᓲᑕ <i>pilin monsuta</i> = fear)
+        <p>tenpo mute pini la jan Wikin lon, lon ma mi. ona li jan utala li
+          tawa, tawa ma suli Elopa ale. ona li pakala e ma tomo mute, li moli e
+          jan mute. ona li jan ike. taso ona li pali kin e kiwen suli. ona li
+          sitelen e sitelen pi jan Wikin, lon kiwen ni. kiwen ni mute lon, lon
+          ma tomo mi. kiwen ni lili lon taso, lon ma ante. sitelen ni li pona,
+          tawa mi!
+    -->
 
-    <p><b>ᑐᓐᓯ</b> <i>tonsi</i> – non-binary gender, trans
+    <div class="syllabic">
+      <p>ᒥ ᔭᓐ ᓲᓕᓐ᙮ ᒥ ᓗᓐ ᒪ ᑐᒧ ᐆᐸᓚ᙮ ᒪ ᑐᒧ ᐆᐸᓚ ᓕ ᓗᓐ ᒪ ᐌᓐᓴ᙮
 
-    <p><b>ᓓᑯ</b> <i>leko</i> – block, cube, square, stairs
+      <p>ᑌᓐᐳ ᒨᑌ ᐱᓂ ᓚ ᔭᓐ ᐎᑭᓐ ᓗᓐ, ᓗᓐ ᒪ ᒥ᙮ ᐅᓇ ᓕ ᔭᓐ ᐆᑕᓚ ᓕ ᑕᐗ, ᑕᐗ ᒪ ᓲᓕ ᐁᓗᐸ ᐊᓓ᙮ ᐅᓇ
+      ᓕ ᐸᑲᓚ ᐁ ᒪ ᑐᒧ ᒨᑌ, ᓕ ᒧᓕ ᐁ ᔭᓐ ᒨᑌ᙮ ᐅᓇ ᓕ ᔭᓐ ᐃᑫ᙮ ᑕᓱ ᐅᓇ ᓕ ᐸᓕ ᑭᓐ ᐁ ᑭᐌᓐ ᓲᓕ᙮ ᐅᓇ
+      ᓕ ᓯᑌᓓᓐ ᐁ ᓯᑌᓓᓐ ᐱ ᔭᓐ ᐎᑭᓐ, ᓗᓐ ᑭᐌᓐ ᓂ᙮ ᑭᐌᓐ ᓂ ᒨᑌ ᓗᓐ, ᓗᓐ ᒪ ᑐᒧ ᒥ᙮ ᑭᐌᓐ ᓂ ᓕᓕ ᓗᓐ
+      ᑕᓱ, ᓗᓐ ᒪ ᐊᓐᑌ᙮ ᓯᑌᓓᓐ ᓂ ᓕ ᐳᓇ, ᑕᐗ ᒥ&#8239;!
+    </div>
 
-    <p><b>ᐁᐌ</b> <i>ewe</i> – gravel, soft stone, powder
-
-    <p><b>ᔭᓯᒪ</b> <i>jasima</i> – reflection, mirror, opposite (ᓲᐸ ᔭᓯᒪ <i>supa
-    jasima</i> = mirror)
-
-    <p><b>ᓕᓐᓘᐎ</b> <i>linluwi</i> – web, net, network, signal, connection, to
-    internet, connection (ᓕᓐᔭ ᓕᓐᓘᐎ <i>linja linluwi</i> = web, net)
-
-    <p><b>ᐸᑭ</b> <i>taki</i> – sticky, adhesive, clingy (ᓕᐴ ᐸᑭ <i>lipu taki</i>
-    = tape)
-
-    <p><b>ᐊᐯᔭ</b> <i>apeja</i> – shame, guilt, embarrassment
-
-    <p><b>ᒥᓯᑫᑫ</b> <i>misikeke</i> – medicine, drugs
-
-    <p><b>ᐗᓓᔭ</b> <i>waleja</i> – context, value, topic, relating to,
-    relevance, salience, importance
+    <table class="glossary">
+      <tr><td class="syllabic">ᔭᓐ ᓲᓕᓐ<td>jan Sulin<td>Zrajm (me)</tr>
+      <tr><td class="syllabic">ᒪ ᑐᒧ ᐆᐸᓚ<td>ma tomo Upala<td>Uppsala (a city)</tr>
+      <tr><td class="syllabic">ᔭᓐ ᐎᑭᓐ<td>jan Wikin<td>the Vikings</tr>
+    </table>
   </section>
 
 <section id=footnotes class=hanging>

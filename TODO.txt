@@ -9,6 +9,13 @@
 ** TODO Support more advanced queries
    e.g. multiple words, part of speech etc.
 * Toki Pona syllabics
+** TODO Add marking for names (Shavian 'namer dot'?)
+   + Use ᐧ 'final middle dot' (inspired by Shavian) -- if so, this requires not
+     using dotted forms for the w-series.
+   + Use ᑊ 'West-Cree P'.
+   + Use * (asterisk, borrowed from linguist's marking of a word that is not
+     correctly formed) -- but this is less easy to write with a pen.
+   + Use ᐤ 'final ring'
 ** TODO Use .woff(2?) instead of .tty fonts
 * jan Pije
 ** TODO Is word 'muddler' correct?

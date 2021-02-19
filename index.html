@@ -14,9 +14,48 @@
     html { box-sizing: border-box; }
     *, :before, :after { box-sizing: inherit; padding: 0; margin: 0; }
     /********************/
+    /* For regular Latin script. */
+    @font-face {
+        font-family: "Noto Sans";
+        src: url("font/noto_sans-regular.ttf");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Noto Sans";
+        src: url("font/noto_sans-italic.ttf");
+        font-style: italic;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Noto Sans";
+        src: url("font/noto_sans-bold.ttf");
+        font-weight: bold;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Noto Sans";
+        src: url("font/noto_sans-bold_italic.ttf");
+        font-style: italic;
+        font-weight: bold;
+        font-display: swap;
+    }
+    /* For Canadian syllabics. */
+    @font-face {
+        font-family: "Noto Sans Canadian Aboriginal";
+        src: url("font/noto_sans_canadian_aboriginal-regular.ttf");
+        font-display: swap;
+    }
+    /* For symbols. */
+    @font-face {
+        font-family: "Times New Roman";
+        /* Font must center overdot above dotted circle,
+           and have overdot resemble syllabics font overdot. */
+        src: url("font/times.ttf");
+        font-display: swap;
+    }
     html {
        max-width: 100%;
-       font: 24px/1.5 sans-serif;
+       font: 24px/1.5 "Noto Sans", "Noto Sans Canadian Aboriginal", "Times New Roman", sans-serif;
        margin: 1rem 2rem;
     }
     /* https://gist.github.com/unruthless/413930 */
@@ -66,10 +105,12 @@
     }
     .fig figcaption { margin: 1em 0; }
     .fig > div {
+        /* Each syllabics mini-table are centered inside <div> of specific width.
+           This way they line up nicely when the line of tables is broken over lines. */
         position: relative;
         display: inline-table;
         margin-top: 2em;
-        width: 8.5em; /* --fig-div-width */
+        width: 8.5em; /* --fig-div-width: slightly larger than widest table */
     }
     .fig .footnote {
         position: absolute;
@@ -77,9 +118,10 @@
         right: 2.25em;
     }
     .fig table {
-        display: inline-table;
+        margin: auto;
         border-spacing: 0;
-        font: 30px/1.25 sans-serif;
+        font-size: 30px;
+        line-height: 1.25;
     }
     .fig thead th { padding-bottom: .5em; }
     .fig tbody td,
@@ -95,10 +137,9 @@
     }
     .fig tbody td {
         padding: 0 .125em;
-        width: 36px;
+        width: 1.25em;  /* width of broadest syllabics character */
     }
-    .fig .no-lp { padding-left: 0; }
-    .fig .xtra-bp td { padding-bottom: .375em; }
+    .fig .xtra-bp td { padding-bottom: .25em; }
     .fig tbody td:first-of-type { border-left-width: 2px; }
     .fig tbody td:last-of-type { border-right-width: 2px; }
     .fig tbody tr:first-of-type td { border-top-width: 2px; }
@@ -114,9 +155,12 @@
         padding: 0 .5rem;
     }
     /* To improve readability of syllabics. */
+    /* (Only useful for content with multiple words. */
     .syllabic {
+        word-spacing: .125em;
+    }
+    div.syllabic, p.syllabic {
         line-height: 1.75;
-        word-spacing: .2em;
         text-align: left;
     }
   </style>
@@ -149,9 +193,9 @@
     </div><div>
       <sup class="footnote"><a href="#fn2">[2]</a></sup>
       <table>
-        <tr><th>wi<td class="no-lp">ᐎ<td><td class="no-lp">ᐌ<th>we</tr>
-        <tr><th>wa<td class="no-lp">ᐗ<td><td class="gray no-lp">ᐒ<th class="gray">wo</tr>
-        <tr><th><td><td><td class="gray no-lp">ᐔ<th class="gray">wu</tr>
+        <tr><th>wi<td>ᐎ<td><td>ᐌ<th>we</tr>
+        <tr><th>wa<td>ᐗ<td><td class="gray">ᐒ<th class="gray">wo</tr>
+        <tr><th><td><td><td class="gray">ᐔ<th class="gray">wu</tr>
       </table>
     </div><div>
       <table>

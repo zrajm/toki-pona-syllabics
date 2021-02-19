@@ -1,11 +1,15 @@
 -*- org -*-
 
+* General
+** TODO Create base CSS from syllabics page and use that everywhere
 * Javascript
 ** TODO Don't use jquery, maybe? (for smallness)
 ** TODO createIndex() should return index object
 ** TODO Hilite matching words(?)
 ** TODO Support more advanced queries
    e.g. multiple words, part of speech etc.
+* Toki Pona syllabics
+** TODO Use .woff(2?) instead of .tty fonts
 * jan Pije
 ** TODO Is word 'muddler' correct?
 ** TODO Is 'adjective: animal nois-' correct?
@@ -46,4 +50,36 @@
    CLOSED: [2021-02-02 Tue 12:54]
 ** DONE Merged definitions from jan Lentan and pu
    CLOSED: [2021-02-05 Fri 09:31]
+** DONE Use prettier fonts on syllabics page
+   CLOSED: [2021-02-19 Fri 10:02]
+
+   + Syllabics should have same line thickness in raised symbols as in other
+     symbols.
+   + Overdot should be centered above the dotted circle symbol.
+
+   + "Tutorial: Choosing the right fonts to show Cree syllabics on your website"
+     [https://blog.mothertongues.org/tutorial-syllabics-fonts/]
+   + "Google Noto Fonts"
+     [https://www.google.com/get/noto/]
+
+   After playing around with fonts and discovering that next to no fonts
+   actually have support for Canadian Aboriginal syllabics, I googled the
+   problem and found the "Choosing the right font to show Cree syllabics"
+   above.
+
+   This led me to "Noto Sans" which is the only font I've been able to find
+   which have the same line thickness for raised symbols as for the other ones.
+   For the Latin alphabet I tried "Noto Serif", but the serifs look inane and
+   unwieldy so a decided to use "Noto Sans" for all text.
+
+   BUUT it turns out that the placement of the overdot is not centered above
+   the dotted circle in "Noto Sans Symbols", so I instead went with Times New
+   Roman from Windows 10 (which fixes this, and also have an overdot which have
+   about the same size and shape as the overdots in the syllabics in "Noto Sans
+   Canadian Aboriginal").
+
+   In the end, "Noto Sans" is used for all Latin characters, using "Noto Sans
+   Canadian Aboriginal" as a fallback to handle all syllabics symbols, and
+   "Times" as an additional fallback to handle symbols (like the overdot, and
+   dotted circle).
 * [eof]

@@ -103,6 +103,7 @@
         text-align: center;
         max-width: 42.5em; /* calc(--fig-div-width * 5) */
     }
+    .fig.inline { margin-bottom: 1em; }
     .fig figcaption { margin: 1em 0; }
     .fig > div {
         /* Each syllabics mini-table are centered inside <div> of specific width.
@@ -112,6 +113,7 @@
         margin-top: 2em;
         width: 8.5em; /* --fig-div-width: slightly larger than widest table */
     }
+    .fig.inline > div { margin-top: 1em; }
     .fig .footnote {
         position: absolute;
         top: -.75em;
@@ -336,7 +338,7 @@
   pointing in all the wrong directions, but I assure you: That is not a mistake
   on my part!)
 
-  <figure class="fig">
+  <figure class="fig inline">
     <div>
       <table>
         <thead><tr><th colspan=5>Eastern</thead>

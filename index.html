@@ -305,6 +305,66 @@
   <section id="sample">
     <h1>Sample Text</h1>
 
+    <style>
+      table.star {
+          margin: 1em 0 1em 1em;
+          border-collapse: collapse;
+          text-align: center;
+          padding: -1em;
+          border: 2px solid #ccc;
+          caption-side: bottom;
+      }
+      table.star td {
+          text-align: center;
+          position: relative;
+          width: .6em;
+          height: .6em;
+      }
+      table.star div {
+          position: absolute;
+          display: inline;
+          transform: translate(-50%, -50%);
+      }
+      table.star div.raised { transform: translate(-50%, -55%); }
+      table.star .horiz {
+          letter-spacing: .2em;
+          white-space: nowrap;
+          padding-left: .25em;
+      }
+      table.star .horiz .spacer {
+          width: 2.25em;
+          display: inline-block;
+      }
+      table.star .vert {
+          line-height: 1em;
+          padding-bottom: .05em;
+      }
+      table.star .vert .spacer {
+          height: 2.25em;
+          display: inline-block;
+      }
+    </style>
+    <table class="star" style="float:right">
+      <tr><td rowspan=15 style="width:1.21em"><td colspan=13 style="height:1.75em"><td rowspan=15 style="width:1.19em"></tr>
+      <tr><td><div>ᑭ</div><td colspan=11><td><div>ᑫ</div></tr>
+      <tr><td><td><div>ᓯ</div><td colspan=9><td><div>ᓭ</div><td></tr>
+      <tr><td colspan=2><td><div class="gray">ᔨ</div><td colspan=7><td><div>ᔦ</div><td colspan=2></tr>
+      <tr><td colspan=3><td><div>ᓕ</div><td colspan=5><td><div>ᓓ</div><td colspan=3></tr>
+      <tr><td colspan=4><td><div>ᓂ</div><td colspan=3><td><div>ᓀ</div><td colspan=4></tr>
+      <tr><td colspan=5><td><div>ᒥ</div><td><td><div>ᒣ</div><td colspan=5></tr>
+      <tr><td colspan=6><td>
+          <div class="horiz">ᑕᐸᕙᐊ<span class="spacer"></span>ᐅ<span class="gray">ᕗ</span>ᐳᑐ</div>
+          <div class="vert"><span class="gray">ᑎ</span><br>ᐱ<br>ᕕ<br>ᐃ<br><span class="spacer"></span><br>ᐁ<br>ᕓ<br>ᐯ<br>ᑌ</div>
+        <td colspan=6></tr>
+      <tr><td colspan=5><td><div>ᒪ</div><td><td><div>ᒧ</div><td colspan=5></tr>
+      <tr><td colspan=4><td><div>ᓇ</div><td colspan=3><td><div>ᓄ</div><td colspan=4></tr>
+      <tr><td colspan=3><td><div class="raised">ᓚ</div><td colspan=5><td><div class="raised">ᓗ</div><td colspan=3></tr>
+      <tr><td colspan=2><td><div>ᔭ</div><td colspan=7><td><div>ᔪ</div><td colspan=2></tr>
+      <tr><td><td><div>ᓴ</div><td colspan=9><td><div>ᓱ</div><td></tr>
+      <tr><td><div>ᑲ</div><td colspan=11><td><div>ᑯ</div></tr>
+      <tr><td colspan=13 style="height:1.75em"></tr>
+      <caption>A Toki Pona syllable star chart.</caption>
+    </table>
     <!--
         <p>mi jan Sulin. mi lon ma tomo Upala. ma tomo Upala li lon ma Wensa.
 
@@ -315,7 +375,6 @@
           ma tomo mi. kiwen ni lili lon taso, lon ma ante. sitelen ni li pona,
           tawa mi!
     -->
-
     <div class="syllabic">
       <p>ᒥ ᔭᓐ ᐧᓲᓕᓐ᙮ ᒥ ᓗᓐ ᒪ ᑐᒧ ᐧᐆᐸᓚ᙮ ᒪ ᑐᒧ ᐧᐆᐸᓚ ᓕ ᓗᓐ ᒪ ᕓᓐᓴ᙮
 

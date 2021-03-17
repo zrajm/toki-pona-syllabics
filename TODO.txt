@@ -9,6 +9,7 @@
 ** TODO Support more advanced queries
    e.g. multiple words, part of speech etc.
 * Toki Pona syllabics
+** TODO Font: Fix so that IPA symbols look prettier
 ** TODO Add marking for names (Shavian 'namer dot'?)
    + Use ᐧ 'final middle dot' (inspired by Shavian) -- if so, this requires not
      using dotted forms for the w-series.
@@ -17,6 +18,78 @@
      correctly formed) -- but this is less easy to write with a pen.
    + Use ᐤ 'final ring'
 ** TODO Use .woff(2?) instead of .tty fonts
+** TODO Write something about o/u merging and unpointed syllabics
+   Marcus Miles wrote someth
+   https://www.facebook.com/groups/sitelen/permalink/2695902890464079/
+
+   Marcus Miles wrote on facebook “I can hazard a guess at the o/u merger. I
+   discovered long ago that if you merge o and u, you don’t get any accidental
+   homophones.” (21 December 2019, 23:36, in Facebook group “toki pona”)
+   [https://www.facebook.com/groups/sitelen/permalink/2695902890464079/?comment_id=2695938253793876&reply_comment_id=2696157930438575]
+
+   ------------------------------------------------------------
+   Zoltán Gorza
+   21 December 2019 · Public
+
+   I am working out a new writing system for toki pona called "sitelen lili",
+   and I'm already working on a font for it, but that might take a while. It
+   basically a syllabic system, consonant (or "blank character" if there's no
+   consonant) is read first than the vowel above it, has multiple forms for
+   each letter (for stylistic use or differentiating/emphasizing), has its own
+   punctuation and o-u difference is optional. The long text is the first verse
+   of "olin li tawa jan ale".
+
+   [pictures]
+   ------------------------------------------------------------
+   Robin Morton
+
+   Interesting. I like its efficiency in terms of strokes.
+
+   A couple of questions. What made you decide to design the alternative forms?
+   And the o/u optional merger? These seem to add a bit of complexity that I'm
+   not sure is necessary.
+
+   I wonder whether there's another stage you could push this to, where the
+   alternate forms have usage patterns that make ergonomic sense, like the
+   tilde-like n is used after a horizontal stroke to differentiate it, whilst
+   the rounded forms of w and m might be used when sequences of your various
+   'v' / 'L' shapes get a bit tricky to distinguish.
+
+   Have you tried designing cursive forms for these? The angles are perhaps a
+   bit confusing. Maybe look to Canadian Aboriginal Syllabics and/or Thaana
+   and/or shorthand systems for some ideas about creating a flowing, yet
+   distinguishable style with a bunch of pretty similar letter forms.
+
+   Hope you don't mind my honest thoughts, fundamentally you've got a lot of
+   good material there but if it were a script in real life I think it would
+   naturally develop a bit past this point for elegance and ease 🙂
+
+   Like · Reply · Share · 1 y · Edited
+   ------------------------------------------------------------
+   Marcus Miles
+
+   Robin Morton: I can hazard a guess at the o/u merger. I discovered long ago
+   that if you merge o and u, you don’t get any accidental homophones. The only
+   consonant affected is < j >, And then only if you change o to u rather than
+   u to o. So Toki Pona can function with a four vowel system rather than a
+   five vowel system.
+
+   Like · Reply · Share · 1 y · Edited
+   ------------------------------------------------------------
+   Zoltán Gorza
+
+   Robin Morton if there wasn't kin and ken, even i and e coupd be merged. as
+   Marcus said, there are no words where only o-u differes, so it's possible
+   (and I haven't had a good idea for 'u')
+
+   Like · Reply · Share · 1 y
+   ------------------------------------------------------------
+   Robin Morton
+
+   And tbf you could spell ken kan instead...
+
+   Like · Reply · Share · 1 y
+   ------------------------------------------------------------
 * jan Pije
 ** TODO Is word 'muddler' correct?
 ** TODO Is 'adjective: animal nois-' correct?

@@ -24,7 +24,7 @@ if (!String.prototype.supplant) {
 
 function ascii2syllabics(orgWord) {
     let err = 0;
-    const newWord = orgWord
+    const newWord = (orgWord.match(/^[A-Z]($|.*[a-z])/) ? 'ᕐ' : '') + orgWord
           .split(/(?=[klmnpstwj][aeiou]|n(?:[klmpstwj]|$))/i)
           .map((char) => syllabics[char.toLowerCase()] || err++)
           .join('');

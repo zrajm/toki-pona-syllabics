@@ -16,7 +16,17 @@
 ** TODO Is 'adjective: animal nois-' correct?
 ** TODO Is 'to communicate animally' correct?
 ** TODO Is 'If it has suchness, we can see it.' correct?
-** TODO Add toggle switch for Canadian syllabics/Latin alphabet
+** TODO Use same fonts as Syllabics article(?)
+   Right now syllabics aren't very pretty.
+
+   Also, maybe remove `text-align: justify`? Are there non-space spaces that
+   get stretched in the jan Pije text?
+** TODO Add toggle switch for alphabet/syllabics/unpointed syllabics
+   Ideally the toggle should hover at top of screen so one can quickly toggle
+   it when one wants to (if this is possible, remove the alt-texts). Remember,
+   though it should be usable on mobile -- maybe the toggle could go (almost
+   completely) transparent after a while (on mobile only?; when user has
+   scrolled down) so that text underneath it can still be read?)
 * Dictionary
 ** TODO Add links to jan Pije’s grammar for special words
 ** TODO Add non-pu words
@@ -164,4 +174,12 @@
 
    Like · Reply · Share · 1 y
    ------------------------------------------------------------
+** DONE jan Pije: Javascript, put naming mark on Capitalized Words
+   CLOSED: [2021-03-25 Thu 15:14]
+   For a word to be capitalized it must start with a capital letter, if it
+   thereafter ends (being only one letter long), or contain at least one lower
+   case letter then it is counted as a Capitalized Word. If the word is FULLY
+   CAPITALIZED it will not get a naming mark, but if it is Boaty McBoatface it
+   will. All words capitalized thusly get a naming mark (even if there are more
+   than one after each other).
 * [eof]

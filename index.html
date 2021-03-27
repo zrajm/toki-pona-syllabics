@@ -106,7 +106,29 @@
       margin-top: 1rem;
     }
     a { text-decoration: none; }
-    a:hover { text-decoration: underline 2px; }
+    a.img {
+        display: inline-block;
+        position: relative;
+    }
+    a.img img { display: block; }
+    a.img:hover { box-shadow: none; }
+    a.img:hover:before {
+        content: ' ';
+        position: absolute;
+        left:   -.25em;
+        right:  -.25em;
+        top:    -.35em;
+        bottom: -.25em;
+        box-shadow: 0 0 1em #88f4 inset,  0 0 2em #88f8 inset;
+    }
+    a:hover {
+        text-decoration: underline 2px;
+        box-shadow: 0 0 1em #88f8 inset;
+        padding: 0  .125em  .125em;
+        margin:  0 -.125em -.125em;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+    }
     :target { background: #88f8; }
     /* Syllabics figures. */
     .fig {
@@ -187,7 +209,9 @@
 </head>
 <body>
 
-  <a href="https://github.com/zrajm/toki-pona-syllabics" style="float:right;margin:0 1em .5em;display:block"><img src="toki-pona-syllabics.svg" style="height:6em"></a>
+  <div style="float:right;margin:0 1em .5em">
+    <a class="img" href="https://github.com/zrajm/toki-pona-syllabics"><img src="toki-pona-syllabics.svg" style="height:6em"></a>
+  </div>
 
   <h1>Toki Pona Syllabics</h1>
 
@@ -477,7 +501,7 @@
       and displayed for a few seconds in one of jan Misali’s videos on YouTube:
 
       <figure class="basic">
-        <a href="conlang-critic.png"
+        <a class="img" href="conlang-critic.png"
            ><img src="conlang-critic.png" height="338" width="584"></a>
         <figcaption>
           Screenshot of table from
@@ -610,7 +634,7 @@
       <figure class="fb-quote">
         <table>
           <tr>
-            <td class="fb-image"><a href="king-syllabics.png"><img
+            <td class="fb-image"><a class="img" href="king-syllabics.png"><img
               src="king-syllabics.png" height="338" width="357"></a></td>
             <td class="fb-message">
               <img class="fb-portrait" src="king-portrait.jpg" height="72" width="72">
@@ -712,7 +736,7 @@
       to be found in Unicode). For completeness, I’ll include it here.
 
       <figure class="basic">
-        <a href="blue-quills-syllabics.png"><img
+        <a class="img" href="blue-quills-syllabics.png"><img
           src="blue-quills-syllabics.png" width="372.5" height="431"></a>
         <figcaption>A different <a
           href="https://www.bluequills.ca/elders-2/rescent01/">Canadian

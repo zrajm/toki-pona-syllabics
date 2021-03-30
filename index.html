@@ -153,22 +153,20 @@
     .fig > div {
         /* Each syllabics mini-table are centered inside <div> of specific width.
            This way they line up nicely when the line of tables is broken over lines. */
-        position: relative;
         display: inline-table;
-        margin-top: 2em;
+        margin-top: 1.5em;
         width: 8.5em; /* --fig-div-width: slightly larger than widest table */
     }
     .fig.inline > div { margin-top: 1em; }
-    .fig div a[href^="#fn"] {
+    .fig table a[href^="#fn"] {
         position: absolute;
-        top: -1.5em;
-        right: 2.5em;
+        top: -1.25em;
+        left: -.125em;
         line-height: 1.25;
     }
     .fig table {
         margin: auto;
         border-spacing: 0;
-        font-size: 30px;
         line-height: 1.25;
     }
     .fig thead th { padding-bottom: .5em; }
@@ -180,12 +178,13 @@
         border: 0 solid #ccc;
     }
     .fig th {
-        font-size: 1rem;
-        font-weight: normal;
+        font-weight: inherit;
+        position: relative;
     }
     .fig tbody td {
         padding: 0 .125em;
         width: 1.25em;  /* width of broadest syllabics character */
+        font-size: 30px;
     }
     .fig .xtra-bp td { padding-bottom: .25em; }
     .fig tbody td:first-of-type { border-left-width: 2px; }
@@ -249,9 +248,8 @@
         <tr><th><td><td><td>ᐆ<th>u</tr>
       </table>
     </div><div>
-      <a href="#fn2">2</a>
       <table>
-        <tr><th>wi<td>ᕕ<td><td>ᕓ<th>we</tr>
+        <tr><th>wi<td>ᕕ<td><td>ᕓ<th><a href="#fn2">2</a>we</tr>
         <tr><th>wa<td>ᕙ<td><td class="gray">ᕗ<th class="gray">wo</tr>
         <tr><th><td><td><td class="gray">ᕘ<th class="gray">wu</tr>
       </table>
@@ -292,16 +290,14 @@
         <tr><th><td><td><td>ᓲ<th>su</tr>
       </table>
     </div><div>
-      <a href="#fn3">3</a>
       <table>
-        <tr><th class="gray">ji<td class="gray">ᔨ<td><td>ᔦ<th>je</tr>
+        <tr><th class="gray">ji<td class="gray">ᔨ<td><td>ᔦ<th><a href="#fn3">3</a>je</tr>
         <tr><th>ja<td>ᔭ<td><td>ᔪ<th>jo</tr>
         <tr><th><td><td><td>ᔫ<th>ju</tr>
       </table>
     </div><div>
-      <a href="#fn4">4</a>
       <table>
-        <tr><th>li<td>ᓕ<td><td>ᓓ<th>le</tr>
+        <tr><th>li<td>ᓕ<td><td>ᓓ<th><a href="#fn4">4</a>le</tr>
         <tr><th>la<td>ᓚ<td><td>ᓗ<th>lo</tr>
         <tr><th><td><td><td>ᓘ<th>lu</tr>
       </table>

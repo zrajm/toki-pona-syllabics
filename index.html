@@ -117,7 +117,14 @@
     h1 {
       margin-top: 1rem;
     }
-    a { text-decoration: none; }
+    a {
+        text-decoration: none;
+        border-radius: .125em;
+        padding: .125em .5em;
+        margin: -.125em -.5em;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+    }
     a.img {
         display: inline-block;
         position: relative;
@@ -132,17 +139,15 @@
         top:    -.35em;
         bottom: -.25em;
         box-shadow: 0 0 1em #88f4 inset, 0 0 2em #88f8 inset;
+        border-radius: .125em;
     }
     a:hover {
         text-decoration: underline 2px;
         box-shadow: 0 0 .5em #88f4 inset, 0 0 1em #88f8 inset;
-        padding: 0  .125em  .125em;
-        margin:  0 -.125em -.125em;
-        box-decoration-break: clone;
-        -webkit-box-decoration-break: clone;
     }
     :target {
         box-shadow: 0 0 2em #fb4b inset;
+        border-radius: .125em;
     }
     /* Syllabics figures. */
     .fig {

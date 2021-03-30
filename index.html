@@ -61,11 +61,16 @@
        font: 24px/1.5 "Noto Sans", "Noto Sans Canadian Aboriginal", "Times New Roman", sans-serif;
        margin: 1rem 2rem;
     }
-    /* https://gist.github.com/unruthless/413930 */
-    sup { top: -0.5rem; }
-    sub { bottom: -0.25rem; }
+    sup { top: -1.15ex; } /* push up one x-height of surrounding font size */
+    sub { top:  1ex;    } /* push down one x-height footnote font size */
+    sub:after, sub:before, sup:after, sup:before {
+        /* Using hairspace lets any <a> underline (in <a><sup>…</sup></a>)
+           stick out a bit on either side, making sure its visible even when
+           link text has a descender (as with descending old-style numbers). */
+        content: '\feff\200a\feff'; /* hair space, no break before/after */
+    }
     sub, sup {
-      font-size: .8rem;
+      font-size: .8em;
       line-height: 0;
       position: relative;
       vertical-align: baseline;
@@ -154,8 +159,8 @@
     .fig.inline > div { margin-top: 1em; }
     .fig .footnote {
         position: absolute;
-        top: -.75em;
-        right: 2.25em;
+        top: -1em;
+        right: 2em;
     }
     .fig table {
         margin: auto;
@@ -224,7 +229,7 @@
   Pona</a>
   using <i><a href="https://en.wikipedia.org/wiki/Canadian_Aboriginal_syllabics">Canadian
   Aboriginal syllabics</a>!</i> One of the world’s coolest writing
-  systems!<sup>&NoBreak;<a href="#fn1">1</a></sup>
+  systems!<a href="#fn1"><sup>1</sup></a>
 
   <p>When you’re done reading this, you might wanna practice your Toki Pona
   syllabics reading skills with <a href="jan-pije/">jan Pijes lessons for Toki
@@ -241,7 +246,7 @@
         <tr><th><td><td><td>ᐆ<th>u</tr>
       </table>
     </div><div>
-      <sup class="footnote"><a href="#fn2">2</a></sup>
+      <a class="footnote" href="#fn2"><sup>2</sup></a>
       <table>
         <tr><th>wi<td>ᕕ<td><td>ᕓ<th>we</tr>
         <tr><th>wa<td>ᕙ<td><td class="gray">ᕗ<th class="gray">wo</tr>
@@ -284,14 +289,14 @@
         <tr><th><td><td><td>ᓲ<th>su</tr>
       </table>
     </div><div>
-      <sup class="footnote"><a href="#fn3">3</a></sup>
+      <a class="footnote" href="#fn3"><sup>3</sup></a>
       <table>
         <tr><th class="gray">ji<td class="gray">ᔨ<td><td>ᔦ<th>je</tr>
         <tr><th>ja<td>ᔭ<td><td>ᔪ<th>jo</tr>
         <tr><th><td><td><td>ᔫ<th>ju</tr>
       </table>
     </div><div>
-      <sup class="footnote"><a href="#fn4">4</a></sup>
+      <a class="footnote" href="#fn4"><sup>4</sup></a>
       <table>
         <tr><th>li<td>ᓕ<td><td>ᓓ<th>le</tr>
         <tr><th>la<td>ᓚ<td><td>ᓗ<th>lo</tr>
@@ -300,14 +305,14 @@
     </div>
     <figcaption>
       ◌ᓐ means <i>n</i> at end of syllable
-      (e.g. ᑐᓐᓯ <i>tonsi</i>) <sup><a href="#fn5">5</a></sup>
+      (e.g. ᑐᓐᓯ <i>tonsi</i>).<a href="#fn5"><sup>5</sup></a>
     </figcaption>
   </figure>
 
   <ul>
     <li>An <i>overdot</i> (◌̇) is used to indicate that a syllable is pronounced
       with <i>u</i> instead
-      of <i>o.</i><sup>&NoBreak;<a href="#fn6">6</a></sup>
+      of <i>o.</i><a href="#fn6"><sup>6</sup></a>
     <li>The shaded syllables above (ᕗ <i>wo,</i> ᕘ <i>wu,</i> ᑎ <i>ti,</i> and
       ᔨ <i>ji</i>) are not allowed in Toki Pona.
   </ul>
@@ -333,7 +338,7 @@
     to mark these words, put a <i>naming mark</i> ᕐ in front of it: ᑐᑭ
     ᕐᓯᓇᓐ <i>toki Sinan</i> (the Klingon language), ᔭᓐ ᕐᓱᓐᔭ <i>jan Sonja,</i>
     and ᒪ ᕐᑲᓇᑕ <i>ma Kanata</i>
-    (Canada).<sup>&NoBreak;<a href="#fn7">7</a></sup>
+    (Canada).<a href="#fn7"><sup>7</sup></a>
   </section>
 
   <section id="sample">
@@ -438,8 +443,7 @@
     recognizing the words, even without vowel length markings). In the few
     cases where ambiguity may rear its ugly head, one may either rely on
     context to clear it up, or add dots to clarify only as needed (this is
-    known as <i>strategic pointing</i>).<sup>&NoBreak;<a href="#fn8"
-    >8</a></sup>
+    known as <i>strategic pointing</i>).<a href="#fn8"><sup>8</sup></a>
 
     <p>Unpointed syllabics are very common, even on road signs, inscriptions,
     and other quite formal contexts.
@@ -458,13 +462,13 @@
       quickly realise that ᑯᓗᐳ <i>kolopo</i> could not be the intended word and
       that ᑰᓘᐴ <i>kulupu</i> is the only possible substitute!
 
-      <p>A closer look at pu<sup>&NoBreak;<a href="#fn9">9</a></sup> reveals
-      that, even if you replace <i>all</i> occurrences of <i>u</i> in the
-      official dictionary with <i>o,</i> this doesn’t lead to any ambiguities!
-      Sure, words like ᑯᓗᐳ <i>kolopo</i> and ᒧᑯ <i>moko</i> may <i>sound</i>
-      funny, but they don’t cause any confusion, since none of these words
-      overlap with any existing words
-      containing <i>o!</i><sup>&NoBreak;<a href="#fn10">10</a></sup>
+      <p>A closer look at pu<a href="#fn9"><sup>9</sup></a> reveals that, even
+      if you replace <i>all</i> occurrences of <i>u</i> in the official
+      dictionary with <i>o,</i> this doesn’t lead to any ambiguities! Sure,
+      words like ᑯᓗᐳ <i>kolopo</i> and ᒧᑯ <i>moko</i> may <i>sound</i> funny,
+      but they don’t cause any confusion, since none of these words overlap
+      with any existing words
+      containing <i>o!</i><a href="#fn10"><sup>10</sup></a>
 
       <p>There are a couple of cases where strategic pointing might
       be especially useful:
@@ -481,9 +485,9 @@
 
       <p>The second case is the official word ᑑ <i>tu,</i> which can be
       confused with the (post-pu) word ᑐ <i>to</i> (used to delimit quotes with
-      ᑌ … ᑐ <i>te … to</i>).<sup>&NoBreak;<a href="#fn11">11</a></sup> So, if
-      you find yourself quoting passages in which ᑑ <i>tu</i> appear, a
-      strategically placed dot might be in order.
+      ᑌ … ᑐ <i>te … to</i>).<a href="#fn11"><sup>11</sup></a> So, if you find
+      yourself quoting passages in which ᑑ <i>tu</i> appear, a strategically
+      placed dot might be in order.
     </section>
   </section>
 
@@ -570,7 +574,7 @@
       (ᕕ <i>wi,</i> ᕓ <i>we,</i> ᕙ <i>wa,</i> ᕗ <i>wo</i>) instead. This is
       partly on jan Misali’s (and <a href="#katelin">jan Katelin’s</a>)
       suggestions, and partly because I, in practice, have found it easier to
-      read.<sup>&NoBreak;<a href="#fn2">2</a></sup>
+      read.<a href="#fn2"><sup>2</sup></a>
     </section>
 
     <section id="king">
@@ -679,8 +683,8 @@
       language this set of characters is used for, but the r-series (<i>ri, re,
       ra, ro</i> in the image above) are unique the
       Western <a href="https://en.wikipedia.org/wiki/Missionary_Oblates_of_Mary_Immaculate">Oblate
-      missionary</a> style,<sup>&NoBreak;<a href="#fn12">12</a></sup> which I
-      presume is used for Western Cree. (This r-series is not even included
+      missionary</a> style,<a href="#fn12"><sup>12</sup></a> which I presume is
+      used for Western Cree. (This r-series is not even included
       in <a href="https://unicode.org/charts/PDF/U1400.pdf">Unicode</a>!)
 
       <p><b>w:</b> King writes <i>w</i> as a dot <i>after</i> the syllabic
@@ -694,7 +698,7 @@
       tines in the U-shape, sticks out in the opposite direction). Compare:
       ᕄᕆ <i>li,</i> ᕂᕃ <i>le,</i> ᕋᕍ <i>la,</i> and ᕊᕊ <i>lo</i> (in each pair,
       the first character is in King’s style, and the second is in the Western
-      Oblate style).<sup>&NoBreak;<a href="#fn13">13</a></sup>
+      Oblate style).<a href="#fn13"><sup>13</sup></a>
 
       <p><b>j:</b> The “j-series” of characters chosen by King (which are more
       commonly written with <i>c</i> in the Latin script; ᒋ <i>ci,</i>
@@ -908,7 +912,7 @@
       <p><b>Names:</b> Where the Latin orthography of Toki Pona uses
       capitalization to indicate names/<wbr>unofficial words, jan Katelin
       instead marks names by putting the Inuktitut <i>uvularization</i>
-      character (ᕐ◌)<sup>&NoBreak;<a href="#fn14">14</a></sup> in front of the
+      character (ᕐ◌)<a href="#fn14"><sup>14</sup></a> in front of the
       word.—&NoBreak;This is neat! Originally my own syllabics did not include
       a naming marker like this, but in part inspired by jan Katelin, I later
       added one.
@@ -921,7 +925,7 @@
       <p><b>Update, 21 March 2021:</b> I originally used the Western Cree final
       ᑊ <i>p</i> as a naming mark, but, after seeing the symbol that jan
       Katelin chose, and thinking about it for a bit, I adopted jan Katelin’s
-      symbol.<sup>&NoBreak;<a href="#fn15">15</a></sup>
+      symbol.<a href="#fn15"><sup>15</sup></a>
     </section>
   </section>
 
@@ -1097,8 +1101,8 @@
   <div id="fn15">
     <p>15. This article originally used the Western Cree final ᑊ <i>p</i> as a
       naming mark, but after seeing <a href="#katelin">jan Katelin’s</a> use of
-      the Inuktitut symbol ᕐ◌ <i>uvularization</i><sup>&NoBreak;<a href="#fn14"
-      >14</a></sup> (and letting the thought sink in) this was changed. Reasons
+      the Inuktitut symbol ᕐ◌ <i>uvularization</i><sup><a href="#fn14">14</a
+      ></sup> (and letting the thought sink in) this was changed. Reasons
       include:
 
     <ul>

@@ -11,6 +11,8 @@
 * Toki Pona syllabics
 ** TODO Font: Fix so that IPA symbols look prettier
 ** TODO Use .woff(2?) instead of .tty fonts
+** TODO Add section on sort order
+** TODO Add section on how to write by hand
 * jan Pije
 ** TODO Is word 'muddler' correct?
 ** TODO Is 'adjective: animal nois-' correct?
@@ -28,6 +30,12 @@
    completely) transparent after a while (on mobile only?; when user has
    scrolled down) so that text underneath it can still be read?)
 * Dictionary
+** TODO Sort in Inuktitut(?) order when displaying syllabics
+   In Javascript, probably use the following to sort in Inuktitut order:
+   ----------------------------------------
+   list.sort((a,b) => a.localeCompare(b, 'iu_CA'))
+   ----------------------------------------
+   [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare]
 ** TODO Add links to jan Pije’s grammar for special words
 ** TODO Add non-pu words
 ** TODO Resolve dictionary TODOs
@@ -182,4 +190,8 @@
    CAPITALIZED it will not get a naming mark, but if it is Boaty McBoatface it
    will. All words capitalized thusly get a naming mark (even if there are more
    than one after each other).
+** DONE On mobile: Same font size in tables as main text
+   CLOSED: [2021-03-31 Wed 00:54]
+** DONE On mobile: Narrower page margins on mobile
+   CLOSED: [2021-03-31 Wed 00:54]
 * [eof]

@@ -83,19 +83,6 @@
     .gray {
       color: #ccc;
     }
-    .hanging div p:first-child {
-      margin-top: 0;
-      text-indent: -2rem;
-    }
-    .hanging p[id] {
-      text-indent: -2rem;
-    }
-    .hanging p {
-      padding-left: 2rem;
-    }
-    .hanging ul {
-      margin-left: 1rem;
-    }
     p {
       margin-top: 1rem;
     }
@@ -930,119 +917,133 @@
     </section>
   </section>
 
-<section id=footnotes class=hanging>
+<section id=footnotes>
   <h1>Footnotes</h1>
 
-  <p id="fn1">1. Of
-  course, <a href="https://en.wikipedia.org/wiki/Canadian_Aboriginal_syllabics">Canadian
-  Aboriginal syllabics</a> is under fierce competition for the title of
-  “coolest writing system” from other nifty scripts such
-  as <a href="https://en.wikipedia.org/wiki/Hangul">Hangul</a>
-  and <a href="https://en.wikipedia.org/wiki/ASLwrite">ASLwrite</a>.
+  <style>
+    ul.hanging {
+        padding: 0;
+        list-style: none;
+    }
+    ul.hanging > li {
+        text-indent: -2em;
+        padding-left: 2em;
+    }
+    ul.hanging > li > p {
+        text-indent: 2em;
+        margin: 0;
+    }
+    ul.hanging ul {
+        text-indent: 0;
+    }
+  </style>
+  <ul class="hanging">
+    <li id="fn1">1. Of course, <a
+      href="https://en.wikipedia.org/wiki/Canadian_Aboriginal_syllabics"
+      >Canadian Aboriginal syllabics</a> is under fierce competition for the
+      title of “coolest writing system” from other nifty scripts such
+      as <a href="https://en.wikipedia.org/wiki/Hangul">Hangul</a>
+      and <a href="https://en.wikipedia.org/wiki/ASLwrite">ASLwrite</a>.
 
-  <div id="fn2">
-    <p>2. Here the Inuktitut v-series (which used for both <i>f</i>
-    and <i>v</i> in Cree and Ojibwe) is used to write the <i>w</i> of Toki Pona
-    (ᕕ <i>wi,</i> ᕓ <i>we,</i> ᕙ <i>wa,</i> ᕗ <i>wo</i>).—One could argue that
-    it is inaccurate to write Toki Pona’s <i>w</i> sound with a syllabics
-    character representing <i>v</i> (or <i>f</i>&#8239;) when several of the
-    syllabics’ languages actually do have a <i>w</i> sound, and a way of
-    writing it. In practice however, I’ve found that it is easier to read a
-    text which is less cluttered by dots. (In Ojibwe and Eastern Cree <i>w</i>
-    is written by adding a dot in front of the syllabic character: ᐎ <i>wi,</i>
-    ᐌ <i>we,</i> ᐗ <i>wa,</i> ᐒ <i>wo.</i> Western Cree instead write <i>w</i>
-    as a dot after the syllabic character: ᐏ <i>wi,</i> ᐍ <i>we,</i>
-    ᐘ <i>wa,</i> ᐓ <i>wo</i>.)
+    <li id="fn2">2. Here the Inuktitut v-series (which used for both <i>f</i>
+      and <i>v</i> in Cree and Ojibwe) is used to write the <i>w</i> of Toki
+      Pona (ᕕ <i>wi,</i> ᕓ <i>we,</i> ᕙ <i>wa,</i> ᕗ <i>wo</i>).—One could
+      argue that it is inaccurate to write Toki Pona’s <i>w</i> sound with a
+      syllabics character representing <i>v</i> (or <i>f</i>&#8239;) when
+      several of the syllabics’ languages actually do have a <i>w</i> sound,
+      and a way of writing it. In practice however, I’ve found that it is
+      easier to read a text which is less cluttered by dots. (In Ojibwe and
+      Eastern Cree <i>w</i> is written by adding a dot in front of the syllabic
+      character: ᐎ <i>wi,</i> ᐌ <i>we,</i> ᐗ <i>wa,</i> ᐒ <i>wo.</i> Western
+      Cree instead write <i>w</i> as a dot after the syllabic character:
+      ᐏ <i>wi,</i> ᐍ <i>we,</i> ᐘ <i>wa,</i> ᐓ <i>wo</i>.)
 
-    <p>This article originally advocated writing <i>w</i> in the Eastern Cree
-    way, with a leading dot (ᐧ◌). This was mostly to be consistent with the
-    fact that this style happened to use mostly Eastern Cree conventions for
-    other things (like the l-series, ᓕ <i>li,</i> ᓓ <i>le,</i> ᓚ <i>la,</i>
-    ᓗ <i>lo</i>, and a raised ᓇ <i>na</i> as syllable-final ◌ᓐ <i>n</i>).
-    However, experience has since taught me that readability is a more
-    important aspect than a hundred percent faithfulness to any one source.
-  </div>
+      <p>This article originally advocated writing <i>w</i> in the Eastern Cree
+      way, with a leading dot (ᐧ◌). This was mostly to be consistent with the
+      fact that this style happened to use mostly Eastern Cree conventions for
+      other things (like the l-series, ᓕ <i>li,</i> ᓓ <i>le,</i> ᓚ <i>la,</i>
+      ᓗ <i>lo</i>, and a raised ᓇ <i>na</i> as syllable-final ◌ᓐ <i>n</i>).
+      However, experience has since taught me that readability is a more
+      important aspect than a hundred percent faithfulness to any one source.
 
-  <p id="fn3" class="noblank">3. Since the letter <i>j</i> in Toki Pona is
-  pronounced like <i>y</i> in English, I have chosen to use the Canadian
-  syllabics y-series of characters (ᔨ <i>yi,</i> ᔦ <i>ye,</i> ᔭ <i>ya,</i>
-  ᔪ <i>yo</i>) for <i>j.</i> (But in keeping with Toki Pona spelling I refer to
-  them as <i>ji, je, ja</i> and <i>jo</i> elsewhere in this text.)
+    <li id="fn3">3. Since the letter <i>j</i> in Toki Pona is pronounced
+      like <i>y</i> in English, I have chosen to use the Canadian syllabics
+      y-series of characters (ᔨ <i>yi,</i> ᔦ <i>ye,</i> ᔭ <i>ya,</i>
+      ᔪ <i>yo</i>) for <i>j.</i> (But in keeping with Toki Pona spelling I
+      refer to them as <i>ji, je, ja</i> and <i>jo</i> elsewhere in this text.)
 
-  <p id="fn4">4. I opted to use the l-series from Eastern Cree (also used by
-  Inuktitut), simply because that set of glyphs respects the symmetry of the
-  syllabics, while glyphs of the l-series in Western Cree syllabics do not
-  follow the expected pattern of rotations. The table below show a comparison
-  between Eastern and Western l-series. (Yes! The Western l-series below is
-  pointing in all the wrong directions, but I assure you: That is not a mistake
-  on my part!)
+    <li id="fn4">4. I opted to use the l-series from Eastern Cree (also used by
+      Inuktitut), simply because that set of glyphs respects the symmetry of
+      the syllabics, while glyphs of the l-series in Western Cree syllabics do
+      not follow the expected pattern of rotations. The table below show a
+      comparison between Eastern and Western l-series. (Yes! The Western
+      l-series below is pointing in all the wrong directions, but I assure you:
+      That is not a mistake on my part!)
 
-  <figure class="fig inline">
-    <div>
-      <table>
-        <thead><tr><th colspan=5>Eastern Cree</thead>
-        <tr><th>li<td>ᓕ<td><td>ᓓ<th>le</tr>
-        <tr class="xtra-bp"><th>la<td>ᓚ<td><td>ᓗ<th>lo</tr>
-      </table>
-    </div><div>
-      <table>
-        <thead><tr><th colspan=5>Western Cree</thead>
-        <tr><th>li<td>ᕆ<td><td>ᕃ<th>le</tr>
-        <tr class="xtra-bp"><th>la<td>ᕍ<td><td>ᕊ<th>lo</tr>
-      </table>
-    </div>
-  </figure>
+      <figure class="fig inline">
+        <div>
+          <table>
+            <thead><tr><th colspan=5>Eastern Cree</thead>
+            <tr><th>li<td>ᓕ<td><td>ᓓ<th>le</tr>
+            <tr class="xtra-bp"><th>la<td>ᓚ<td><td>ᓗ<th>lo</tr>
+          </table>
+        </div><div>
+          <table>
+            <thead><tr><th colspan=5>Western Cree</thead>
+            <tr><th>li<td>ᕆ<td><td>ᕃ<th>le</tr>
+            <tr class="xtra-bp"><th>la<td>ᕍ<td><td>ᕊ<th>lo</tr>
+          </table>
+        </div>
+      </figure>
 
-  <p id="fn5">5. The languages written in Canadian syllabics use various
-  different glyphs for non-syllabic <i>n.</i> For simplicity’s sake I’m here
-  using the character ◌ᓐ (raised ᓇ <i>na,</i> used by Inuktitut, Eastern Cree,
-  most of Ojibwe). Other possible choices include: ◌ᐣ (final <i>n</i> in
-  Western Cree) or ◌ᣙ (raised ᓂ <i>ni,</i> a less common variant used in
-  Ojibwe).
 
-  <div id="fn6">
-    <p>6. In Canadian syllabics an <i>overdot</i> (◌̇) is used to mark long
-    vowels, but Toki Pona does not make a distinction between long and short
-    vowels. However, Canadian syllabics only have four possible rotations with
-    which to indicate vowel, and Toki Pona has <i>five</i> vowels, so in this
-    system the overdot is used to convert an <i>o</i> into an <i>u,</i> instead
-    of its traditional vowel-lengthening role.
+    <li id="fn5">5. The languages written in Canadian syllabics use various
+      different glyphs for non-syllabic <i>n.</i> For simplicity’s sake I’m
+      here using the character ◌ᓐ (raised ᓇ <i>na,</i> used by Inuktitut,
+      Eastern Cree, most of Ojibwe). Other possible choices include: ◌ᐣ
+      (final <i>n</i> in Western Cree) or ◌ᣙ (raised ᓂ <i>ni,</i> a less common
+      variant used in Ojibwe).
 
-    <p>The o-series of characters—which is used here for both <i>o</i> (without
-    overdot) and <i>u</i> (with overdot)—is used for <i>o</i> in most of the
-    Canadian syllabics languages, but is used for <i>u</i> in Inuktitut. I’ve
-    chosen to mark <i>u</i> with an overdot (rather than <i>o</i>)
-    since <i>u</i> is the least common vowel in Toki Pona, and I want to
-    minimize the amount of diacritics occurring in text.
-  </div>
+    <li id="fn6">6. In Canadian syllabics an <i>overdot</i> (◌̇) is used to mark
+      long vowels, but Toki Pona does not make a distinction between long and
+      short vowels. However, Canadian syllabics only have four possible
+      rotations with which to indicate vowel, and Toki Pona has <i>five</i>
+      vowels, so in this system the overdot is used to convert an <i>o</i> into
+      an <i>u,</i> instead of its traditional vowel-lengthening role.
 
-  <p id="fn7" class="noblank">7. The idea of a <i>naming mark</i> does not come
-    from Canadian Aboriginal syllabics, but is borrowed from
-    the <a href="https://en.wikipedia.org/wiki/Shavian_alphabet">Shavian
-    alphabet</a> (which, just like syllabics, does not distinguish between
-    upper and lower case). In Shavian this symbol is called a <i>naming dot</i>
-    and is written as a raised dot (ᐧ◌) in front of a name. (The same raised
-    dot is used in syllabics to indicate that a <i>w</i> should be added to a
-    syllable.)
+      <p>The o-series of characters—which is used here for both <i>o</i>
+      (without overdot) and <i>u</i> (with <nobr>overdot)—</nobr>is used
+      for <i>o</i> in most of the Canadian syllabics languages, but is used
+      for <i>u</i> in Inuktitut. I’ve chosen to mark <i>u</i> with an overdot
+      (rather than <i>o</i>) since <i>u</i> is the least common vowel in Toki
+      Pona, and I want to minimize the amount of diacritics occurring in text.
 
-  <p id="fn8">8. For the curious, the blog post “<a
-    href="http://abecedaria.blogspot.com/2005/11/to-point-or-not-to-point.html"
-    >Abecedaria: To Point or Not to Point</a>” by Suzanne McCarthy goes into
-    the subject of pointing in greater detail.
+    <li id="fn7">7. The idea of a <i>naming mark</i> does not come from
+      Canadian Aboriginal syllabics, but is borrowed from
+      the <a href="https://en.wikipedia.org/wiki/Shavian_alphabet">Shavian
+      alphabet</a> (which, just like syllabics, does not distinguish between
+      upper and lower case). In Shavian this symbol is called a <i>naming
+      dot</i> and is written as a raised dot (ᐧ◌) in front of a name. (The same
+      raised dot is used in syllabics to indicate that a <i>w</i> should be
+      added to a syllable.)
 
-  <p id="fn9">9. The word “pu” is defined by the “Official Toki Pona
-    Dictionary” (found in the book <i>Toki Pona: The Language of Good,</i>
-    2014, Sonja Lang, pages <nobr>125–134</nobr>). It means
-    “<small>ADJECTIVE</small> interacting with the official Toki Pona book”.
+    <li id="fn8">8. For the curious, the blog post “<a
+      href="http://abecedaria.blogspot.com/2005/11/to-point-or-not-to-point.html"
+      >Abecedaria: To Point or Not to Point</a>” by Suzanne McCarthy goes into
+      the subject of pointing in greater detail.
 
-  <div id="fn10">
-    <p>10. This is only true of <i>o</i> and <i>u</i> (which are the two vowels
-      that occur in the fewest number of words in the language). Replacing any
-      other vowel with another result in ambiguities. (The worst case, with the
-      most common vowels, <i>a</i> and <i>i,</i> there are six overlapping
-      words.)
+    <li id="fn9">9. The word “pu” is defined by the “Official Toki Pona
+      Dictionary” (found in the book <i>Toki Pona: The Language of Good,</i>
+      2014, Sonja Lang, pages <nobr>125–134</nobr>). It means
+      “<small>ADJECTIVE</small> interacting with the official Toki Pona book”.
 
-    <p>There are 23 words containing <i>u</i> in the official dictionary:
+    <li id="fn10">10. This is only true of <i>o</i> and <i>u</i> (which are the
+      two vowels that occur in the fewest number of words in the language).
+      Replacing any other vowel with another result in ambiguities. (The worst
+      case, with the most common vowels, <i>a</i> and <i>i,</i> there are six
+      overlapping words.)
+
+      <p>There are 23 words containing <i>u</i> in the official dictionary:
       ᐊᓅ <i>anu,</i> ᐁᓲᓐ <i>esun,</i> ᑰᓓ <i>kule,</i> ᑰᓘᐴ <i>kulupu,</i>
       ᑰᑌ <i>kute,</i> ᓕᐴ <i>lipu,</i> ᓘᑲ <i>luka,</i> ᓘᑭᓐ <i>lukin,</i>
       ᓘᐸ <i>lupa,</i> ᒧᑰ <i>moku,</i> ᒨ <i>mu,</i> ᒨᓐ <i>mun,</i>
@@ -1050,7 +1051,7 @@
       ᓲᓄ <i>suno,</i> ᓲᐸ <i>supa,</i> ᓲᕕ <i>suwi,</i> ᑑ <i>tu,</i>
       ᐆᓐᐸ <i>unpa,</i> ᐆᑕ <i>uta,</i> and ᐆᑕᓚ <i>utala.</i>
 
-    <p>And 34 words containing <i>o:</i> ᐃᔪ <i>ijo,</i> ᐃᓗ <i>ilo,</i>
+      <p>And 34 words containing <i>o:</i> ᐃᔪ <i>ijo,</i> ᐃᓗ <i>ilo,</i>
       ᔦᓗ <i>jelo,</i> ᔪ <i>jo,</i> ᑯ <i>ko,</i> ᑯᓐ <i>kon,</i> ᓚᓱ <i>laso,</i>
       ᓗᔦ <i>loje,</i> ᓗᓐ <i>lon,</i> ᒧᑰ <i>moku,</i> ᒧᓕ <i>moli,</i>
       ᒧᓐᓯ <i>monsi,</i> ᓇᒪᑯ <i>namako,</i> ᓄᑲ <i>noka,</i> ᐅ <i>o,</i>
@@ -1059,68 +1060,68 @@
       ᓯᔦᓗ <i>sijelo,</i> ᓱᓇ <i>sona,</i> ᓱᕓᓕ <i>soweli,</i> ᓲᓄ <i>suno,</i>
       ᑕᓱ <i>taso,</i> ᑌᓗ <i>telo,</i> ᑌᓐᐳ <i>tenpo,</i> ᑐᑭ <i>toki,</i>
       ᑐᒧ <i>tomo,</i> ᕙᓗ <i>walo,</i> and ᕙᓱ <i>waso.</i>
-  </div>
 
-  <p id="fn11" class="noblank">11. According to jan Inwin’s Toki Pona
-    dictionary, <a 
-    href="https://docs.google.com/spreadsheets/d/1t-pjAgZDyKPXcCRnEdATFQOxGbQFMjZm-8EvXiQd2Po"
-    ><i>Nimi Ale Pona</i> 2nd ed</a> (accessed 27 March 2021).
+    <li id="fn11" class="noblank">11. According to jan Inwin’s Toki Pona
+      dictionary, <a
+      href="https://docs.google.com/spreadsheets/d/1t-pjAgZDyKPXcCRnEdATFQOxGbQFMjZm-8EvXiQd2Po"
+      ><i>Nimi Ale Pona</i> 2nd ed</a> (accessed 27 March 2021).
 
-  <p id="fn12">12. The “Western Oblate style” of syllabics is described in
-  John Stewart Murdoch’s thesis from 1981, <i><a
-  href="https://mspace.lib.umanitoba.ca/xmlui/handle/1993/9207">Syllabics:
-  A Successful Educational Innovation</a>.</i> (See pages 308, 311, and table 7
-  on page 391.)
+    <li id="fn12">12. The “Western Oblate style” of syllabics is described in
+      John Stewart Murdoch’s thesis from 1981, <i><a
+      href="https://mspace.lib.umanitoba.ca/xmlui/handle/1993/9207">Syllabics:
+      A Successful Educational Innovation</a>.</i> (See pages 308, 311, and
+      table 7 on page 391.)
 
-  <p id="fn13">13. The difference between King’s style and the Western Oblate
-  style might be easier to see using tables.
+    <li id="fn13">13. The difference between King’s style and the Western
+      Oblate style might be easier to see using tables.
 
-  <figure class="fig inline">
-    <div>
-      <table>
-        <thead><tr><th colspan=5>King’s style</thead>
-        <tr><th>li<td>ᕄ<td><td>ᕂ<th>le</tr>
-        <tr class="xtra-bp"><th>la<td>ᕋ<td><td>ᕊ<th>lo</tr>
-      </table>
-    </div><div>
-      <table>
-        <thead><tr><th colspan=5>Western Oblate</thead>
-        <tr><th>li<td>ᕆ<td><td>ᕃ<th>le</tr>
-        <tr class="xtra-bp"><th>la<td>ᕍ<td><td>ᕊ<th>lo</tr>
-      </table>
-    </div>
-  </figure>
+      <figure class="fig inline">
+        <div>
+          <table>
+            <thead><tr><th colspan=5>King’s style</thead>
+            <tr><th>li<td>ᕄ<td><td>ᕂ<th>le</tr>
+            <tr class="xtra-bp"><th>la<td>ᕋ<td><td>ᕊ<th>lo</tr>
+          </table>
+        </div><div>
+          <table>
+            <thead><tr><th colspan=5>Western Oblate</thead>
+            <tr><th>li<td>ᕆ<td><td>ᕃ<th>le</tr>
+            <tr class="xtra-bp"><th>la<td>ᕍ<td><td>ᕊ<th>lo</tr>
+          </table>
+        </div>
+      </figure>
 
-  <p id="fn14">14. In Inuktitut, ᕐ◌ <i>uvularization</i> can be put in front of
-    a k-series character (ᑭ <i>ki,</i> ᑫ <i>kai,</i> ᑲ <i>ka,</i> ᑯ <i>ku</i>)
-    to indicate that the <i>k</i> sound is pronounced a further back than usual
-    (with an uvular <i>q,</i> rather than the usual velar <i>k</i>):
-    ᕿ <i>qi,</i> ᙯ <i>qai,</i> ᖃ <i>qa,</i> ᖁ <i>qu.</i>—The same character can
-    also be written <i>after</i> a syllabic character (◌ᕐ) but then it
-    indicates an <i>r</i> sound (◌ᕐ is a raised Inuktitut ᕋ <i>ra</i>).
+    <li id="fn14">14. In Inuktitut, ᕐ◌ <i>uvularization</i> can be put in front
+      of a k-series character (ᑭ <i>ki,</i> ᑫ <i>kai,</i> ᑲ <i>ka,</i>
+      ᑯ <i>ku</i>) to indicate that the <i>k</i> sound is pronounced a further
+      back than usual (with an uvular <i>q,</i> rather than the usual
+      velar <i>k</i>): ᕿ <i>qi,</i> ᙯ <i>qai,</i> ᖃ <i>qa,</i> ᖁ <i>qu.</i>—The
+      same character can also be written <i>after</i> a syllabic character (◌ᕐ)
+      but then it indicates an <i>r</i> sound (◌ᕐ is a raised Inuktitut
+      ᕋ <i>ra</i>).
 
-  <div id="fn15">
-    <p>15. This article originally used the Western Cree final ᑊ <i>p</i> as a
-      naming mark, but after seeing <a href="#katelin">jan Katelin’s</a> use of
-      the Inuktitut symbol ᕐ◌ <i>uvularization</i><sup><a href="#fn14">14</a
-      ></sup> (and letting the thought sink in) this was changed. Reasons
-      include:
+    <li id="fn15">15. This article originally used the Western Cree final
+      ᑊ <i>p</i> as a naming mark, but after seeing <a href="#katelin">jan
+      Katelin’s</a> use of the Inuktitut symbol
+      ᕐ◌ <i>uvularization</i><sup><a href="#fn14">14</a ></sup> (and letting
+      the thought sink in) this was changed. Reasons include:
 
-    <ul>
-      <li>The Inuktitut ᕐ◌ <i>uvularization</i> character is used at the
-        beginning of words, but I have not been able to confirm whether or not
-        ᑊ <i>p</i> can do that in Western Cree. (Finding information about Cree
-        syllable structure is surprisingly hard!)
-      <li>The Toki Pona syllabics described in this article mostly borrows the
-        conventions of Eastern Cree and later styles of syllabics. The
-        character ᑊ <i>p</i> (not being a raised syllabic symbol) is in an
-        earlier, Western Cree, style, while ᕐ◌ <i>uvularization</i> (being the
-        raised Inuktitut syllabic ᕋ <i>ra</i>) is in a more Eastern tradition.
-      <li>The fact that jan Katelin’s syllabics already use this symbol makes
-        it easier for syllabics aficionados to switch between this style and
-        jan Katelin’s.
-    </ul>
-  </div>
+      <ul>
+        <li>The Inuktitut ᕐ◌ <i>uvularization</i> character is used at the
+          beginning of words, but I have not been able to confirm whether or
+          not ᑊ <i>p</i> can do that in Western Cree. (Finding information
+          about Cree syllable structure is surprisingly hard!)
+        <li>The Toki Pona syllabics described in this article mostly borrows
+          the conventions of Eastern Cree and later styles of syllabics. The
+          character ᑊ <i>p</i> (not being a raised syllabic symbol) is in an
+          earlier, Western Cree, style, while ᕐ◌ <i>uvularization</i> (being
+          the raised Inuktitut syllabic ᕋ <i>ra</i>) is in a more Eastern
+          tradition.
+        <li>The fact that jan Katelin’s syllabics already use this symbol makes
+          it easier for syllabics aficionados to switch between this style and
+          jan Katelin’s.
+      </ul>
+  </ul>
 </section>
 <footer style="border-top:3px solid #000;text-align:center;margin:1rem">
   <p>Copyright 2021 <a href="http://zrajm.org">zrajm</a> (Uppsala, Sweden)

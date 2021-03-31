@@ -153,7 +153,7 @@
         /* Each syllabics mini-table are centered inside <div> of specific width.
            This way they line up nicely when the line of tables is broken over lines. */
         display: inline-table;
-        margin-top: 1.5em;
+        margin-top: 1em;
         width: 8.25em; /* --fig-div-width: slightly larger than widest table */
     }
     .fig.inline > div { margin-top: 1em; }
@@ -182,8 +182,10 @@
     }
     .fig tbody td {
         padding: 0 .125em;
-        width: 1.25em;  /* width of broadest syllabics character */
         font-size: 25px;
+    }
+    .fig div.ordinal tbody td {
+        width: 1.25em;  /* width of broadest syllabics character */
     }
     .fig .xtra-bp td { padding-bottom: .25em; }
     .fig tbody td:first-of-type { border-left-width: 2px; }
@@ -244,66 +246,109 @@
   the writing with my <a href="https://app.memrise.com/course/5956950/"><i>Toki
   Pona Syllabics</i> course</a> on Memrise!
 
+  <style>
+    .cardinal table {
+        transform: rotate(45deg);
+        border-collapse: collapse;
+        margin: 1em auto .5em;
+    }
+    .cardinal table a[href^="#fn"] > u { display: inline; }
+    .cardinal table a[href^="#fn"] {
+        top: -3em;
+        left: -.5em;
+        margin: .75rem;
+    }
+    .cardinal td, .cardinal th {
+        text-align: center;
+        vertical-align: center;
+        max-height: 30px;
+        border: 0 solid #ccc;
+        font-weight: inherit;
+        line-height: 30px;
+    }
+    .cardinal u {
+        line-height: 1;
+        height: 1.5em;
+        width: 1.5em;
+        display: block;
+        vertical-align: middle;
+        text-decoration: none;
+    }
+    .cardinal th {
+        transform: rotate(-45deg);
+    }
+    .cardinal td u {
+        margin: -.125em;
+        margin: -5px;
+        font-size: 25px;
+        transform: rotate(-45deg) translateY(.25em);
+    }
+    .cardinal tbody td:first-of-type { border-left-width: 2px; }
+    .cardinal tbody td:last-of-type { border-right-width: 2px; }
+    .cardinal tbody tr:first-of-type td { border-top-width: 2px; }
+    .cardinal tbody tr:last-of-type td { border-bottom-width: 2px; }
+  </style>
+
   <figure class="fig">
-    <div>
+    <div class="cardinal">
       <table>
-        <tr><th>e<td>ᐁ<td>ᐃ<th>i</tr>
-        <tr><th>o<td>ᐅ<td>ᐊ<th>a</tr>
-        <tr><th>u<td>ᐆ<td><th></tr>
+        <tr><th><u>e</u><td><u>ᐁ</u><td><u>ᐊ</u><th><u>a</u></tr>
+        <tr><th><u>o</u><td><u>ᐅ</u><td><u>ᐃ</u><th><u>i</u></tr>
+        <tr><th><u>u</u><td><u>ᐆ</u><td><th></tr>
       </table>
-    </div><div>
+    </div><div class="cardinal">
       <table>
-        <tr><th>pe<td>ᐯ<td>ᐱ<th>pi</tr>
-        <tr><th>po<td>ᐳ<td>ᐸ<th>pa</tr>
-        <tr><th>pu<td>ᐴ<td><th></tr>
+        <tr><th><u>pe</u><td><u>ᐯ</u><td><u>ᐸ</u><th><u>pa</u></tr>
+        <tr><th><u>po</u><td><u>ᐳ</u><td><u>ᐱ</u><th><u>pi</u></tr>
+        <tr><th><u>pu</u><td><u>ᐴ</u><td><th></tr>
       </table>
-    </div><div>
+    </div><div class="cardinal">
       <table>
-        <tr><th>te<td>ᑌ<td class="gray">ᑎ<th class="gray">ti</tr>
-        <tr><th>to<td>ᑐ<td>ᑕ<th>ta</tr>
-        <tr><th>tu<td>ᑑ<td><th></tr>
+        <tr><th><u>te</u><td><u>ᑌ</u><td><u>ᑕ</u><th><u>ta</u></tr>
+        <tr><th><u>to</u><td><u>ᑐ</u><td class="gray"><u>ᑎ</u><th class="gray"><u>ti</u></tr>
+        <tr><th><u>tu</u><td><u>ᑑ</u><td><th></tr>
       </table>
-    </div><div>
+    </div><div class="ordinal">
       <table>
         <tr><th>ke<td>ᑫ<td>ᑭ<th>ki</tr>
         <tr><th>ko<td>ᑯ<td>ᑲ<th>ka</tr>
         <tr><th>ku<td>ᑰ<td><th></tr>
       </table>
-    </div><div>
+    </div><div class="ordinal">
       <table>
         <tr><th>me<td>ᒣ<td>ᒥ<th>mi</tr>
         <tr><th>mo<td>ᒧ<td>ᒪ<th>ma</tr>
         <tr><th>mu<td>ᒨ<td><th></tr>
       </table>
-    </div><div>
+    </div><div class="ordinal">
       <table>
         <tr><th>ne<td>ᓀ<td>ᓂ<th>ni</tr>
         <tr><th>no<td>ᓄ<td>ᓇ<th>na</tr>
         <tr><th>nu<td>ᓅ<td><th></tr>
       </table>
-    </div><div>
+    </div><div class="ordinal">
       <table>
         <tr><th>le<td>ᓓ<td>ᓕ<th><a href="#fn2">2</a>li</tr>
         <tr><th>lo<td>ᓗ<td>ᓚ<th>la</tr>
         <tr><th>lu<td>ᓘ<td><th></tr>
       </table>
-    </div><div>
+    </div><div class="ordinal">
       <table>
         <tr><th>se<td>ᓭ<td>ᓯ<th>si</tr>
         <tr><th>so<td>ᓱ<td>ᓴ<th>sa</tr>
         <tr><th>su<td>ᓲ<td><th></tr>
       </table>
-    </div><div>
+    </div><div class="ordinal">
       <table>
         <tr><th>je<td>ᔦ<td class="gray">ᔨ<th class="gray"><a href="#fn3">3</a>ji</tr>
         <tr><th>jo<td>ᔪ<td>ᔭ<th>ja</tr>
         <tr><th>ju<td>ᔫ<td><th></tr>
       </table>
-    </div><div>
+    </div><div class="cardinal">
       <table>
-        <tr><th>we<td>ᕓ<td>ᕕ<th><a href="#fn4">4</a>wi</tr>
-        <tr><th class="gray">wo<td class="gray">ᕗ<td>ᕙ<th>wa</tr>
-        <tr><th class="gray">wu<td class="gray">ᕘ<td><th></tr>
+        <tr><th><u>we</u><td><u>ᕓ</u><td><u>ᕙ</u><th><a href="#fn4"><u>4</u></a><u>wa</u></tr>
+        <tr><th class="gray"><u>wo</u><td class="gray"><u>ᕗ</u><td><u>ᕕ</u><th><u>wi</u></tr>
+        <tr><th class="gray"><u>wu</u><td class="gray"><u>ᕘ</u><td><th></tr>
       </table>
     </div>
     <figcaption>

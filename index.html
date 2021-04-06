@@ -141,57 +141,6 @@
         box-shadow: 0 0 2em #fb4b inset, 0 0 4em #fb4b inset;
         border-radius: .125em;
     }
-    /* Syllabics figures. */
-    .fig {
-        margin: 0 auto 1em;
-        text-align: center;
-        max-width: 42.5em; /* calc(--fig-div-width * 5) */
-    }
-    .fig.inline { margin-bottom: 1em; }
-    .fig figcaption { margin: .5em 0; }
-    .fig > div {
-        /* Each syllabics mini-table are centered inside <div> of specific width.
-           This way they line up nicely when the line of tables is broken over lines. */
-        display: inline-table;
-        margin-top: 1em;
-        width: 8.25em; /* --fig-div-width: slightly larger than widest table */
-    }
-    .fig.inline > div { margin-top: 1em; }
-    .fig table a[href^="#fn"] {
-        position: absolute;
-        top: -1.25em;
-        left: -.125em;
-        line-height: 1.25;
-    }
-    .fig table {
-        margin: auto;
-        border-spacing: 0;
-        line-height: 1.25;
-    }
-    .fig thead th { padding-bottom: .5em; }
-    .fig tbody td,
-    .fig tbody th {
-        padding: 0 .25em;
-        text-align: center;
-        vertical-align: baseline;
-        border: 0 solid #bbb;
-    }
-    .fig th {
-        font-weight: inherit;
-        position: relative;
-    }
-    .fig tbody td {
-        padding: 0 .125em;
-        font-size: 25px;
-    }
-    .fig div.ordinal tbody td {
-        width: 1.25em;  /* width of broadest syllabics character */
-    }
-    .fig .xtra-bp td { padding-bottom: .25em; }
-    .fig tbody td:first-of-type { border-left-width: 2px; }
-    .fig tbody td:last-of-type { border-right-width: 2px; }
-    .fig tbody tr:first-of-type td { border-top-width: 2px; }
-    .fig tbody tr:last-of-type td { border-bottom-width: 2px; }
     /* Glossary table. */
     .glossary {
         border-collapse: collapse;
@@ -247,110 +196,113 @@
   Pona Syllabics</i> course</a> on Memrise!
 
   <style>
-    .cardinal table {
-        transform: rotate(45deg);
-        border-collapse: collapse;
-        margin: 1.25em auto .75em;
-    }
-    .cardinal table a[href^="#fn"] > u { display: inline; }
-    .cardinal table a[href^="#fn"] {
-        top: -3em;
-        left: -.5em;
-        margin: .75rem;
-    }
-    .cardinal td, .cardinal th {
+    .syllabics.inline { margin: 1rem auto -.5rem; }
+    .syllabics {
         text-align: center;
-        vertical-align: center;
-        max-height: 30px;
-        border: 0 solid #bbb;
+        max-width: 44rem; /* width of 5 mini-tables */
+        margin: 1.5rem auto;
+    }
+    .syllabics figcaption { margin: -.5rem; }
+    .syllabics table {
+        display: inline-table;
+        border-collapse: collapse;
+        margin: 0 .25rem 1.5rem;
+    }
+    .syllabics table.cardinal {
+        transform-origin: 4rem 2rem;         /* (2*grid) (grid) */
+        transform: translate(.75em, .75em) rotate(45deg);
+    }
+    .syllabics td, .syllabics th {
+        height: 2rem; width: 2rem;           /* (grid) */
+    }
+    .syllabics td {                          /* syllabics characters */
+        font-size: 25px;
+        text-align: center;
+        border: 2px solid #bbb;
+    }
+    /* Remove borders on <td> that are adjacent to other <td>s. */
+    .syllabics td + td { border-left: hidden; }
+    .syllabics tr + tr td { border-top: hidden; }
+    .syllabics th {                          /* Latin characters */
         font-weight: inherit;
-        line-height: 30px;
+        position: relative; /*HERE*/
     }
-    .cardinal u {
-        line-height: 1;
-        height: 1.5em;
-        width: 1.5em;
-        display: block;
-        vertical-align: middle;
+    .syllabics th:first-child {              /* Latin characters, left side */
+        padding-right: .25rem;
+        text-align: right;
+    }
+    .syllabics th:last-child {               /* Latin characters, right side */
+        padding-left: .25rem;
+        text-align: left;
+    }
+    .syllabics table u {
+        display: inline-block;
         text-decoration: none;
+        transform: rotate(-45deg);
+        min-width: 1.5ex;                    /* for 'i' in 1st table to look okay */
+        text-align: center;
     }
-    .cardinal th {
+    .syllabics table a {
+        position: absolute;
+        line-height: 1.25;
+        top: -1.125rem; left: .125rem;
+    }
+    .syllabics .cardinal a {
+        transform-origin: left bottom;
         transform: rotate(-45deg);
     }
-    .cardinal td u {
-        margin: -.125em;
-        margin: -5px;
-        font-size: 25px;
-        transform: rotate(-45deg) translateY(.25em);
-    }
-    .cardinal tbody td:first-of-type { border-left-width: 2px; }
-    .cardinal tbody td:last-of-type { border-right-width: 2px; }
-    .cardinal tbody tr:first-of-type td { border-top-width: 2px; }
-    .cardinal tbody tr:last-of-type td { border-bottom-width: 2px; }
   </style>
-
-  <figure class="fig">
-    <div class="cardinal">
-      <table>
-        <tr><th><u>e</u><td><u>ᐁ</u><td><u>ᐊ</u><th><u>a</u></tr>
-        <tr><th><u>o</u><td><u>ᐅ</u><td><u>ᐃ</u><th><u>i</u></tr>
-        <tr><th><u>u</u><td><u>ᐆ</u><td><th></tr>
-      </table>
-    </div><div class="cardinal">
-      <table>
-        <tr><th><u>pe</u><td><u>ᐯ</u><td><u>ᐸ</u><th><u>pa</u></tr>
-        <tr><th><u>po</u><td><u>ᐳ</u><td><u>ᐱ</u><th><u>pi</u></tr>
-        <tr><th><u>pu</u><td><u>ᐴ</u><td><th></tr>
-      </table>
-    </div><div class="cardinal">
-      <table>
-        <tr><th><u>te</u><td><u>ᑌ</u><td><u>ᑕ</u><th><u>ta</u></tr>
-        <tr><th><u>to</u><td><u>ᑐ</u><td class="gray"><u>ᑎ</u><th class="gray"><u>ti</u></tr>
-        <tr><th><u>tu</u><td><u>ᑑ</u><td><th></tr>
-      </table>
-    </div><div class="ordinal">
-      <table>
-        <tr><th>ke<td>ᑫ<td>ᑭ<th>ki</tr>
-        <tr><th>ko<td>ᑯ<td>ᑲ<th>ka</tr>
-        <tr><th>ku<td>ᑰ<td><th></tr>
-      </table>
-    </div><div class="ordinal">
-      <table>
-        <tr><th>me<td>ᒣ<td>ᒥ<th>mi</tr>
-        <tr><th>mo<td>ᒧ<td>ᒪ<th>ma</tr>
-        <tr><th>mu<td>ᒨ<td><th></tr>
-      </table>
-    </div><div class="ordinal">
-      <table>
-        <tr><th>ne<td>ᓀ<td>ᓂ<th>ni</tr>
-        <tr><th>no<td>ᓄ<td>ᓇ<th>na</tr>
-        <tr><th>nu<td>ᓅ<td><th></tr>
-      </table>
-    </div><div class="ordinal">
-      <table>
-        <tr><th>le<td>ᓓ<td>ᓕ<th><a href="#fn2">2</a>li</tr>
-        <tr><th>lo<td>ᓗ<td>ᓚ<th>la</tr>
-        <tr><th>lu<td>ᓘ<td><th></tr>
-      </table>
-    </div><div class="ordinal">
-      <table>
-        <tr><th>se<td>ᓭ<td>ᓯ<th>si</tr>
-        <tr><th>so<td>ᓱ<td>ᓴ<th>sa</tr>
-        <tr><th>su<td>ᓲ<td><th></tr>
-      </table>
-    </div><div class="ordinal">
-      <table>
-        <tr><th>je<td>ᔦ<td class="gray">ᔨ<th class="gray"><a href="#fn3">3</a>ji</tr>
-        <tr><th>jo<td>ᔪ<td>ᔭ<th>ja</tr>
-        <tr><th>ju<td>ᔫ<td><th></tr>
-      </table>
-    </div><div class="cardinal">
-      <table>
-        <tr><th><u>we</u><td><u>ᕓ</u><td><u>ᕙ</u><th><a href="#fn4"><u>4</u></a><u>wa</u></tr>
-        <tr><th class="gray"><u>wo</u><td class="gray"><u>ᕗ</u><td><u>ᕕ</u><th><u>wi</u></tr>
-        <tr><th class="gray"><u>wu</u><td class="gray"><u>ᕘ</u><td><th></tr>
-      </table>
-    </div>
+  <figure class="syllabics">
+    <table class="cardinal">
+      <tr><th><u>e</u><td><u>ᐁ</u><td><u>ᐊ</u><th><u>a</u></tr>
+      <tr><th><u>o</u><td><u>ᐅ</u><td><u>ᐃ</u><th><u>i</u></tr>
+      <tr><th><u>u</u><td><u>ᐆ</u></tr>
+    </table>
+    <table class="cardinal">
+      <tr><th><u>pe</u><td><u>ᐯ</u><td><u>ᐸ</u><th><u>pa</u></tr>
+      <tr><th><u>po</u><td><u>ᐳ</u><td><u>ᐱ</u><th><u>pi</u></tr>
+      <tr><th><u>pu</u><td><u>ᐴ</u></tr>
+    </table>
+    <table class="cardinal">
+      <tr><th><u>te</u><td><u>ᑌ</u><td><u>ᑕ</u><th><u>ta</u></tr>
+      <tr><th><u>to</u><td><u>ᑐ</u><td class="gray"><u>ᑎ</u><th class="gray"><u>ti</u></tr>
+      <tr><th><u>tu</u><td><u>ᑑ</u></tr>
+    </table>
+    <table class="ordinal">
+      <tr><th>ke<td>ᑫ<td>ᑭ<th>ki</tr>
+      <tr><th>ko<td>ᑯ<td>ᑲ<th>ka</tr>
+      <tr><th>ku<td>ᑰ</tr>
+    </table>
+    <table class="ordinal">
+      <tr><th>me<td>ᒣ<td>ᒥ<th>mi</tr>
+      <tr><th>mo<td>ᒧ<td>ᒪ<th>ma</tr>
+      <tr><th>mu<td>ᒨ</tr>
+    </table>
+    <table class="ordinal">
+      <tr><th>ne<td>ᓀ<td>ᓂ<th>ni</tr>
+      <tr><th>no<td>ᓄ<td>ᓇ<th>na</tr>
+      <tr><th>nu<td>ᓅ</tr>
+    </table>
+    <table class="ordinal">
+      <tr><th>le<td>ᓓ<td>ᓕ<th><a href="#fn2">2</a>li</tr>
+      <tr><th>lo<td>ᓗ<td>ᓚ<th>la</tr>
+      <tr><th>lu<td>ᓘ</tr>
+    </table>
+    <table class="ordinal">
+      <tr><th>se<td>ᓭ<td>ᓯ<th>si</tr>
+      <tr><th>so<td>ᓱ<td>ᓴ<th>sa</tr>
+      <tr><th>su<td>ᓲ</tr>
+    </table>
+    <table class="ordinal">
+      <tr><th>je<td>ᔦ<td class="gray">ᔨ<th class="gray"><a href="#fn3">3</a>ji</tr>
+      <tr><th>jo<td>ᔪ<td>ᔭ<th>ja</tr>
+      <tr><th>ju<td>ᔫ</tr>
+    </table>
+    <table class="cardinal">
+      <tr><th><u>we</u><td><u>ᕓ</u><td><u>ᕙ</u><th><a href="#fn4">4</a><u>wa</u></tr>
+      <tr><th class="gray"><u>wo</u><td class="gray"><u>ᕗ</u><td><u>ᕕ</u><th><u>wi</u></tr>
+      <tr><th class="gray"><u>wu</u><td class="gray"><u>ᕘ</u></tr>
+    </table>
     <figcaption>
       Use ◌ᓐ for <i>n</i> at end of syllable (e.g.
       ᑐᓐᓯ <nobr><i>tonsi</i>).<a href="#fn5">5</a></nobr>
@@ -1011,20 +963,17 @@
       l-series below is pointing in all the wrong directions, but I assure you:
       That is not a mistake on my part!)
 
-      <figure class="fig inline">
-        <div>
-          <table>
-            <thead><tr><th colspan=4>Eastern Cree</thead>
-            <tr><th>le<td>ᓓ<td>ᓕ<th>li</tr>
-            <tr class="xtra-bp"><th>lo<td>ᓗ<td>ᓚ<th>la</tr>
-          </table>
-        </div><div>
-          <table>
-            <thead><tr><th colspan=5>Western Cree</thead>
-            <tr><th>le<td>ᕃ<td>ᕆ<th>li</tr>
-            <tr class="xtra-bp"><th>lo<td>ᕊ<td>ᕍ<th>la</tr>
-          </table>
-        </div>
+      <figure class="syllabics inline">
+        <table>
+          <caption>Eastern Cree</caption>
+          <tr><th>le<td>ᓓ<td>ᓕ<th>li</tr>
+          <tr class="xtra-bp"><th>lo<td>ᓗ<td>ᓚ<th>la</tr>
+        </table>
+        <table>
+          <caption>Western Cree</caption>
+          <tr><th>le<td>ᕃ<td>ᕆ<th>li</tr>
+          <tr class="xtra-bp"><th>lo<td>ᕊ<td>ᕍ<th>la</tr>
+        </table>
       </figure>
 
     <li id="fn3">3. Since the letter <i>j</i> in Toki Pona is pronounced
@@ -1132,20 +1081,17 @@
     <li id="fn13">13. The difference between King’s style and the Western
       Oblate style might be easier to see using tables.
 
-      <figure class="fig inline">
-        <div>
-          <table>
-            <thead><tr><th colspan=5>King’s style</thead>
-            <tr><th>le<td>ᕂ<td>ᕄ<th>li</tr>
-            <tr class="xtra-bp"><th>lo<td>ᕊ<td>ᕋ<th>la</tr>
-          </table>
-        </div><div>
-          <table>
-            <thead><tr><th colspan=5>Western Oblate</thead>
-            <tr><th>le<td>ᕃ<td>ᕆ<th>li</tr>
-            <tr class="xtra-bp"><th>lo<td>ᕊ<td>ᕍ<th>la</tr>
-          </table>
-        </div>
+      <figure class="syllabics inline">
+        <table>
+          <caption>King’s style</caption>
+          <tr><th>le<td>ᕂ<td>ᕄ<th>li</tr>
+          <tr class="xtra-bp"><th>lo<td>ᕊ<td>ᕋ<th>la</tr>
+        </table>
+        <table>
+          <caption>Western Oblate</caption>
+          <tr><th>le<td>ᕃ<td>ᕆ<th>li</tr>
+          <tr class="xtra-bp"><th>lo<td>ᕊ<td>ᕍ<th>la</tr>
+        </table>
       </figure>
 
     <li id="fn14">14. In Inuktitut, ᕐ◌ <i>uvularization</i> can be put in front

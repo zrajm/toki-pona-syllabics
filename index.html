@@ -102,6 +102,7 @@
     h1 {
       margin-top: 1rem;
     }
+    small { font-size: .9em; }
     a {
         text-decoration: none;
         border-radius: .125em;
@@ -308,10 +309,74 @@
 
   <ul>
     <li>An <i>overdot</i> (◌̇) is used to indicate that a syllable is pronounced
-      with <i>u</i> instead of <i>o.</i><a href="#fn6">6</a>
+      with <i>u</i> instead of <i>o.</i><a href="#fn7">7</a>
     <li>The shaded syllables above (ᕗ <i>wo,</i> ᕘ <i>wu,</i> ᑎ <i>ti,</i> and
       ᔨ <i>ji</i>) are not allowed in Toki Pona.
   </ul>
+
+  <style>
+    table.simple {
+        border-collapse: collapse;
+        margin: 1em auto;
+    }
+    table.simple th {
+        font-weight: inherit;
+    }
+    table.simple td {
+        font-size: 25px;
+    }
+    table.simple td, table.simple th {
+        height: 1.75rem;
+        width: 2rem;
+        text-align: center;
+        border: 2px solid #bbb;
+        line-height: 1;
+    }
+    .simple .tiny {
+        font-size: .6em;
+        line-height: 1.2;
+    }
+  </style>
+  <table class="simple" border="1" cellspacing=0 bordercolor=#000 style="float:right;margin:0 0 .5em 1em" id="sorting">
+    <caption>Syllabics Sort Order<a href="#fn6">6</a></caption>
+    <tr><th><th>-e<th>-i<th>-o<th>-u<th>-a<th class="tiny">final</tr>
+    <tr><th class="tiny">vowel<br>only<td>ᐁ<td>ᐃ<td>ᐅ<td>ᐆ<td>ᐊ<th></tr>
+    <tr><th>p-<td>ᐯ<td>ᐱ<td>ᐳ<td>ᐴ<td>ᐸ<th></tr>
+    <tr><th>t-<td>ᑌ<td class="gray">ᑎ<td>ᑐ<td>ᑑ<td>ᑕ<th></tr>
+    <tr><th>k-<td>ᑫ<td>ᑭ<td>ᑯ<td>ᑰ<td>ᑲ<th></tr>
+    <tr><th>m-<td>ᒣ<td>ᒥ<td>ᒧ<td>ᒨ<td>ᒪ<th></tr>
+    <tr><th>n-<td>ᓀ<td>ᓂ<td>ᓄ<td>ᓅ<td>ᓇ<td>◌ᓐ</tr>
+    <tr><th>l-<td>ᓓ<td>ᓕ<td>ᓗ<td>ᓘ<td>ᓚ<th></tr>
+    <tr><th>s-<td>ᓭ<td>ᓯ<td>ᓱ<td>ᓲ<td>ᓴ<th></tr>
+    <tr><th>j-<td>ᔦ<td class="gray">ᔨ<td>ᔪ<td>ᔫ<td>ᔭ<th></tr>
+    <tr><th>w-<td>ᕓ<td>ᕕ<td class="gray">ᕗ<td class="gray">ᕘ<td>ᕙ<th></tr>
+    <tr><th colspan=7 align=center style="border-style:none hidden hidden">ᕐ◌ (naming mark) is ignored</tr>
+  </table>
+
+  <p>Syllabics characters are categorized as either <i>symmetric,</i>
+  or <i>asymmetric,</i> depending on the way they are modified when the vowel
+  change. The symmetric shapes (ᐁ <i>e,</i> ᐯ <i>pe,</i> ᑌ <i>te,</i> and
+  ᕓ <i>we</i>) point in the four cardinal directions of the compass
+  (south/<wbr>north/<wbr>east/<wbr>west) and are rotated 90° between the vowels
+  (these are also called <i>cardinal</i>). The asymmetric shapes (ᑫ <i>ke,</i>
+  ᒣ <i>me,</i> ᓀ <i>ne,</i> ᓓ <i>le,</i> ᓭ <i>se,</i> and ᔦ <i>je</i>) are
+  flipped, not rotated, to get the different vowels (these are also
+  called <i>ordinal,</i> since they point in the ordinal directions of the
+  compass: <small>NW</small>, <small>NE</small>, <small>SW</small>,
+  <small>SE</small>).—When talking about the orientation of a character, the
+  word <i>rotation</i> is used, regardless of whether the specific character is
+  actually rotated or flipped.
+
+  <p>The word <i>series</i> is often used to group characters with, either the
+  same consonant (a line in the <a href="#sorting">sort table</a>), or vowel (a
+  column). The t-series thus includes all rotations of the character
+  ᑌ <i>te,</i> while the e-series include the characters with a rotation that
+  corresponds to the vowel <i>e</i>: ᐁ <i>e,</i> ᐯ <i>pe,</i> ᑌ <i>te,</i>
+  ᑫ <i>ke,</i> ᒣ <i>me,</i> etc.
+
+  <p>When sorting Toki Pona syllabics (<a href="#sorting">see table</a>), the
+  Eastern Cree/<wbr>Inuktitut order is used, except for the naming mark (ᕐ◌),
+  which is ignored (and does not affect the sort order).<a href="#fn6">6</a>
 
   <section id="punct">
     <h1>Punctuation</h1>
@@ -333,7 +398,7 @@
     (that is, unofficial words) can’t be marked with capitalization. Instead,
     to mark these words, put a <i>naming mark</i> ᕐ in front of it: ᑐᑭ
     ᕐᓯᓇᓐ <i>toki Sinan</i> (the Klingon language), ᔭᓐ ᕐᓱᓐᔭ <i>jan Sonja,</i>
-    and ᒪ ᕐᑲᓇᑕ <i>ma Kanata</i> (Canada).<a href="#fn7">7</a>
+    and ᒪ ᕐᑲᓇᑕ <i>ma Kanata</i> (Canada).<a href="#fn8">8</a>
   </section>
 
   <section id="sample">
@@ -438,7 +503,7 @@
     recognizing the words, even without vowel length markings). In the few
     cases where ambiguity may rear its ugly head, one may either rely on
     context to clear it up, or add dots to clarify only as needed (this is
-    known as <i>strategic pointing</i>).<a href="#fn8">8</a>
+    known as <i>strategic pointing</i>).<a href="#fn9">9</a>
 
     <p>Unpointed syllabics are very common, even on road signs, inscriptions,
     and other quite formal contexts.
@@ -457,12 +522,12 @@
       quickly realise that ᑯᓗᐳ <i>kolopo</i> could not be the intended word and
       that ᑰᓘᐴ <i>kulupu</i> is the only possible substitute!
 
-      <p>A closer look at pu<a href="#fn9">9</a> reveals that, even if you
+      <p>A closer look at pu<a href="#fn10">10</a> reveals that, even if you
       replace <i>all</i> occurrences of <i>u</i> in the official dictionary
       with <i>o,</i> this doesn’t lead to any ambiguities! Sure, words like
       ᑯᓗᐳ <i>kolopo</i> and ᒧᑯ <i>moko</i> may <i>sound</i> funny, but they
       don’t cause any confusion, since none of these words overlap with any
-      existing words containing <i>o!</i><a href="#fn10">10</a>
+      existing words containing <i>o!</i><a href="#fn11">11</a>
 
       <p>There are a couple of cases where strategic pointing might
       be especially useful:
@@ -479,7 +544,7 @@
 
       <p>The second case is the official word ᑑ <i>tu,</i> which can be
       confused with the (post-pu) word ᑐ <i>to</i> (used to delimit quotes with
-      ᑌ … ᑐ <i>te … to</i>).<a href="#fn11">11</a> So, if you find yourself
+      ᑌ … ᑐ <i>te … to</i>).<a href="#fn12">12</a> So, if you find yourself
       quoting passages in which ᑑ <i>tu</i> appear, a strategically placed dot
       might be in order.
     </section>
@@ -676,7 +741,7 @@
       language this set of characters is used for, but the r-series (<i>re, ri,
       ro, ra</i> in the image above) are unique the
       Western <a href="https://en.wikipedia.org/wiki/Missionary_Oblates_of_Mary_Immaculate">Oblate
-      missionary</a> style,<a href="#fn12">12</a> which I presume is used for
+      missionary</a> style,<a href="#fn13">13</a> which I presume is used for
       Western Cree. (This r-series is not even included
       in <a href="https://unicode.org/charts/PDF/U1400.pdf">Unicode</a>!)
 
@@ -691,7 +756,7 @@
       tines in the U-shape, sticks out in the opposite direction). Compare:
       ᕂᕃ <i>le,</i> ᕄᕆ <i>li,</i> ᕊᕊ <i>lo,</i> and ᕋᕍ <i>la</i> (in each pair,
       the first character is in King’s style, and the second is in the Western
-      Oblate style).<a href="#fn13">13</a>
+      Oblate style).<a href="#fn14">14</a>
 
       <p><b>j:</b> The “j-series” of characters chosen by King (which are more
       commonly written with <i>c</i> in the Latin script; ᒉ <i>ce,</i>
@@ -905,7 +970,7 @@
       <p><b>Names:</b> Where the Latin orthography of Toki Pona uses
       capitalization to indicate names/<wbr>unofficial words, jan Katelin
       instead marks names by putting the Inuktitut <i>uvularization</i>
-      character (ᕐ◌)<a href="#fn14">14</a> in front of the
+      character (ᕐ◌)<a href="#fn15">15</a> in front of the
       word.<nobr>—This</nobr> is neat! Originally my own syllabics did not
       include a naming mark like this, but in part inspired by jan Katelin, I
       later added one.
@@ -918,7 +983,7 @@
       <p><b>Update, 21 March 2021:</b> I originally used the Western Cree final
       ᑊ <i>p</i> as a naming mark, but, after seeing the symbol that jan
       Katelin chose, and thinking about it for a bit, I adopted jan Katelin’s
-      symbol.<a href="#fn15">15</a>
+      symbol.<a href="#fn16">16</a>
     </section>
   </section>
 
@@ -1007,7 +1072,33 @@
       (final <i>n</i> in Western Cree) or ◌ᣙ (raised ᓂ <i>ni,</i> a less common
       variant used in Ojibwe).
 
-    <li id="fn6">6. In Canadian syllabics an <i>overdot</i> (◌̇) is used to mark
+    <li id="fn6">6. Syllabics sort order varies between languages. The order
+      used for Toki Pona syllabics is the same as for Cree and Inuktitut, which
+      is also is the order in which the characters are listed in the Unicode
+      table. The exception to this is the ᕐ◌ <i>naming mark,</i> which is
+      disregarded in the Toki Pona syllabics sort.
+
+      <p>The sort order is: ᐁ <i>e,</i> ᐯ <i>pe,</i> ᑌ <i>te,</i> ᑫ <i>ke,</i>
+      qᒣ <i>me,</i> ᓀ <i>ne,</i> ᓓ <i>le,</i> ᓭ <i>se,</i> ᔦ <i>je,</i>
+      ᕓ <i>we</i>. Within each consonant series the rotations are in the
+      order: <i>e, i, o, u, a</i> (with the pointed <i>u</i> coming after its
+      unpointed counterpart <i>o</i>). Lastly syllable-final ◌ᓐ <i>n</i> is
+      sorted after ᓇ <i>na</i> (but before ᓓ <i>le</i>), and any occurrence of
+      the ᕐ◌ naming mark is ignored. For more information on syllabics sorting,
+      see:
+
+      <ul>
+        <li>“<a href="https://www.languagegeek.com/typography/syllabics/syllabicsAbugida.html"
+          >Is Syllabics an Abugida?</a>” (Chris Harvey, 2006)
+        <li>“<a href="https://creeliteracy.org/2017/10/17/syllabics-and-sro-two-sides-of-the-same-coin/"
+          >Syllabics and Standard Roman Orthography: Two sides of the same
+          coin</a>” (Arden Ogg, 2017)
+        <li>“<a href="https://creelanguage.wordpress.com/2018/04/06/syllabics-chart/"
+          >Kepin’s Cree Language Blog: Syllabics Chart</a>” (Kevin Brousseau,
+          2018).
+      </ul>
+
+    <li id="fn7">7. In Canadian syllabics an <i>overdot</i> (◌̇) is used to mark
       long vowels, but Toki Pona does not make a distinction between long and
       short vowels. However, Canadian syllabics only have four possible
       rotations with which to indicate vowel, and Toki Pona has <i>five</i>
@@ -1021,7 +1112,7 @@
       (rather than <i>o</i>) since <i>u</i> is the least common vowel in Toki
       Pona, and I want to minimize the amount of diacritics occurring in text.
 
-    <li id="fn7">7. The idea of a <i>naming mark</i> does not come from
+    <li id="fn8">8. The idea of a <i>naming mark</i> does not come from
       Canadian Aboriginal syllabics, but is borrowed from
       the <a href="https://en.wikipedia.org/wiki/Shavian_alphabet">Shavian
       alphabet</a> (which, just like syllabics, does not distinguish between
@@ -1030,17 +1121,17 @@
       raised dot is used in syllabics to indicate that a <i>w</i> should be
       added to a syllable.)
 
-    <li id="fn8">8. For the curious, the blog post “<a
+    <li id="fn9">9. For the curious, the blog post “<a
       href="http://abecedaria.blogspot.com/2005/11/to-point-or-not-to-point.html"
       >Abecedaria: To Point or Not to Point</a>” by Suzanne McCarthy goes into
       the subject of pointing in greater detail.
 
-    <li id="fn9">9. The word “pu” is defined by the “Official Toki Pona
+    <li id="fn10">10. The word “pu” is defined by the “Official Toki Pona
       Dictionary” (found in the book <i>Toki Pona: The Language of Good,</i>
       2014, Sonja Lang, pages <nobr>125–134</nobr>). It means
       “<small>ADJECTIVE</small> interacting with the official Toki Pona book”.
 
-    <li id="fn10">10. This is only true of <i>o</i> and <i>u</i> (which are the
+    <li id="fn11">11. This is only true of <i>o</i> and <i>u</i> (which are the
       two vowels that occur in the fewest number of words in the language).
       Replacing any other vowel with another result in ambiguities. (The worst
       case, with the most common vowels, <i>a</i> and <i>i,</i> there are six
@@ -1064,17 +1155,17 @@
       ᓯᔦᓗ <i>sijelo,</i> ᓱᓇ <i>sona,</i> ᓱᕓᓕ <i>soweli,</i> ᓲᓄ <i>suno,</i>
       ᔦᓗ <i>jelo,</i> ᔪ <i>jo,</i> ᕙᓗ <i>walo,</i> and ᕙᓱ <i>waso</i>.
 
-    <li id="fn11">11. According to jan Inwin’s Toki Pona dictionary, <a
+    <li id="fn12">12. According to jan Inwin’s Toki Pona dictionary, <a
       href="https://docs.google.com/spreadsheets/d/1t-pjAgZDyKPXcCRnEdATFQOxGbQFMjZm-8EvXiQd2Po"
       ><i>Nimi Ale Pona</i> 2nd ed</a> (accessed 27 March 2021).
 
-    <li id="fn12">12. The “Western Oblate style” of syllabics is described in
+    <li id="fn13">13. The “Western Oblate style” of syllabics is described in
       John Stewart Murdoch’s thesis from 1981, <i><a
       href="https://mspace.lib.umanitoba.ca/xmlui/handle/1993/9207">Syllabics:
       A Successful Educational Innovation</a>.</i> (See pages 308, 311, and
       table 7 on page 391.)
 
-    <li id="fn13">13. The difference between King’s style and the Western
+    <li id="fn14">14. The difference between King’s style and the Western
       Oblate style might be easier to see using tables.
 
       <figure class="syllabics inline">
@@ -1090,7 +1181,7 @@
         </table>
       </figure>
 
-    <li id="fn14">14. In Inuktitut, ᕐ◌ <i>uvularization</i> can be put in front
+    <li id="fn15">15. In Inuktitut, ᕐ◌ <i>uvularization</i> can be put in front
       of a k-series character (ᑫ <i>kai,</i> ᑭ <i>ki,</i> ᑯ <i>ku,</i>
       ᑲ <i>ka</i>) to indicate that the <i>k</i> sound is pronounced a further
       back than usual (with an uvular <i>q,</i> rather than the usual
@@ -1099,10 +1190,10 @@
       but then it indicates an <i>r</i> sound (◌ᕐ is a raised Inuktitut
       ᕋ <i>ra</i>).
 
-    <li id="fn15">15. This article originally used the Western Cree final
+    <li id="fn16">16. This article originally used the Western Cree final
       ᑊ <i>p</i> as a naming mark, but after seeing <a href="#katelin">jan
       Katelin’s</a> use of the Inuktitut symbol
-      ᕐ◌ <i>uvularization</i><sup><a href="#fn14">14</a ></sup> (and letting
+      ᕐ◌ <i>uvularization</i><sup><a href="#fn15">15</a ></sup> (and letting
       the thought sink in) this was changed. Reasons include:
 
       <ul>

@@ -8,6 +8,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/toki-pona-syllabics/favicon/32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/toki-pona-syllabics/favicon/16x16.png">
 <link rel="manifest" href="/toki-pona-syllabics/favicon/site.webmanifest">
+<!--*** NOTE: CSS only allows 'id' attr on block tags without border! ***-->
 <style>
   /* Mini-reset. */
   html { box-sizing: border-box; }
@@ -108,29 +109,28 @@
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
   }
-  a.img {
-    display: inline-block;
-    position: relative;
-  }
+  a.img { display: inline-block; }
+  a.img, [id] { position: relative; }
   a.img img { display: block; }
   a.img:hover { box-shadow: none; }
-  a.img:hover:before {
+  a.img:hover:before, :target:before {
     content: ' ';
     position: absolute;
-    left:   -.25rem;
-    right:  -.25rem;
-    top:    -.35rem;
-    bottom: -.25rem;
-    box-shadow: 0 0 2rem #88f4 inset, 0 0 4rem #88f8 inset;
+    left: -.25rem; right: -.25rem;
     border-radius: .125rem;
+  }
+  a.img:hover:before {
+    top: -.35rem; bottom: -.25rem;
+    box-shadow: 0 0 2rem #88f4 inset, 0 0 4rem #88f8 inset;
+  }
+  :target:before {
+    top: 0rem; bottom: -.125rem;
+    box-shadow: 0 0 2rem #fb4b inset, 0 0 4rem #fb4b inset;
+    z-index: -1;
   }
   a:hover {
     text-decoration: underline 2px;
     box-shadow: 0 0 .75rem #88f4 inset, 0 0 1.5rem #88f8 inset;
-  }
-  :target {
-    box-shadow: 0 0 2rem #fb4b inset, 0 0 4rem #fb4b inset;
-    border-radius: .125rem;
   }
   /* Glossary table. */
   .glossary {
@@ -309,43 +309,49 @@ Syllabics</i> course</a> on Memrise!
 </ul>
 
 <style>
-  table.simple {
+  #sorting table {
     border-collapse: collapse;
-    margin: 1em auto;
   }
-  table.simple th {
+  #sorting table th {
     font-weight: inherit;
   }
-  table.simple td {
+  #sorting table td {
     font-size: 25px;
   }
-  table.simple td, table.simple th {
+  #sorting table td, #sorting table th {
     height: 1.75rem;
     width: 2rem;
-    text-align: center;
     border: 2px solid #bbb;
     line-height: 1;
   }
-  .simple .tiny {
+  #sorting .tiny {
     font-size: .6em;
     line-height: 1.2;
   }
+  #sorting {
+    float: right;
+    text-align: center;
+    margin-bottom: .5rem;
+    margin-left: 1rem;
+  }
 </style>
-<table class="simple" border="1" cellspacing=0 bordercolor=#000 style="float:right;margin:0 0 .5em 1em" id="sorting">
-  <caption>Syllabics Sort Order<a href="#fn6">6</a></caption>
-  <tr><th><th>-e<th>-i<th>-o<th>-u<th>-a<th class="tiny">final</tr>
-  <tr><th class="tiny">vowel<br>only<td>ᐁ<td>ᐃ<td>ᐅ<td>ᐆ<td>ᐊ<th></tr>
-  <tr><th>p-<td>ᐯ<td>ᐱ<td>ᐳ<td>ᐴ<td>ᐸ<th></tr>
-  <tr><th>t-<td>ᑌ<td class="gray">ᑎ<td>ᑐ<td>ᑑ<td>ᑕ<th></tr>
-  <tr><th>k-<td>ᑫ<td>ᑭ<td>ᑯ<td>ᑰ<td>ᑲ<th></tr>
-  <tr><th>m-<td>ᒣ<td>ᒥ<td>ᒧ<td>ᒨ<td>ᒪ<th></tr>
-  <tr><th>n-<td>ᓀ<td>ᓂ<td>ᓄ<td>ᓅ<td>ᓇ<td>◌ᓐ</tr>
-  <tr><th>l-<td>ᓓ<td>ᓕ<td>ᓗ<td>ᓘ<td>ᓚ<th></tr>
-  <tr><th>s-<td>ᓭ<td>ᓯ<td>ᓱ<td>ᓲ<td>ᓴ<th></tr>
-  <tr><th>j-<td>ᔦ<td class="gray">ᔨ<td>ᔪ<td>ᔫ<td>ᔭ<th></tr>
-  <tr><th>w-<td>ᕓ<td>ᕕ<td class="gray">ᕗ<td class="gray">ᕘ<td>ᕙ<th></tr>
-  <tr><th colspan=7 align=center style="border-style:none hidden hidden">ᕐ◌ (naming mark) is ignored</tr>
-</table>
+<figure id="sorting">
+  <table>
+    <caption>Syllabics Sort Order<a href="#fn6">6</a></caption>
+    <tr><th><th>-e<th>-i<th>-o<th>-u<th>-a<th class="tiny">final</tr>
+    <tr><th class="tiny">vowel<br>only<td>ᐁ<td>ᐃ<td>ᐅ<td>ᐆ<td>ᐊ<th></tr>
+    <tr><th>p-<td>ᐯ<td>ᐱ<td>ᐳ<td>ᐴ<td>ᐸ<th></tr>
+    <tr><th>t-<td>ᑌ<td class="gray">ᑎ<td>ᑐ<td>ᑑ<td>ᑕ<th></tr>
+    <tr><th>k-<td>ᑫ<td>ᑭ<td>ᑯ<td>ᑰ<td>ᑲ<th></tr>
+    <tr><th>m-<td>ᒣ<td>ᒥ<td>ᒧ<td>ᒨ<td>ᒪ<th></tr>
+    <tr><th>n-<td>ᓀ<td>ᓂ<td>ᓄ<td>ᓅ<td>ᓇ<td>◌ᓐ</tr>
+    <tr><th>l-<td>ᓓ<td>ᓕ<td>ᓗ<td>ᓘ<td>ᓚ<th></tr>
+    <tr><th>s-<td>ᓭ<td>ᓯ<td>ᓱ<td>ᓲ<td>ᓴ<th></tr>
+    <tr><th>j-<td>ᔦ<td class="gray">ᔨ<td>ᔪ<td>ᔫ<td>ᔭ<th></tr>
+    <tr><th>w-<td>ᕓ<td>ᕕ<td class="gray">ᕗ<td class="gray">ᕘ<td>ᕙ<th></tr>
+  </table>
+  ᕐ◌ (naming mark) is ignored
+</figure>
 
 <p>Syllabics characters are categorized as either <i>symmetric,</i>
 or <i>asymmetric,</i> depending on the way they are modified when the vowel
@@ -1221,7 +1227,7 @@ which is ignored (and does not affect the sort order).<a href="#fn6">6</a>
 </script><style>
   .id {
     position: absolute;
-    right: calc(100% - 1.625rem); /* right align = left marg (2rem) - .375rem */
+    right: calc(100% + .5rem);
     font-weight: bold;
     opacity: .3;
   }

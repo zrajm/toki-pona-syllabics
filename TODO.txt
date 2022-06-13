@@ -10,7 +10,6 @@
    e.g. multiple words, part of speech etc.
 * Toki Pona syllabics
 ** TODO Font: Fix so that IPA symbols look prettier
-** TODO Use .woff(2?) instead of .tty fonts
 ** TODO Add section on sort order
 ** TODO Add section on how to write by hand
 * jan Pije
@@ -60,6 +59,10 @@
    Japanese inspired script.
    https://www.reddit.com/r/tokipona/comments/jax1x2/sitelen_telo_v101_a_japaneseinspired_logographic/
 * FINISHED
+** DONE Add links to internal IDs
+   CLOSED: [2022-06-13 Mon 15:16]
+** DONE Use .woff2 instead of .tty fonts
+   CLOSED: [2022-06-13 Mon 13:20]
 ** DONE Add search function
    CLOSED: [2021-01-30 Sat 21:48]
    https://jprogr.github.io/TokiPonaDictionary/

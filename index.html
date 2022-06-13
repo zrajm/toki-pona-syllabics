@@ -11,7 +11,7 @@
 <style>
   /* Mini-reset. */
   html { box-sizing: border-box; }
-  *, :before, :after { box-sizing: inherit; padding: 0; margin: 0; }
+  *, :before, :after { box-sizing: inherit; padding: 0; margin: 0; text-indent: initial; }
   /********************/
   /* For regular Latin script. */
   @font-face {
@@ -173,7 +173,7 @@
   <a class="img" href="https://github.com/zrajm/toki-pona-syllabics"><img src="toki-pona-syllabics.svg" style="height:6em"></a>
 </div>
 
-<h1>Toki Pona Syllabics</h1>
+<h1 id="top">Toki Pona Syllabics</h1>
 
 <p>Here’s how to write <a href="https://en.wikipedia.org/wiki/Toki_Pona">Toki
 Pona</a> using <i><a
@@ -1216,6 +1216,21 @@ which is ignored (and does not affect the sort order).<a href="#fn6">6</a>
 <footer style="border-top:.125em solid #000;text-align:center;margin:1.5rem;padding:.75rem">
   Copyright 2021–2022 <a href="http://zrajm.org">zrajm</a>, Uppsala, Sweden.
 </footer>
+<script>
+  // Add links to internal 'id' attributes.
+  document.querySelectorAll('[id]').forEach(e => {
+    (e.tagName === 'SECTION' ? e.firstElementChild : e).insertAdjacentHTML(
+      'afterbegin', `<a class="id" href="#${e.id}" title="#${e.id}">#</a>`)
+  })
+</script><style>
+  .id {
+    position: absolute;
+    right: calc(100% - 1.625rem); /* right align = left marg (2rem) - .375rem */
+    font-weight: bold;
+    opacity: .3;
+  }
+  .id:hover { opacity: 1 }
+</style>
 <!--
 LocalWords: Abecedaria Abugida ai anu ASLwrite bordercolor bp br Brousseau calc
 LocalWords: canadian ce cellspacing charset ci colspan conlang Conlang css

@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--*- ispell-dictionary: "english" -*-->
+<!DOCTYPE html><!--*-js-indent-level:2;css-indent-offset:2-*-->
 <html>
 <head>
   <!-- Copyright 2021–2022 by zrajm. Licenses: CC BY-SA for text, GPLv2 for code. -->
@@ -17,50 +17,49 @@
     /********************/
     /* For regular Latin script. */
     @font-face {
-        font-family: "Noto Sans";
-        src: url("font/noto_sans-regular.ttf");
-        font-display: swap;
+      font-family: "Noto Sans";
+      src: url("font/noto_sans-regular.ttf");
+      font-display: swap;
     }
     @font-face {
-        font-family: "Noto Sans";
-        src: url("font/noto_sans-italic.ttf");
-        font-style: italic;
-        font-display: swap;
+      font-family: "Noto Sans";
+      src: url("font/noto_sans-italic.ttf");
+      font-style: italic;
+      font-display: swap;
     }
     @font-face {
-        font-family: "Noto Sans";
-        src: url("font/noto_sans-bold.ttf");
-        font-weight: bold;
-        font-display: swap;
+      font-family: "Noto Sans";
+      src: url("font/noto_sans-bold.ttf");
+      font-weight: bold;
+      font-display: swap;
     }
     @font-face {
-        font-family: "Noto Sans";
-        src: url("font/noto_sans-bold_italic.ttf");
-        font-style: italic;
-        font-weight: bold;
-        font-display: swap;
+      font-family: "Noto Sans";
+      src: url("font/noto_sans-bold_italic.ttf");
+      font-style: italic;
+      font-weight: bold;
+      font-display: swap;
     }
     /* For Canadian syllabics. */
     @font-face {
-        font-family: "Noto Sans Canadian Aboriginal";
-        src: url("font/noto_sans_canadian_aboriginal-regular.ttf");
-        font-display: swap;
+      font-family: "Noto Sans Canadian Aboriginal";
+      src: url("font/noto_sans_canadian_aboriginal-regular.ttf");
+      font-display: swap;
     }
     /* For symbols. */
     @font-face {
-        font-family: "Times New Roman";
-        /* Font must center overdot above dotted circle,
-           and have overdot resemble syllabics font overdot. */
-        src: url("font/times.ttf");
-        font-display: swap;
+      font-family: "Times New Roman";
+      /* Font must center overdot above dotted circle,
+         and have overdot resemble syllabics font overdot. */
+      src: url("font/times.ttf");
+      font-display: swap;
     }
     html {
-        /* https://www.typotheque.com/articles/opentype_features_in_css */
-        font-feature-settings:
-            'onum' on; /* numbers with upper & lower case */
-       max-width: 100%;
-       font: 20px/1.5 "Noto Sans", "Noto Sans Canadian Aboriginal", "Times New Roman", sans-serif;
-       margin: 1rem 2rem;
+      /* https://www.typotheque.com/articles/opentype_features_in_css */
+      font-feature-settings: 'onum' on; /* numbers with upper & lower case */
+      max-width: 100%;
+      font: 20px/1.5 "Noto Sans", "Noto Sans Canadian Aboriginal", "Times New Roman", sans-serif;
+      margin: 1rem 2rem;
     }
     figure, figure img { max-width: 100%; }
     figure img { max-height: 70vh; }
@@ -69,10 +68,10 @@
     sub { top:  1ex;    } /* push down one x-height footnote font size */
     a[href^="#fn"]:after, a[href^="#fn"]:before,
     sub:after, sub:before, sup:after, sup:before {
-        /* Using hairspace lets any <a> underline (in <a><sup>…</sup></a>)
-           stick out a bit on either side, making sure its visible even when
-           link text has a descender (as with descending old-style numbers). */
-        content: '\feff\200a\feff'; /* hair space, no break before/after */
+      /* Using hairspace lets any <a> underline (in <a><sup>…</sup></a>)
+         stick out a bit on either side, making sure its visible even when
+         link text has a descender (as with descending old-style numbers). */
+      content: '\feff\200a\feff'; /* hair space, no break before/after */
     }
     sub, sup, a[href^="#fn"] {
       font-size: .8em;
@@ -104,71 +103,71 @@
     }
     small { font-size: .9em; }
     a {
-        text-decoration: none;
-        border-radius: .125em;
-        padding: 0  .25em  .125em;
-        margin:  0 -.25em -.125em;
-        box-decoration-break: clone;
-        -webkit-box-decoration-break: clone;
+      text-decoration: none;
+      border-radius: .125em;
+      padding: 0  .25em  .125em;
+      margin:  0 -.25em -.125em;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
     }
     a[href^="#fn"] {
-        padding: 0  .25em  .125em;
-        margin:  0 -.25em -.125em;
+      padding: 0  .25em  .125em;
+      margin:  0 -.25em -.125em;
     }
     a.img {
-        display: inline-block;
-        position: relative;
+      display: inline-block;
+      position: relative;
     }
     a.img img { display: block; }
     a.img:hover { box-shadow: none; }
     a.img:hover:before {
-        content: ' ';
-        position: absolute;
-        left:   -.25em;
-        right:  -.25em;
-        top:    -.35em;
-        bottom: -.25em;
-        box-shadow: 0 0 2em #88f4 inset, 0 0 4em #88f8 inset;
-        border-radius: .125em;
+      content: ' ';
+      position: absolute;
+      left:   -.25em;
+      right:  -.25em;
+      top:    -.35em;
+      bottom: -.25em;
+      box-shadow: 0 0 2em #88f4 inset, 0 0 4em #88f8 inset;
+      border-radius: .125em;
     }
     a:hover {
-        text-decoration: underline 2px;
-        box-shadow: 0 0 .75em #88f4 inset, 0 0 1.5em #88f8 inset;
+      text-decoration: underline 2px;
+      box-shadow: 0 0 .75em #88f4 inset, 0 0 1.5em #88f8 inset;
     }
     :target {
-        box-shadow: 0 0 2em #fb4b inset, 0 0 4em #fb4b inset;
-        border-radius: .125em;
+      box-shadow: 0 0 2em #fb4b inset, 0 0 4em #fb4b inset;
+      border-radius: .125em;
     }
     /* Glossary table. */
     .glossary {
-        border-collapse: collapse;
-        margin: 2rem;
+      border-collapse: collapse;
+      margin: 2rem;
     }
     .glossary td {
-        border: 2px solid #bbb;
-        padding: 0 .5rem;
+      border: 2px solid #bbb;
+      padding: 0 .5rem;
     }
     /* To improve readability of syllabics. */
     /* (Only useful for content with multiple words. */
     .syllabic {
-        word-spacing: .125em;
+      word-spacing: .125em;
     }
     div.syllabic, p.syllabic {
-        line-height: 1.75;
-        text-align: left;
+      line-height: 1.75;
+      text-align: left;
     }
   </style>
   <style>
     /* Mobile-specific CSS. */
     @media screen and (max-width: 767px) {
-        html { margin: 0 0 0 .5rem; }
+      html { margin: 0 0 0 .5rem; }
     }
   </style>
   <style>
     figure.basic {
-        width: calc(584px + 5em); /* contained <img> width */
-        margin: 2rem auto;
-        text-align: center;
+      width: calc(584px + 5em); /* contained <img> width */
+      margin: 2rem auto;
+      text-align: center;
     }
   </style>
 </head>
@@ -199,58 +198,58 @@
   <style>
     .syllabics.inline { margin: 1rem auto -.5rem; }
     .syllabics {
-        text-align: center;
-        max-width: 44rem; /* width of 5 mini-tables */
-        margin: 1.5rem auto;
+      text-align: center;
+      max-width: 44rem; /* width of 5 mini-tables */
+      margin: 1.5rem auto;
     }
     .syllabics figcaption { margin: -.5rem; }
     .syllabics table {
-        display: inline-table;
-        border-collapse: collapse;
-        margin: 0 .25rem 1.5rem;
+      display: inline-table;
+      border-collapse: collapse;
+      margin: 0 .25rem 1.5rem;
     }
     .syllabics table.cardinal {
-        transform-origin: 4rem 2rem;         /* (2*grid) (grid) */
-        transform: translate(.75em, .75em) rotate(45deg);
+      transform-origin: 4rem 2rem;           /* (2*grid) (grid) */
+      transform: translate(.75em, .75em) rotate(45deg);
     }
     .syllabics td, .syllabics th {
-        height: 2rem; width: 2rem;           /* (grid) */
+      height: 2rem; width: 2rem;             /* (grid) */
     }
     .syllabics td {                          /* syllabics characters */
-        font-size: 25px;
-        text-align: center;
-        border: 2px solid #bbb;
+      font-size: 25px;
+      text-align: center;
+      border: 2px solid #bbb;
     }
     /* Remove borders on <td> that are adjacent to other <td>s. */
     .syllabics td + td { border-left: hidden; }
     .syllabics tr + tr td { border-top: hidden; }
     .syllabics th {                          /* Latin characters */
-        font-weight: inherit;
-        position: relative; /*HERE*/
+      font-weight: inherit;
+      position: relative; /*HERE*/
     }
     .syllabics th:first-child {              /* Latin characters, left side */
-        padding-right: .25rem;
-        text-align: right;
+      padding-right: .25rem;
+      text-align: right;
     }
     .syllabics th:last-child {               /* Latin characters, right side */
-        padding-left: .25rem;
-        text-align: left;
+      padding-left: .25rem;
+      text-align: left;
     }
     .syllabics table u {
-        display: inline-block;
-        text-decoration: none;
-        transform: rotate(-45deg);
-        min-width: 1.5ex;                    /* for 'i' in 1st table to look okay */
-        text-align: center;
+      display: inline-block;
+      text-decoration: none;
+      transform: rotate(-45deg);
+      min-width: 1.5ex;                      /* for 'i' in 1st table to look okay */
+      text-align: center;
     }
     .syllabics table a {
-        position: absolute;
-        line-height: 1.25;
-        top: -1.125rem; left: .125rem;
+      position: absolute;
+      line-height: 1.25;
+      top: -1.125rem; left: .125rem;
     }
     .syllabics .cardinal a {
-        transform-origin: left bottom;
-        transform: rotate(-45deg);
+      transform-origin: left bottom;
+      transform: rotate(-45deg);
     }
   </style>
   <figure class="syllabics">
@@ -319,25 +318,25 @@
 
   <style>
     table.simple {
-        border-collapse: collapse;
-        margin: 1em auto;
+      border-collapse: collapse;
+      margin: 1em auto;
     }
     table.simple th {
-        font-weight: inherit;
+      font-weight: inherit;
     }
     table.simple td {
-        font-size: 25px;
+      font-size: 25px;
     }
     table.simple td, table.simple th {
-        height: 1.75rem;
-        width: 2rem;
-        text-align: center;
-        border: 2px solid #bbb;
-        line-height: 1;
+      height: 1.75rem;
+      width: 2rem;
+      text-align: center;
+      border: 2px solid #bbb;
+      line-height: 1;
     }
     .simple .tiny {
-        font-size: .6em;
-        line-height: 1.2;
+      font-size: .6em;
+      line-height: 1.2;
     }
   </style>
   <table class="simple" border="1" cellspacing=0 bordercolor=#000 style="float:right;margin:0 0 .5em 1em" id="sorting">
@@ -409,45 +408,45 @@
 
     <style>
       table.star {
-          margin: 1em 0 1em 1em;
-          border-collapse: collapse;
-          text-align: center;
-          padding: -1em;
-          border: 2px solid #bbb;
-          caption-side: bottom;
-          font-size: 25px;
+        margin: 1em 0 1em 1em;
+        border-collapse: collapse;
+        text-align: center;
+        padding: -1em;
+        border: 2px solid #bbb;
+        caption-side: bottom;
+        font-size: 25px;
       }
       table.star td {
-          text-align: center;
-          position: relative;
-          width: .6em;
-          height: .6em;
+        text-align: center;
+        position: relative;
+        width: .6em;
+        height: .6em;
       }
       table.star div {
-          position: absolute;
-          display: inline;
-          transform: translate(-50%, -50%);
+        position: absolute;
+        display: inline;
+        transform: translate(-50%, -50%);
       }
       table.star div.raised { transform: translate(-50%, -55%); }
       table.star .horiz {
-          letter-spacing: .2em;
-          white-space: nowrap;
-          padding-left: .25em;
+        letter-spacing: .2em;
+        white-space: nowrap;
+        padding-left: .25em;
       }
       table.star .horiz .spacer {
-          width: 2.25em;
-          display: inline-block;
+        width: 2.25em;
+        display: inline-block;
       }
       table.star .vert {
-          line-height: 1em;
-          padding-bottom: .05em;
+        line-height: 1em;
+        padding-bottom: .05em;
       }
       table.star .vert .spacer {
-          height: 2.25em;
-          display: inline-block;
+        height: 2.25em;
+        display: inline-block;
       }
       table.star caption {
-          font-size: 1rem;
+        font-size: 1rem;
       }
     </style>
     <table class="star" style="float:right">
@@ -648,57 +647,57 @@
 
      <style>
        .fb-quote {
-           vertical-align: top;
-           max-width: 42.5em; /* from '.fig' */
-           margin: 1rem auto;
+         vertical-align: top;
+         max-width: 42.5em; /* from '.fig' */
+         margin: 1rem auto;
        }
        .fb-quote > table {
-           margin: 0;
-           border: 2px solid #bbb;
-           padding: 4px;
-           border-spacing: 0;
+         margin: 0;
+         border: 2px solid #bbb;
+         padding: 4px;
+         border-spacing: 0;
        }
        .fb-quote td.fb-image {
-           vertical-align: middle;
-           background: #000;
-           padding: 1em;
+         vertical-align: middle;
+         background: #000;
+         padding: 1em;
        }
        .fb-quote td.fb-message {
-           font-size: 18px;
-           vertical-align: top;
-           padding: .5em 1em;
+         font-size: 18px;
+         vertical-align: top;
+         padding: .5em 1em;
        }
        .fb-quote a img {
-           background: #fff;
-           padding: .5em .25em;
+         background: #fff;
+         padding: .5em .25em;
        }
        .fb-quote img.fb-portrait {
-           border-radius: 50%;
-           float: left;
-           margin-right: .5em;
-           background: #65676b;
+         border-radius: 50%;
+         float: left;
+         margin-right: .5em;
+         background: #65676b;
        }
        .fb-quote small.fb-date {
-           color: #65676b;
-           font-weight: bold;
+         color: #65676b;
+         font-weight: bold;
        }
        .fb-quote small.fb-date a {
-           color: inherit;
+         color: inherit;
        }
        .fb-quote small.fb-date > .fb-sharing {
-           /* PNG stencil, background color shine through. */
-           background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAyElEQVQYGS3BMUrDYBzG4RdCIHxjCHiGUhBBEKFLltCxowdwLy4eQZwFCeQgvYUXcHHsEhKTL6mVmPrz80+fR5i+ajekpGPRVxgBvsv9+ms373/33QOxhAeB1GwxPx/TQiKarkF9RUZw8jA8y+B8qWE1FgT1Hcux0NmwEgnp9E4wvHJBJkMinAKy7zf+zc1WAYm6XKZ94uzzUTrcypc4BcflqcbU98S+FBxviBQQtRvggJNAgJeIZYYXLucrPAjTV12OwzWFLzF/Q2mzEISvDyYAAAAASUVORK5CYII=) center/cover currentColor;
-           height: .75em;
-           width: .75em;
-           display: inline-block;
-           box-sizing: content-box;
+         /* PNG stencil, background color shine through. */
+         background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAyElEQVQYGS3BMUrDYBzG4RdCIHxjCHiGUhBBEKFLltCxowdwLy4eQZwFCeQgvYUXcHHsEhKTL6mVmPrz80+fR5i+ajekpGPRVxgBvsv9+ms373/33QOxhAeB1GwxPx/TQiKarkF9RUZw8jA8y+B8qWE1FgT1Hcux0NmwEgnp9E4wvHJBJkMinAKy7zf+zc1WAYm6XKZ94uzzUTrcypc4BcflqcbU98S+FBxviBQQtRvggJNAgJeIZYYXLucrPAjTV12OwzWFLzF/Q2mzEISvDyYAAAAASUVORK5CYII=) center/cover currentColor;
+         height: .75em;
+         width: .75em;
+         display: inline-block;
+         box-sizing: content-box;
        }
        .fb-quote figcaption {
-           text-align: center;
+         text-align: center;
        }
        .fb-quote p {
-           margin: .5em 0 0 0;
-           text-indent: 0;
+         margin: .5em 0 0 0;
+         text-indent: 0;
        }
       </style>
       <figure class="fb-quote">
@@ -827,53 +826,53 @@
 
       <style>
         figure.discord {
-            vertical-align: top;
-            width: 25em;
-            margin: 1rem auto;
+          vertical-align: top;
+          width: 25em;
+          margin: 1rem auto;
         }
         .discord > div {
-            padding: 1em;
-            color: #dcddde;
-            background: #36393F;
-            font-size: 18px;
-            line-height: 1.375;
+          padding: 1em;
+          color: #dcddde;
+          background: #36393F;
+          font-size: 18px;
+          line-height: 1.375;
         }
         .discord table {
-            border-collapse: collapse;
-            text-align: center;
+          border-collapse: collapse;
+          text-align: center;
         }
         .discord td { padding-right: .25em; }
         .discord td:first-child { text-align: left; }
         .discord .nick {
-            color: #1f8b4c;
-            margin-right: .25em;
+          color: #1f8b4c;
+          margin-right: .25em;
         }
         .discord img {
-            position: absolute;
-            width: 2.5em;         /* 40px */
-            border-radius: 50%;
-            left: .25em;          /* 4px */
-            margin: .125em 0 0 0; /* 2px */
+          position: absolute;
+          width: 2.5em;         /* 40px */
+          border-radius: 50%;
+          left: .25em;          /* 4px */
+          margin: .125em 0 0 0; /* 2px */
         }
         .discord > div > div {
-            position: relative;
-            padding: .125em 1.5em .125em 3.75em;  /* 2px 24px 2px 60px */
+          position: relative;
+          padding: .125em 1.5em .125em 3.75em;  /* 2px 24px 2px 60px */
         }
         .discord > div > div:hover {
-            background: #32353b;
+          background: #32353b;
         }
         .discord > div > div:hover time {
-            display: inline;
+          display: inline;
         }
         .discord small, .discord time {
-            color: #72767d;
-            font-size: 75%;
+          color: #72767d;
+          font-size: 75%;
         }
         .discord time {
-            position: absolute;
-            left: .125em;         /* 2px */
-            padding: 0 .25em;     /* 4px */
-            line-height: 1.95;
+          position: absolute;
+          left: .125em;         /* 2px */
+          padding: 0 .25em;     /* 4px */
+          line-height: 1.95;
         }
       </style>
       <figure class="discord">
@@ -933,26 +932,26 @@
 
       <style>
         table.vowels {
-            border-collapse: collapse;
-            margin: 0 0 1em 2em;
-            float: right;
-            text-align: center;
+          border-collapse: collapse;
+          margin: 0 0 1em 2em;
+          float: right;
+          text-align: center;
         }
         table.vowels td, table.vowels th { padding: 0 .5em; }
         table.vowels td {
-            border: 2px solid #bbb;
-            font-size: 25px;
+          border: 2px solid #bbb;
+          font-size: 25px;
         }
         table.vowels th {
-            font-weight: inherit;
-            padding-left: 0;
+          font-weight: inherit;
+          padding-left: 0;
         }
         table.vowels th:first-child { text-align: right; }
         table.vowels i {
-            display: inline-block;
-            font-style: inherit;
-            font-size: 1rem;
-            width: 1em;
+          display: inline-block;
+          font-style: inherit;
+          font-size: 1rem;
+          width: 1em;
         }
       </style>
       <table class="vowels">
@@ -995,235 +994,240 @@
     </section>
   </section>
 
-<section id=footnotes>
-  <h1>Footnotes</h1>
+  <section id=footnotes>
+    <h1>Footnotes</h1>
 
-  <style>
-    ul.hanging {
+    <style>
+      ul.hanging {
         padding: 0;
         list-style: none;
-    }
-    ul.hanging > li {
+      }
+      ul.hanging > li {
         text-indent: -1.25em;
         padding-left: 1.25em;
-    }
-    ul.hanging > li > p {
+      }
+      ul.hanging > li > p {
         text-indent: 1.25em;
         margin: 0;
-    }
-    ul.hanging ul {
+      }
+      ul.hanging ul {
         padding: 0 1em;
         list-style-type: disc;
         text-indent: 0;
-    }
-  </style>
-  <ul class="hanging">
-    <li id="fn1">1. Of course, <a
-      href="https://en.wikipedia.org/wiki/Canadian_Aboriginal_syllabics"
-      >Canadian Aboriginal syllabics</a> is under fierce competition for the
-      title of “coolest writing system” from other nifty scripts such
-      as <a href="https://en.wikipedia.org/wiki/Hangul">Hangul</a>
-      and <a href="https://en.wikipedia.org/wiki/ASLwrite">ASLwrite</a>.
+      }
+    </style>
+    <ul class="hanging">
+      <li id="fn1">1. Of course, <a
+        href="https://en.wikipedia.org/wiki/Canadian_Aboriginal_syllabics"
+        >Canadian Aboriginal syllabics</a> is under fierce competition for the
+        title of “coolest writing system” from other nifty scripts such
+        as <a href="https://en.wikipedia.org/wiki/Hangul">Hangul</a>
+        and <a href="https://en.wikipedia.org/wiki/ASLwrite">ASLwrite</a>.
 
-    <li id="fn2">2. I opted to use the l-series from Eastern Cree (also used by
-      Inuktitut), simply because that set of glyphs respects the symmetry of
-      the syllabics, while glyphs of the l-series in Western Cree syllabics do
-      not follow the expected pattern of rotations. The table below show a
-      comparison between Eastern and Western l-series. (Yes! The Western
-      l-series below is pointing in all the wrong directions, but I assure you:
-      That is not a mistake on my part!)
+      <li id="fn2">2. I opted to use the l-series from Eastern Cree (also used
+        by Inuktitut), simply because that set of glyphs respects the symmetry
+        of the syllabics, while glyphs of the l-series in Western Cree
+        syllabics do not follow the expected pattern of rotations. The table
+        below show a comparison between Eastern and Western l-series. (Yes! The
+        Western l-series below is pointing in all the wrong directions, but I
+        assure you: That is not a mistake on my part!)
 
-      <figure class="syllabics inline">
-        <table>
-          <caption>Eastern Cree</caption>
-          <tr><th>le<td>ᓓ<td>ᓕ<th>li</tr>
-          <tr class="xtra-bp"><th>lo<td>ᓗ<td>ᓚ<th>la</tr>
-        </table>
-        <table>
-          <caption>Western Cree</caption>
-          <tr><th>le<td>ᕃ<td>ᕆ<th>li</tr>
-          <tr class="xtra-bp"><th>lo<td>ᕊ<td>ᕍ<th>la</tr>
-        </table>
-      </figure>
+        <figure class="syllabics inline">
+          <table>
+            <caption>Eastern Cree</caption>
+            <tr><th>le<td>ᓓ<td>ᓕ<th>li</tr>
+            <tr class="xtra-bp"><th>lo<td>ᓗ<td>ᓚ<th>la</tr>
+          </table>
+          <table>
+            <caption>Western Cree</caption>
+            <tr><th>le<td>ᕃ<td>ᕆ<th>li</tr>
+            <tr class="xtra-bp"><th>lo<td>ᕊ<td>ᕍ<th>la</tr>
+          </table>
+        </figure>
 
-    <li id="fn3">3. Since the letter <i>j</i> in Toki Pona is pronounced
-      like <i>y</i> in English, I have chosen to use the Canadian syllabics
-      y-series of characters (ᔦ <i>ye,</i> ᔨ <i>yi,</i> ᔪ <i>yo,</i>
-      ᔭ <i>ya</i>) for <i>j.</i> (But in keeping with Toki Pona spelling I
-      refer to them as <i>je, ji, jo</i> and <i>ja</i> elsewhere in this text.)
+      <li id="fn3">3. Since the letter <i>j</i> in Toki Pona is pronounced
+        like <i>y</i> in English, I have chosen to use the Canadian syllabics
+        y-series of characters (ᔦ <i>ye,</i> ᔨ <i>yi,</i> ᔪ <i>yo,</i>
+        ᔭ <i>ya</i>) for <i>j.</i> (But in keeping with Toki Pona spelling I
+        refer to them as <i>je, ji, jo</i> and <i>ja</i> elsewhere in this
+        text.)
 
-    <li id="fn4">4. Here the Inuktitut v-series (which used for both <i>f</i>
-      and <i>v</i> in Cree and Ojibwe) is used to write the <i>w</i> of Toki
-      Pona (ᕓ <i>we,</i> ᕕ <i>wi,</i> ᕗ <i>wo,</i> ᕙ <i>wa</i>).—One could
-      argue that it is inaccurate to write Toki Pona’s <i>w</i> sound with a
-      syllabics character representing <i>v</i> (or <i>f</i>&#8239;) when
-      several of the syllabics’ languages actually do have a <i>w</i> sound,
-      and a way of writing it. In practice however, I’ve found that it is
-      easier to read a text which is less cluttered by dots. (In Ojibwe and
-      Eastern Cree <i>w</i> is written by adding a dot in front of the syllabic
-      character: ᐌ <i>we,</i> ᐎ <i>wi,</i> ᐒ <i>wo,</i> ᐗ <i>wa.</i> Western
-      Cree instead write <i>w</i> as a dot after the syllabic character:
-      ᐍ <i>we,</i> ᐏ <i>wi,</i> ᐓ <i>wo,</i> ᐘ <i>wa</i>.)
+      <li id="fn4">4. Here the Inuktitut v-series (which used for both <i>f</i>
+        and <i>v</i> in Cree and Ojibwe) is used to write the <i>w</i> of Toki
+        Pona (ᕓ <i>we,</i> ᕕ <i>wi,</i> ᕗ <i>wo,</i> ᕙ <i>wa</i>).—One could
+        argue that it is inaccurate to write Toki Pona’s <i>w</i> sound with a
+        syllabics character representing <i>v</i> (or <i>f</i>&#8239;) when
+        several of the syllabics’ languages actually do have a <i>w</i> sound,
+        and a way of writing it. In practice however, I’ve found that it is
+        easier to read a text which is less cluttered by dots. (In Ojibwe and
+        Eastern Cree <i>w</i> is written by adding a dot in front of the
+        syllabic character: ᐌ <i>we,</i> ᐎ <i>wi,</i> ᐒ <i>wo,</i> ᐗ <i>wa.</i>
+        Western Cree instead write <i>w</i> as a dot after the syllabic
+        character: ᐍ <i>we,</i> ᐏ <i>wi,</i> ᐓ <i>wo,</i> ᐘ <i>wa</i>.)
 
-      <p>This article originally advocated writing <i>w</i> in the Eastern Cree
-      way, with a leading dot (ᐧ◌). This was mostly to be consistent with the
-      fact that this style happened to use mostly Eastern Cree conventions for
-      other things (like the l-series, ᓓ <i>le,</i> ᓕ <i>li,</i> ᓗ <i>lo,</i>
-      ᓚ <i>la,</i> and a raised ᓇ <i>na</i> as syllable-final ◌ᓐ <i>n</i>).
-      However, experience has since taught me that readability is a more
-      important aspect than a hundred percent faithfulness to any one source.
+        <p>This article originally advocated writing <i>w</i> in the Eastern
+        Cree way, with a leading dot (ᐧ◌). This was mostly to be consistent
+        with the fact that this style happened to use mostly Eastern Cree
+        conventions for other things (like the l-series, ᓓ <i>le,</i>
+        ᓕ <i>li,</i> ᓗ <i>lo,</i> ᓚ <i>la,</i> and a raised ᓇ <i>na</i> as
+        syllable-final ◌ᓐ <i>n</i>). However, experience has since taught me
+        that readability is a more important aspect than a hundred percent
+        faithfulness to any one source.
 
-    <li id="fn5">5. The languages written in Canadian syllabics use various
-      different glyphs for non-syllabic <i>n.</i> For simplicity’s sake I’m
-      here using the character ◌ᓐ (raised ᓇ <i>na,</i> used by Inuktitut,
-      Eastern Cree, most of Ojibwe). Other possible choices include: ◌ᐣ
-      (final <i>n</i> in Western Cree) or ◌ᣙ (raised ᓂ <i>ni,</i> a less common
-      variant used in Ojibwe).
+      <li id="fn5">5. The languages written in Canadian syllabics use various
+        different glyphs for non-syllabic <i>n.</i> For simplicity’s sake I’m
+        here using the character ◌ᓐ (raised ᓇ <i>na,</i> used by Inuktitut,
+        Eastern Cree, most of Ojibwe). Other possible choices include: ◌ᐣ
+        (final <i>n</i> in Western Cree) or ◌ᣙ (raised ᓂ <i>ni,</i> a less
+        common variant used in Ojibwe).
 
-    <li id="fn6">6. Syllabics sort order varies between languages. The order
-      used for Toki Pona syllabics is the same as for Cree and Inuktitut, which
-      is also is the order in which the characters are listed in the Unicode
-      table. The exception to this is the ᕐ◌ <i>naming mark,</i> which is
-      disregarded in the Toki Pona syllabics sort.
+      <li id="fn6">6. Syllabics sort order varies between languages. The order
+        used for Toki Pona syllabics is the same as for Cree and Inuktitut,
+        which is also is the order in which the characters are listed in the
+        Unicode table. The exception to this is the ᕐ◌ <i>naming mark,</i>
+        which is disregarded in the Toki Pona syllabics sort.
 
-      <p>The sort order is: ᐁ <i>e,</i> ᐯ <i>pe,</i> ᑌ <i>te,</i> ᑫ <i>ke,</i>
-      qᒣ <i>me,</i> ᓀ <i>ne,</i> ᓓ <i>le,</i> ᓭ <i>se,</i> ᔦ <i>je,</i>
-      ᕓ <i>we</i>. Within each consonant series the rotations are in the
-      order: <i>e, i, o, u, a</i> (with the pointed <i>u</i> coming after its
-      unpointed counterpart <i>o</i>). Lastly syllable-final ◌ᓐ <i>n</i> is
-      sorted after ᓇ <i>na</i> (but before ᓓ <i>le</i>), and any occurrence of
-      the ᕐ◌ naming mark is ignored. For more information on syllabics sorting,
-      see:
+        <p>The sort order is: ᐁ <i>e,</i> ᐯ <i>pe,</i> ᑌ <i>te,</i>
+        ᑫ <i>ke,</i> qᒣ <i>me,</i> ᓀ <i>ne,</i> ᓓ <i>le,</i> ᓭ <i>se,</i>
+        ᔦ <i>je,</i> ᕓ <i>we</i>. Within each consonant series the rotations
+        are in the order: <i>e, i, o, u, a</i> (with the pointed <i>u</i>
+        coming after its unpointed counterpart <i>o</i>). Lastly syllable-final
+        ◌ᓐ <i>n</i> is sorted after ᓇ <i>na</i> (but before ᓓ <i>le</i>), and
+        any occurrence of the ᕐ◌ naming mark is ignored. For more information
+        on syllabics sorting, see:
 
-      <ul>
-        <li>“<a href="https://www.languagegeek.com/typography/syllabics/syllabicsAbugida.html"
-          >Is Syllabics an Abugida?</a>” (Chris Harvey, 2006)
-        <li>“<a href="https://creeliteracy.org/2017/10/17/syllabics-and-sro-two-sides-of-the-same-coin/"
-          >Syllabics and Standard Roman Orthography: Two sides of the same
-          coin</a>” (Arden Ogg, 2017)
-        <li>“<a href="https://creelanguage.wordpress.com/2018/04/06/syllabics-chart/"
-          >Kepin’s Cree Language Blog: Syllabics Chart</a>” (Kevin Brousseau,
-          2018).
-      </ul>
+        <ul>
+          <li>“<a href="https://www.languagegeek.com/typography/syllabics/syllabicsAbugida.html"
+            >Is Syllabics an Abugida?</a>” (Chris Harvey, 2006)
+          <li>“<a href="https://creeliteracy.org/2017/10/17/syllabics-and-sro-two-sides-of-the-same-coin/"
+            >Syllabics and Standard Roman Orthography: Two sides of the same
+            coin</a>” (Arden Ogg, 2017)
+          <li>“<a href="https://creelanguage.wordpress.com/2018/04/06/syllabics-chart/"
+            >Kepin’s Cree Language Blog: Syllabics Chart</a>” (Kevin Brousseau,
+            2018).
+        </ul>
 
-    <li id="fn7">7. In Canadian syllabics an <i>overdot</i> (◌̇) is used to mark
-      long vowels, but Toki Pona does not make a distinction between long and
-      short vowels. However, Canadian syllabics only have four possible
-      rotations with which to indicate vowel, and Toki Pona has <i>five</i>
-      vowels, so in this system the overdot is used to convert an <i>o</i> into
-      an <i>u,</i> instead of its traditional vowel-lengthening role.
+      <li id="fn7">7. In Canadian syllabics an <i>overdot</i> (◌̇) is used to
+        mark long vowels, but Toki Pona does not make a distinction between
+        long and short vowels. However, Canadian syllabics only have four
+        possible rotations with which to indicate vowel, and Toki Pona
+        has <i>five</i> vowels, so in this system the overdot is used to
+        convert an <i>o</i> into an <i>u,</i> instead of its traditional
+        vowel-lengthening role.
 
-      <p>The o-series of characters—which is used here for both <i>o</i>
-      (without overdot) and <i>u</i> (with <nobr>overdot)—</nobr>is used
-      for <i>o</i> in most of the Canadian syllabics languages, but is used
-      for <i>u</i> in Inuktitut. I’ve chosen to mark <i>u</i> with an overdot
-      (rather than <i>o</i>) since <i>u</i> is the least common vowel in Toki
-      Pona, and I want to minimize the amount of diacritics occurring in text.
+        <p>The o-series of characters—which is used here for both <i>o</i>
+        (without overdot) and <i>u</i> (with <nobr>overdot)—</nobr>is used
+        for <i>o</i> in most of the Canadian syllabics languages, but is used
+        for <i>u</i> in Inuktitut. I’ve chosen to mark <i>u</i> with an overdot
+        (rather than <i>o</i>) since <i>u</i> is the least common vowel in Toki
+        Pona, and I want to minimize the amount of diacritics occurring in
+        text.
 
-    <li id="fn8">8. The idea of a <i>naming mark</i> does not come from
-      Canadian Aboriginal syllabics, but is borrowed from
-      the <a href="https://en.wikipedia.org/wiki/Shavian_alphabet">Shavian
-      alphabet</a> (which, just like syllabics, does not distinguish between
-      upper and lower case). In Shavian this symbol is called a <i>naming
-      dot</i> and is written as a raised dot (ᐧ◌) in front of a name. (The same
-      raised dot is used in syllabics to indicate that a <i>w</i> should be
-      added to a syllable.)
+      <li id="fn8">8. The idea of a <i>naming mark</i> does not come from
+        Canadian Aboriginal syllabics, but is borrowed from
+        the <a href="https://en.wikipedia.org/wiki/Shavian_alphabet">Shavian
+        alphabet</a> (which, just like syllabics, does not distinguish between
+        upper and lower case). In Shavian this symbol is called a <i>naming
+        dot</i> and is written as a raised dot (ᐧ◌) in front of a name. (The
+        same raised dot is used in syllabics to indicate that a <i>w</i> should
+        be added to a syllable.)
 
-    <li id="fn9">9. For the curious, the blog post “<a
-      href="http://abecedaria.blogspot.com/2005/11/to-point-or-not-to-point.html"
-      >Abecedaria: To Point or Not to Point</a>” by Suzanne McCarthy goes into
-      the subject of pointing in greater detail.
+      <li id="fn9">9. For the curious, the blog post “<a
+        href="http://abecedaria.blogspot.com/2005/11/to-point-or-not-to-point.html"
+        >Abecedaria: To Point or Not to Point</a>” by Suzanne McCarthy goes
+        into the subject of pointing in greater detail.
 
-    <li id="fn10">10. The word “pu” is defined by the “Official Toki Pona
-      Dictionary” (found in the book <i>Toki Pona: The Language of Good,</i>
-      2014, Sonja Lang, pages <nobr>125–134</nobr>). It means
-      “<small>ADJECTIVE</small> interacting with the official Toki Pona book”.
+      <li id="fn10">10. The word “pu” is defined by the “Official Toki Pona
+        Dictionary” (found in the book <i>Toki Pona: The Language of Good,</i>
+        2014, Sonja Lang, pages <nobr>125–134</nobr>). It means
+        “<small>ADJECTIVE</small> interacting with the official Toki Pona
+        book”.
 
-    <li id="fn11">11. This is only true of <i>o</i> and <i>u</i> (which are the
-      two vowels that occur in the fewest number of words in the language).
-      Replacing any other vowel with another result in ambiguities. (The worst
-      case, with the most common vowels, <i>a</i> and <i>i,</i> there are six
-      overlapping words.)
+      <li id="fn11">11. This is only true of <i>o</i> and <i>u</i> (which are
+        the two vowels that occur in the fewest number of words in the
+        language). Replacing any other vowel with another result in
+        ambiguities. (The worst case, with the most common vowels, <i>a</i>
+        and <i>i,</i> there are six overlapping words.)
 
-      <p>There are 23 words containing <i>u</i> in the official dictionary:
-      ᐁᓲᓐ <i>esun,</i> ᐆᑕ <i>uta,</i> ᐆᑕᓚ <i>utala,</i> ᐆᓐᐸ <i>unpa,</i>
-      ᐊᓅ <i>anu,</i> ᐴ <i>pu,</i> ᑑ <i>tu,</i> ᑰᑌ <i>kute,</i> ᑰᓓ <i>kule,</i>
-      ᑰᓘᐴ <i>kulupu,</i> ᒧᑰ <i>moku,</i> ᒨ <i>mu,</i> ᒨᑌ <i>mute,</i>
-      ᒨᓐ <i>mun,</i> ᒨᓯ <i>musi,</i> ᓕᐴ <i>lipu,</i> ᓘᐸ <i>lupa,</i>
-      ᓘᑭᓐ <i>lukin,</i> ᓘᑲ <i>luka,</i> ᓲᐸ <i>supa,</i> ᓲᓄ <i>suno,</i>
-      ᓲᓕ <i>suli,</i> and ᓲᕕ <i>suwi</i>.
+        <p>There are 23 words containing <i>u</i> in the official dictionary:
+        ᐁᓲᓐ <i>esun,</i> ᐆᑕ <i>uta,</i> ᐆᑕᓚ <i>utala,</i> ᐆᓐᐸ <i>unpa,</i>
+        ᐊᓅ <i>anu,</i> ᐴ <i>pu,</i> ᑑ <i>tu,</i> ᑰᑌ <i>kute,</i>
+        ᑰᓓ <i>kule,</i> ᑰᓘᐴ <i>kulupu,</i> ᒧᑰ <i>moku,</i> ᒨ <i>mu,</i>
+        ᒨᑌ <i>mute,</i> ᒨᓐ <i>mun,</i> ᒨᓯ <i>musi,</i> ᓕᐴ <i>lipu,</i>
+        ᓘᐸ <i>lupa,</i> ᓘᑭᓐ <i>lukin,</i> ᓘᑲ <i>luka,</i> ᓲᐸ <i>supa,</i>
+        ᓲᓄ <i>suno,</i> ᓲᓕ <i>suli,</i> and ᓲᕕ <i>suwi</i>.
 
-      <p>And 34 words containing <i>o:</i> ᐃᓗ <i>ilo,</i> ᐃᔪ <i>ijo,</i>
-      ᐅ <i>o,</i> ᐅᐯᓐ <i>open,</i> ᐅᑯ <i>oko,</i> ᐅᓇ <i>ona,</i>
-      ᐅᓕᓐ <i>olin,</i> ᐳᑭ <i>poki,</i> ᐳᑲ <i>poka,</i> ᐳᓇ <i>pona,</i>
-      ᑌᓐᐳ <i>tenpo,</i> ᑌᓗ <i>telo,</i> ᑐᑭ <i>toki,</i> ᑐᒧ <i>tomo,</i>
-      ᑕᓱ <i>taso,</i> ᑯ <i>ko,</i> ᑯᓐ <i>kon,</i> ᒧᑰ <i>moku,</i>
-      ᒧᓐᓯ <i>monsi,</i> ᒧᓕ <i>moli,</i> ᓄᑲ <i>noka,</i> ᓇᒪᑯ <i>namako,</i>
-      ᓗᓐ <i>lon,</i> ᓗᔦ <i>loje,</i> ᓚᓱ <i>laso,</i> ᓭᓗ <i>selo,</i>
-      ᓯᔦᓗ <i>sijelo,</i> ᓱᓇ <i>sona,</i> ᓱᕓᓕ <i>soweli,</i> ᓲᓄ <i>suno,</i>
-      ᔦᓗ <i>jelo,</i> ᔪ <i>jo,</i> ᕙᓗ <i>walo,</i> and ᕙᓱ <i>waso</i>.
+        <p>And 34 words containing <i>o:</i> ᐃᓗ <i>ilo,</i> ᐃᔪ <i>ijo,</i>
+        ᐅ <i>o,</i> ᐅᐯᓐ <i>open,</i> ᐅᑯ <i>oko,</i> ᐅᓇ <i>ona,</i>
+        ᐅᓕᓐ <i>olin,</i> ᐳᑭ <i>poki,</i> ᐳᑲ <i>poka,</i> ᐳᓇ <i>pona,</i>
+        ᑌᓐᐳ <i>tenpo,</i> ᑌᓗ <i>telo,</i> ᑐᑭ <i>toki,</i> ᑐᒧ <i>tomo,</i>
+        ᑕᓱ <i>taso,</i> ᑯ <i>ko,</i> ᑯᓐ <i>kon,</i> ᒧᑰ <i>moku,</i>
+        ᒧᓐᓯ <i>monsi,</i> ᒧᓕ <i>moli,</i> ᓄᑲ <i>noka,</i> ᓇᒪᑯ <i>namako,</i>
+        ᓗᓐ <i>lon,</i> ᓗᔦ <i>loje,</i> ᓚᓱ <i>laso,</i> ᓭᓗ <i>selo,</i>
+        ᓯᔦᓗ <i>sijelo,</i> ᓱᓇ <i>sona,</i> ᓱᕓᓕ <i>soweli,</i> ᓲᓄ <i>suno,</i>
+        ᔦᓗ <i>jelo,</i> ᔪ <i>jo,</i> ᕙᓗ <i>walo,</i> and ᕙᓱ <i>waso</i>.
 
-    <li id="fn12">12. According to jan Inwin’s Toki Pona dictionary, <a
-      href="https://docs.google.com/spreadsheets/d/1t-pjAgZDyKPXcCRnEdATFQOxGbQFMjZm-8EvXiQd2Po"
-      ><i>Nimi Ale Pona</i> 2nd ed</a> (accessed 27 March 2021).
+      <li id="fn12">12. According to jan Inwin’s Toki Pona dictionary, <a
+        href="https://docs.google.com/spreadsheets/d/1t-pjAgZDyKPXcCRnEdATFQOxGbQFMjZm-8EvXiQd2Po"
+        ><i>Nimi Ale Pona</i> 2nd ed</a> (accessed 27 March 2021).
 
-    <li id="fn13">13. The “Western Oblate style” of syllabics is described in
-      John Stewart Murdoch’s thesis from 1981, <i><a
-      href="https://mspace.lib.umanitoba.ca/xmlui/handle/1993/9207">Syllabics:
-      A Successful Educational Innovation</a>.</i> (See pages 308, 311, and
-      table 7 on page 391.)
+      <li id="fn13">13. The “Western Oblate style” of syllabics is described in
+        John Stewart Murdoch’s thesis from 1981, <i><a
+        href="https://mspace.lib.umanitoba.ca/xmlui/handle/1993/9207">Syllabics:
+        A Successful Educational Innovation</a>.</i> (See pages 308, 311, and
+        table 7 on page 391.)
 
-    <li id="fn14">14. The difference between King’s style and the Western
-      Oblate style might be easier to see using tables.
+      <li id="fn14">14. The difference between King’s style and the Western
+        Oblate style might be easier to see using tables.
 
-      <figure class="syllabics inline">
-        <table>
-          <caption>King’s style</caption>
-          <tr><th>le<td>ᕂ<td>ᕄ<th>li</tr>
-          <tr class="xtra-bp"><th>lo<td>ᕊ<td>ᕋ<th>la</tr>
-        </table>
-        <table>
-          <caption>Western Oblate</caption>
-          <tr><th>le<td>ᕃ<td>ᕆ<th>li</tr>
-          <tr class="xtra-bp"><th>lo<td>ᕊ<td>ᕍ<th>la</tr>
-        </table>
-      </figure>
+        <figure class="syllabics inline">
+          <table>
+            <caption>King’s style</caption>
+            <tr><th>le<td>ᕂ<td>ᕄ<th>li</tr>
+            <tr class="xtra-bp"><th>lo<td>ᕊ<td>ᕋ<th>la</tr>
+          </table>
+          <table>
+            <caption>Western Oblate</caption>
+            <tr><th>le<td>ᕃ<td>ᕆ<th>li</tr>
+            <tr class="xtra-bp"><th>lo<td>ᕊ<td>ᕍ<th>la</tr>
+          </table>
+        </figure>
 
-    <li id="fn15">15. In Inuktitut, ᕐ◌ <i>uvularization</i> can be put in front
-      of a k-series character (ᑫ <i>kai,</i> ᑭ <i>ki,</i> ᑯ <i>ku,</i>
-      ᑲ <i>ka</i>) to indicate that the <i>k</i> sound is pronounced a further
-      back than usual (with an uvular <i>q,</i> rather than the usual
-      velar <i>k</i>): ᙯ <i>qai,</i> ᕿ <i>qi,</i> ᖁ <i>qu,</i> ᖃ <i>qa</i>.—The
-      same character can also be written <i>after</i> a syllabic character (◌ᕐ)
-      but then it indicates an <i>r</i> sound (◌ᕐ is a raised Inuktitut
-      ᕋ <i>ra</i>).
+      <li id="fn15">15. In Inuktitut, ᕐ◌ <i>uvularization</i> can be put in
+        front of a k-series character (ᑫ <i>kai,</i> ᑭ <i>ki,</i> ᑯ <i>ku,</i>
+        ᑲ <i>ka</i>) to indicate that the <i>k</i> sound is pronounced a
+        further back than usual (with an uvular <i>q,</i> rather than the usual
+        velar <i>k</i>): ᙯ <i>qai,</i> ᕿ <i>qi,</i> ᖁ <i>qu,</i>
+        ᖃ <i>qa</i>.—The same character can also be written <i>after</i> a
+        syllabic character (◌ᕐ) but then it indicates an <i>r</i> sound (◌ᕐ is
+        a raised Inuktitut ᕋ <i>ra</i>).
 
-    <li id="fn16">16. This article originally used the Western Cree final
-      ᑊ <i>p</i> as a naming mark, but after seeing <a href="#katelin">jan
-      Katelin’s</a> use of the Inuktitut symbol
-      ᕐ◌ <i>uvularization</i><a href="#fn15">15</a> (and letting the thought
-      sink in) this was changed. Reasons include:
+      <li id="fn16">16. This article originally used the Western Cree final
+        ᑊ <i>p</i> as a naming mark, but after seeing <a href="#katelin">jan
+        Katelin’s</a> use of the Inuktitut symbol
+        ᕐ◌ <i>uvularization</i><a href="#fn15">15</a> (and letting the thought
+        sink in) this was changed. Reasons include:
 
-      <ul>
-        <li>The Inuktitut ᕐ◌ <i>uvularization</i> character is used at the
-          beginning of words, but I have not been able to confirm whether or
-          not ᑊ <i>p</i> can do that in Western Cree. (Finding information
-          about Cree syllable structure is surprisingly hard!)
-        <li>The Toki Pona syllabics described in this article mostly borrows
-          the conventions of Eastern Cree and later styles of syllabics. The
-          character ᑊ <i>p</i> (not being a raised syllabic symbol) is in an
-          earlier, Western Cree, style, while ᕐ◌ <i>uvularization</i> (being
-          the raised Inuktitut syllabic ᕋ <i>ra</i>) is in a more Eastern
-          tradition.
-        <li>The fact that jan Katelin’s syllabics already use this symbol makes
-          it easier for syllabics aficionados to switch between this style and
-          jan Katelin’s.
-      </ul>
-  </ul>
-</section>
-<footer style="border-top:.125em solid #000;text-align:center;margin:1.5rem;padding:.75rem">
-  Copyright 2021–2022 <a href="http://zrajm.org">zrajm</a>, Uppsala, Sweden.
-</footer>
+        <ul>
+          <li>The Inuktitut ᕐ◌ <i>uvularization</i> character is used at the
+            beginning of words, but I have not been able to confirm whether or
+            not ᑊ <i>p</i> can do that in Western Cree. (Finding information
+            about Cree syllable structure is surprisingly hard!)
+          <li>The Toki Pona syllabics described in this article mostly borrows
+            the conventions of Eastern Cree and later styles of syllabics. The
+            character ᑊ <i>p</i> (not being a raised syllabic symbol) is in an
+            earlier, Western Cree, style, while ᕐ◌ <i>uvularization</i> (being
+            the raised Inuktitut syllabic ᕋ <i>ra</i>) is in a more Eastern
+            tradition.
+          <li>The fact that jan Katelin’s syllabics already use this symbol
+            makes it easier for syllabics aficionados to switch between this
+            style and jan Katelin’s.
+        </ul>
+    </ul>
+  </section>
+  <footer style="border-top:.125em solid #000;text-align:center;margin:1.5rem;padding:.75rem">
+    Copyright 2021–2022 <a href="http://zrajm.org">zrajm</a>, Uppsala, Sweden.
+  </footer>
 </body>
 </html>
 <!--

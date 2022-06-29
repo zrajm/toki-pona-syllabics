@@ -1186,7 +1186,7 @@ symbol.<a href="#fn16">16</a>
 <script>
   // Add links to internal 'id' attributes.
   document.querySelectorAll('[id]').forEach(e => {
-    (e.tagName === 'SECTION' ? e.firstElementChild : e).insertAdjacentHTML(
+    e.insertAdjacentHTML(
       'afterbegin', `<a class="id" href="#${e.id}" title="#${e.id}">#</a>`)
   })
 </script><style>

@@ -58,7 +58,17 @@
     font-feature-settings: 'onum' on; /* numbers with upper & lower case */
     max-width: 100%;
     font: 20px/1.5 "Noto Sans", "Noto Sans Canadian Aboriginal", "Times New Roman", sans-serif;
-    margin: 1rem 2rem;
+  }
+  body {
+    margin: 1rem auto;
+    margin: 0 auto;
+    max-width: 35rem;
+    width: calc(100vw - 4rem);
+    line-height: 1.75;
+  }
+  :root {
+    border: 1px solid #000;
+    border-top: 2px solid #bbb;
   }
   figure, figure img { max-width: 100%; }
   figure img { max-height: 70vh; }
@@ -137,7 +147,7 @@
   /* Glossary table. */
   .glossary {
     border-collapse: collapse;
-    margin: 2rem;
+    margin: 2rem 1.25rem;
   }
   .glossary td {
     border: 2px solid #bbb;
@@ -156,7 +166,7 @@
 <style>
   /* Mobile-specific CSS. */
   @media screen and (max-width: 767px) {
-    html { margin: 0 0 0 .5rem; }
+    body { margin: 0 0 0 .5rem; }
   }
 </style>
 <style>
@@ -485,7 +495,7 @@ Kanata</i> (Canada).<a href="#fn8">8</a>
   ᓕ ᐳᓇ, ᑕᕙ ᒥ&#8239;!
 </div>
 
-<table class="glossary">
+<table class="glossary" style="clear:both">
   <tr><td class="syllabic">ᔭᓐ ᕐᓴᔦᓐ<td>jan Sajen<td>Zrajm (me)</tr>
   <tr><td class="syllabic">ᒪ ᑐᒧ ᕐᐆᐸᓚ<td>ma tomo Upala<td>Uppsala (a city)</tr>
   <tr><td class="syllabic">ᔭᓐ ᕐᕕᑭᓐ<td>jan Wikin<td>the Vikings</tr>
@@ -1182,7 +1192,7 @@ symbol.<a href="#fn16">16</a>
         jan Katelin’s.
     </ul>
 </ul>
-<footer style="border-top:.125em solid #000;text-align:center;margin:1.5rem;padding:.75rem">
+<footer style="border-top:2px solid #bbb;text-align:center;margin:1.25rem;padding-top:.75rem">
   Copyright 2021–2022 <a href="http://zrajm.org">zrajm</a>, Uppsala, Sweden.
 </footer>
 <script>

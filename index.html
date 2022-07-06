@@ -112,7 +112,6 @@
   a.img { display: inline-block; }
   a.img, [id] { position: relative; }
   a.img img { display: block; }
-  a.img:hover { box-shadow: none; }
   a.img:hover:before, :target:before {
     content: ' ';
     position: absolute;
@@ -121,16 +120,19 @@
   }
   a.img:hover:before {
     top: -.35rem; bottom: -.25rem;
-    box-shadow: 0 0 2rem #88f4 inset, 0 0 4rem #88f8 inset;
+  }
+  a.img:hover:before, a:not(.img):hover {
+    box-shadow: 0 0 .75rem #88f7 inset, 0 0 1.5rem #88f7 inset;
+    background: #88f1;
   }
   :target:before {
     top: 0rem; bottom: -.125rem;
-    box-shadow: 0 0 2rem #fb4b inset, 0 0 4rem #fb4b inset;
+    box-shadow: 0 0 .75rem #fb4b inset, 0 0 1.5rem #fb4b inset;
+    background: #fb44;
     z-index: -1;
   }
   a:hover {
     text-decoration: underline 2px;
-    box-shadow: 0 0 .75rem #88f4 inset, 0 0 1.5rem #88f8 inset;
   }
   /* Glossary table. */
   .glossary {
